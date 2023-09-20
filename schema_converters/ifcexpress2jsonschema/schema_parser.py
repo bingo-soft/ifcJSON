@@ -451,9 +451,9 @@ class JsonSchema:
 
 
 def main():
-    express_file_path = "./reference_schemas/IFC4.exp"
+    express_file_path = "../reference_schemas/IFC4X2.exp"
     json_schema = JsonSchema(express_file_path)
-    json_file_path = f"./../Schema/{json_schema.schema_version}.json"
+    json_file_path = f"../../Schema/{json_schema.schema_version}.json"
     json_schema.to_file(json_file_path)
 
 
