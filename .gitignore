@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# XML files
+psd_xml_files
+qto_xml_files
+
+# JSON files
+psd_json_files
+qto_json_files
