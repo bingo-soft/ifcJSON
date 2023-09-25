@@ -129,8 +129,8 @@ dmypy.json
 .pyre/
 
 # XML files
-psd_xml_files
-qto_xml_files
+# psd_xml_files
+# qto_xml_files
 
 # JSON files
 psd_json_files
