@@ -1,0 +1,217 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "ca614c80d20111e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SanitaryTerminalTypeBath",
+    "Definition": "Sanitary appliance for immersion of the human body or parts of it (BS6100). HISTORY: In IFC4, Material and MaterialThickness properties removed. Use materials capabilities from IfcMaterialsResource schema. Datatype of color changed to IfcLabel (still a string value)",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSanitaryTerminal/BATH"
+    },
+    "ApplicableTypeValue": "IfcSanitaryTerminal/BATH",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "d0572d80d20111e1800000215ad4efdf",
+          "Name": "BathType",
+          "Definition": "The property enumeration defines the types of bath that may be specified within the property set.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_BathType",
+                "EnumItem": [
+                  "DOMESTIC",
+                  "DOMESTICCORNER",
+                  "FOOT",
+                  "JACUZZI",
+                  "PLUNGE",
+                  "SITZ",
+                  "TREATMENT",
+                  "WHIRLPOOL",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "DOMESTIC",
+                    "Definition": "Bath, for one person at a time, into which the whole body can be easily immersed.",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Domestic"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "FOOT",
+                    "Definition": "Shallow bath for washing the feet.",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Foot"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "POOL",
+                    "Definition": "Indoor or outdoor pool.",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "PLUNGE",
+                    "Definition": "Bath, usually for more than one person at a time, into which the whole body can be easily immersed.",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Plunge"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SITZ",
+                    "Definition": "Bath in which a bather sits as in a chair.",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Sitz"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SPA",
+                    "Definition": "Indoor or outdoor pool designed for multiple people in which an integrated device agitates the water by pumped circulation or induction of water and/or air.",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Whirlpool"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TREATMENT",
+                    "Definition": "Bath used for hydrotherapy purposes.",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Treatment"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0f857e80d20211e1800000215ad4efdf",
+          "Name": "DrainSize",
+          "Definition": "The size of the drain outlet connection from the object.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "17452300d20211e1800000215ad4efdf",
+          "Name": "HasGrabHandles",
+          "Definition": "Indicates whether the bath is fitted with handles that provide assistance to a bather in entering or leaving the bath.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

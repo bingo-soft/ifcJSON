@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c8928b80d1f711e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProjectOrderMoveOrder",
+    "Definition": "Defines the requirements for move orders. Note that the move order status is defined in the same way as a work order status since a move order implies a work requirement.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProjectOrder/MOVEORDER"
+    },
+    "ApplicableTypeValue": "IfcProjectOrder/MOVEORDER",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "cfb99980d1f711e1800000215ad4efdf",
+        "Name": "SpecialInstructions",
+        "Definition": "Special instructions that affect the move.",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcText"
+            }
+          }
+        }
+      }
+    }
+  }
+}

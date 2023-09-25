@@ -1,0 +1,146 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "b6a8ec80d1e711e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FlowInstrumentTypePressureGauge",
+    "Definition": "A device that reads and displays a pressure value at a point or the pressure difference between two points.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFlowInstrument/PRESSUREGAUGE"
+    },
+    "ApplicableTypeValue": "IfcFlowInstrument/PRESSUREGAUGE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "bc9ecd80d1e711e1800000215ad4efdf",
+          "Name": "PressureGaugeType",
+          "Definition": "Identifies the means by which pressure is displayed.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_PressureGaugeType",
+                "EnumItem": [
+                  "DIAL",
+                  "DIGITAL",
+                  "MANOMETER",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "DIAL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Dial"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DIGITAL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Digital"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MANOMETER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Manometer"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "caece980d1e711e1800000215ad4efdf",
+          "Name": "DisplaySize",
+          "Definition": "The physical size of the display. For a dial pressure gauge it will be the diameter of the dial.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

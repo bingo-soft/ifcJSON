@@ -1,0 +1,119 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "2a052b00d1f511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PrecastSlab",
+    "Definition": "Layout and component information defining how prestressed slab components are laid out in a precast slab assembly. The values are global defaults for the slab as a whole, but can be overridden by local placements of the individual com",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSlab"
+    },
+    "ApplicableTypeValue": "IfcSlab",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2ffb0c00d1f511e1800000215ad4efdf",
+          "Name": "TypeDesignator",
+          "Definition": "Type designator for the precast concrete slab, expressing mainly the component type. Possible values are \u201cHollow-core\u201d, \u201cDouble-tee\u201d, \u201cFlat plank\u201d, etc.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "36898380d1f511e1800000215ad4efdf",
+          "Name": "ToppingType",
+          "Definition": "Defines if a topping is applied and what kind. Values are \u201cFull topping\u201d, \u201cPerimeter Wash\u201d, \u201cNone\u201d",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3c7f6480d1f511e1800000215ad4efdf",
+          "Name": "EdgeDistanceToFirstAxis",
+          "Definition": "The distance from the left (\u2018West\u2019) edge of the slab (in the direction of span of the components) to the axis of the first component.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "430ddc00d1f511e1800000215ad4efdf",
+          "Name": "DistanceBetweenComponentAxes",
+          "Definition": "The distance between the axes of the components, measured along the \u2018South\u2019 edge of the slab.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4a34ea00d1f511e1800000215ad4efdf",
+          "Name": "AngleToFirstAxis",
+          "Definition": "The angle of rotation of the axis of the first component relative to the \u2018West\u2019 edge of the slab.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4ef99e00d1f511e1800000215ad4efdf",
+          "Name": "AngleBetweenComponentAxes",
+          "Definition": "The angle between the axes of each pair of components.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5456e880d1f511e1800000215ad4efdf",
+          "Name": "NominalThickness",
+          "Definition": "The nominal overall thickness of the slab.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5b7df680d1f511e1800000215ad4efdf",
+          "Name": "NominalToppingThickness",
+          "Definition": "The nominal thickness of the topping.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,967 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "ff20d400d20011e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_Risk",
+    "Definition": "An indication of exposure to mischance, peril, menace, hazard or loss. \n\nHISTORY: Extended in IFC2x3\n\nThere are various types of risk that may be encountered and there may be several instances of Pset_Risk associated in an instance of an IfcProcess.\nSpecification of this property set incorporates the values of the Incom risk analysis matrix (satisfying AS/NZS 4360) together with additional identified requirements.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProcess"
+    },
+    "ApplicableTypeValue": "IfcProcess",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "0516b500d20111e1800000215ad4efdf",
+          "Name": "RiskType",
+          "Definition": "Identifies the predefined types of risk from which the type required may be set.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_RiskType",
+                "EnumItem": [
+                  "BUSINESS",
+                  "HAZARD",
+                  "HEALTHANDSAFETY",
+                  "INSURANCE",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "BUSINESS",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Business"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "HAZARD",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Hazard"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "HEALTHANDSAFETY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Health and Safety"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "INSURANCE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Insurance"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1495fe00d20111e1800000215ad4efdf",
+          "Name": "NatureOfRisk",
+          "Definition": "An indication of the generic nature of the risk that might be encountered. \n\nNOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of grille unit' causing injury and damage to person and property.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1bbd0c00d20111e1800000215ad4efdf",
+          "Name": "SubNatureOfRisk1",
+          "Definition": "A first subsidiary value that might be assigned to designate a more specific type of risk.\n\nNOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This property set allows for a generic nature of risk and up to two subsidiary natures. An example might be 'causing injury and damage'.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "224b8380d20111e1800000215ad4efdf",
+          "Name": "SubNatureOfRisk2",
+          "Definition": "A second subsidiary value that might be assigned to designate a more specific type of risk. An example might be 'o person and property'.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "29729180d20111e1800000215ad4efdf",
+          "Name": "RiskCause",
+          "Definition": "A value that may be assigned to capture the cause or trigger for the risk. An example might be 'poor fixing'.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "30010900d20111e1800000215ad4efdf",
+          "Name": "AssessmentOfRisk",
+          "Definition": "Likelihood of risk event occurring.\n\nNote  that assessment of risk may frequently be associated with the physical location of the object for which the risk is assessed.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_RiskAssessment",
+                "EnumItem": [
+                  "ALMOSTCERTAIN",
+                  "VERYLIKELY",
+                  "LIKELY",
+                  "VERYPOSSIBLE",
+                  "POSSIBLE",
+                  "SOMEWHATPOSSIBLE",
+                  "UNLIKELY",
+                  "VERYUNLIKELY",
+                  "RARE",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "ALMOSTCERTAIN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Almost Certain"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VERYLIKELY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Very Likely"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "LIKELY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Likely"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VERYPOSSIBLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Very Possible"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "POSSIBLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Possible"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SOMEWHATPOSSIBLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Somewhat Possible"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNLIKELY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Unlikely"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VERYUNLIKELY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Very Unlikely"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "RARE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Rare"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "44dd9c80d20111e1800000215ad4efdf",
+          "Name": "RiskConsequence",
+          "Definition": "Indicates the level of severity of the consequences that the risk would have in case it happens.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_RiskConsequence",
+                "EnumItem": [
+                  "CATASTROPHIC",
+                  "SEVERE",
+                  "MAJOR",
+                  "CONSIDERABLE",
+                  "MODERATE",
+                  "SOME",
+                  "MINOR",
+                  "VERYLOW",
+                  "INSIGNIFICANT",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "CATASTROPHIC",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Catastrophic"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SEVERE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Severe"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MAJOR",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Major"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CONSIDERABLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Considerable"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MODERATE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Moderate"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SOME",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Some"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MINOR",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Minor"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VERYLOW",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Very Low"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "INSIGNIFICANT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Insignificant"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5aeb5d00d20111e1800000215ad4efdf",
+          "Name": "RiskRating",
+          "Definition": "A general rating of the risk that may be determined from a combination of the risk assessment and risk consequence.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_RiskRating",
+                "EnumItem": [
+                  "CRITICAL",
+                  "VERYHIGH",
+                  "HIGH",
+                  "CONSIDERABLE",
+                  "MODERATE",
+                  "SOME",
+                  "LOW",
+                  "VERYLOW",
+                  "INSIGNIFICANT",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "CRITICAL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Critical"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VERYHIGH",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Veryhigh"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "HIGH",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "High"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CONSIDERABLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Considerable"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MODERATE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Moderate"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SOME",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Some"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "LOW",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Low"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VERYLOW",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Verylow"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "INSIGNIFICANT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Insignificant"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7191b400d20111e1800000215ad4efdf",
+          "Name": "RiskOwner",
+          "Definition": "A determination of who is the owner of the risk by reference to principal roles of organizations within a project. Determination of the specific organization should be by reference to instances of IfcActorRole assigned to instances of IfcOrganization (if assigned).",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_RiskOwner",
+                "EnumItem": [
+                  "DESIGNER",
+                  "SPECIFIER",
+                  "CONSTRUCTOR",
+                  "INSTALLER",
+                  "MAINTAINER",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "DESIGNER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Designer"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SPECIFIER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Specifier"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CONSTRUCTOR",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Constructor"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "INSTALLER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Installer"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MAINTAINER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Maintainer"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "81a99380d20111e1800000215ad4efdf",
+          "Name": "AffectsSurroundings",
+          "Definition": "Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE).\n\nFor example, the process of painting would affect all the people in the vicinity of the process.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "88d0a180d20111e1800000215ad4efdf",
+          "Name": "PreventiveMeassures",
+          "Definition": "Identifies preventive measures to be taken to mitigate risk.",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcText"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

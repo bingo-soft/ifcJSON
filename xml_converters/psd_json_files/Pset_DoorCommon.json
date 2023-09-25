@@ -1,0 +1,369 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "0e8d2680d1db11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DoorCommon",
+    "Definition": "Properties common to the definition of all occurrences of IfcDoor.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDoor"
+    },
+    "ApplicableTypeValue": "IfcDoor",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2795d780d1db11e1800000215ad4efdf",
+          "Name": "Reference",
+          "Definition": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "32e90300d1db11e1800000215ad4efdf",
+          "Name": "Status",
+          "Definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_ElementStatus",
+                "EnumItem": [
+                  "NEW",
+                  "EXISTING",
+                  "DEMOLISH",
+                  "TEMPORARY",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "NEW",
+                    "Definition": "element designed as new addition",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "New"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "EXISTING",
+                    "Definition": "element exists and is to remain",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Existing"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DEMOLISH",
+                    "Definition": "element exists but is to be demolished",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Demolish"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TEMPORARY",
+                    "Definition": "element will exist only temporarily (such as a temporary support structure)",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Temporary"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7ba0bc00d1db11e1800000215ad4efdf",
+          "Name": "FireRating",
+          "Definition": "Fire rating for this object. It is given according to the national fire safety code or regulation.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "95420380d1db11e1800000215ad4efdf",
+          "Name": "AcousticRating",
+          "Definition": "Acoustic rating for this object.\nIt is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b4409580d1db11e1800000215ad4efdf",
+          "Name": "SecurityRating",
+          "Definition": "Index based rating system indicating security level.\nIt is giving according to the national building code.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cde1dd00d1db11e1800000215ad4efdf",
+          "Name": "DurabilityRating",
+          "Definition": "Durability against mechanical stress. It is given according to the national code or regulation.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ec47d880d1db11e1800000215ad4efdf",
+          "Name": "HygrothermalRating",
+          "Definition": "Resistence against hygrothermal impact from different temperatures and humidities inside and outside. It is given according to the national code or regulation.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5030f04224d94c74aba753294170b227",
+          "Name": "WaterTightnessRating",
+          "Definition": "Water tightness rating for this object.\nIt is provided according to the national building code.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "da9b78dfa88b4538887d4c597a1059dd",
+          "Name": "MechanicalLoadRating",
+          "Definition": "Mechanical load rating for this object.\nIt is provided according to the national building code.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9be0892ff9324135bdafcd98782a64ff",
+          "Name": "WindLoadRating",
+          "Definition": "Wind load resistance rating for this object.\nIt is provided according to the national building code.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "23b68500d1dc11e1800000215ad4efdf",
+          "Name": "Infiltration",
+          "Definition": "Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0aadd400d1dc11e1800000215ad4efdf",
+          "Name": "IsExternal",
+          "Definition": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "42b51700d1dc11e1800000215ad4efdf",
+          "Name": "ThermalTransmittance",
+          "Definition": "Thermal transmittance coefficient (U-Value) of a material.\nIt applies to the total door construction.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermalTransmittanceMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5d878b80d1dc11e1800000215ad4efdf",
+          "Name": "GlazingAreaFraction",
+          "Definition": "Fraction of the glazing area relative to the total area of the filling element. \nIt shall be used, if the glazing area is not given separately for all panels within the filling element.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "76903c80d1dc11e1800000215ad4efdf",
+          "Name": "HandicapAccessible",
+          "Definition": "Indication that this object is designed to be accessible by the handicapped. \nIt is giving according to the requirements of the national building code.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8f98ed80d1dc11e1800000215ad4efdf",
+          "Name": "FireExit",
+          "Definition": "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).\nHere it defines an exit door in accordance to the national building code.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "aa6b6200d1dc11e1800000215ad4efdf",
+          "Name": "HasDrive",
+          "Definition": "Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "beaf5f00d1dc11e1800000215ad4efdf",
+          "Name": "SelfClosing",
+          "Definition": "Indication whether this object is designed to close automatically after use (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cec73e80d1dc11e1800000215ad4efdf",
+          "Name": "SmokeStop",
+          "Definition": "Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

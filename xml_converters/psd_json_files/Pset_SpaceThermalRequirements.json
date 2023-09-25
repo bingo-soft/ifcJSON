@@ -1,0 +1,243 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "3cd72a00d20c11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SpaceThermalRequirements",
+    "Definition": "Properties related to the comfort requirements for thermal and other  thermal related performance properties of spaces that apply to the occurrences of IfcSpace, IfcSpatialZone or IfcZone. It can also be used to capture requirements for IfcSpaceType's. This includes the required design temperature, humidity, ventilation, and air conditioning.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcSpace",
+        "IfcSpatialZone",
+        "IfcZone"
+      ]
+    },
+    "ApplicableTypeValue": "IfcSpace, IfcSpatialZone, IfcZone",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "42cd0b00d20c11e1800000215ad4efdf",
+          "Name": "SpaceTemperature",
+          "Definition": "Temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period. Provide this value, if no temperatur range (Min-Max) is available.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "48c2ec00d20c11e1800000215ad4efdf",
+          "Name": "SpaceTemperatureMax",
+          "Definition": "Maximal temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4eb8cd00d20c11e1800000215ad4efdf",
+          "Name": "SpaceTemperatureMin",
+          "Definition": "Minimal temperature of the space or zone, that is required from user/designer view point. If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "54161780d20c11e1800000215ad4efdf",
+          "Name": "SpaceTemperatureSummerMax",
+          "Definition": "Maximal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5a0bf880d20c11e1800000215ad4efdf",
+          "Name": "SpaceTemperatureSummerMin",
+          "Definition": "Minimal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6001d980d20c11e1800000215ad4efdf",
+          "Name": "SpaceTemperatureWinterMax",
+          "Definition": "Maximal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "65f7ba80d20c11e1800000215ad4efdf",
+          "Name": "SpaceTemperatureWinterMin",
+          "Definition": "Minimal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6bed9b80d20c11e1800000215ad4efdf",
+          "Name": "SpaceHumidity",
+          "Definition": "Humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period. Provide this property, if no humidity range (Min-Max) is available.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "70b24f80d20c11e1800000215ad4efdf",
+          "Name": "SpaceHumidityMax",
+          "Definition": "Maximal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "76a83080d20c11e1800000215ad4efdf",
+          "Name": "SpaceHumidityMin",
+          "Definition": "Minimal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7c057b00d20c11e1800000215ad4efdf",
+          "Name": "SpaceHumiditySummer",
+          "Definition": "Humidity of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8162c580d20c11e1800000215ad4efdf",
+          "Name": "SpaceHumidityWinter",
+          "Definition": "Humidity of the space or zone for the cold (winter) period that is required from user/designer view point and provided as requirement for heating.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "86c01000d20c11e1800000215ad4efdf",
+          "Name": "DiscontinuedHeating",
+          "Definition": "Indication whether discontinued heating is required/desirable from user/designer view point. (TRUE) if yes, (FALSE) otherwise.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8d4e8780d20c11e1800000215ad4efdf",
+          "Name": "NaturalVentilation",
+          "Definition": "Indication whether the space is required to have natural ventilation (TRUE) or mechanical ventilation (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "94759580d20c11e1800000215ad4efdf",
+          "Name": "NaturalVentilationRate",
+          "Definition": "Indication of the requirement of a particular natural air ventilation rate, given in air changes per hour.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcCountMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9a6b7680d20c11e1800000215ad4efdf",
+          "Name": "MechanicalVentilationRate",
+          "Definition": "Indication of the requirement of a particular mechanical air ventilation rate, given in air changes per hour.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcCountMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9fc8c100d20c11e1800000215ad4efdf",
+          "Name": "AirConditioning",
+          "Definition": "Indication whether this space requires air conditioning provided (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a5bea200d20c11e1800000215ad4efdf",
+          "Name": "AirConditioningCentral",
+          "Definition": "Indication whether the space  requires a central air conditioning provided (TRUE) or not (FALSE).\nIt should only be given, if the property \"AirConditioning\" is set to TRUE.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

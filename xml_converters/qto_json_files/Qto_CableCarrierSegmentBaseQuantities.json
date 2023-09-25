@@ -1,0 +1,41 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_CableCarrierSegmentBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of cable carrier segment.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCableCarrierSegment"
+    },
+    "ApplicableTypeValue": "IfcCableCarrierSegment",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "GrossWeight",
+          "Definition": "Weight of the element.",
+          "QtoType": "Q_WEIGHT"
+        },
+        {
+          "Name": "Length",
+          "Definition": "Length of the segment, calculated at midpoint of cross-section, equal to the distance between inlet and outlet ports.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "CrossSectionArea",
+          "Definition": "Area of the cross section.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "OuterSurfaceArea",
+          "Definition": "Total surface area.",
+          "QtoType": "Q_AREA"
+        }
+      ]
+    }
+  }
+}

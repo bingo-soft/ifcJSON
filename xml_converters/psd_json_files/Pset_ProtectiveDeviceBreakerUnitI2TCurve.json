@@ -1,0 +1,211 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "abaa8800d1f811e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProtectiveDeviceBreakerUnitI2TCurve",
+    "Definition": "A coherent set of attributes representing a curve for let-through energy of a protective device. Note - A protective device may be associated with different instances of this pSet providing information related to different  basic characteristics",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProtectiveDevice"
+    },
+    "ApplicableTypeValue": "IfcProtectiveDevice",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "b6651d00d1f811e1800000215ad4efdf",
+          "Name": "VoltageLevel",
+          "Definition": "The voltage levels of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_VoltageLevels",
+                "EnumItem": [
+                  "U230",
+                  "U400",
+                  "U440",
+                  "U525",
+                  "U690",
+                  "U1000",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "U230",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U230"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U400",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U400"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U440",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U440"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U525",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U525"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U690",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U690"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U1000",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U1000"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d09efb00d1f811e1800000215ad4efdf",
+          "Name": "NominalCurrent",
+          "Definition": "A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the \nUltimateRatedCurrent associated with the same breaker unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d98fcc80d1f811e1800000215ad4efdf",
+          "Name": "BreakerUnitCurve",
+          "Definition": "A curve that establishes the let through energy of a breaker unit when a particular prospective current is applied.  Note that the breaker unit curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set:\n\n(1) Defining value: ProspectiveCurrent: A list of minimum 2 and maximum 16 numbers providing the currents in [A] for points in the current/I2t log/log coordinate space. The curve is drawn as a straight line between two consecutive points.\n(2) Defined value: LetThroughEnergy: A list of minimum 2 and maximum 16 numbers providing the let-through energy, I2t, in [A2s] for points in the current/I2t log/log coordinate space. The curve is drawn as a straight line between two consecutive points.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcElectricCurrentMeasure"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcReal"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "4d80a380d1fe11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProtectiveDeviceTypeResidualCurrentCircuitBreaker",
+    "Definition": "A residual current circuit breaker opens, closes or isolates a circuit and has short circuit and overload protection.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProtectiveDevice/RESIDUALCURRENTCIRCUITBREAKER"
+    },
+    "ApplicableTypeValue": "IfcProtectiveDevice/RESIDUALCURRENTCIRCUITBREAKER",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "52455780d1fe11e1800000215ad4efdf",
+        "Name": "Sensitivity",
+        "Definition": "Current leakage to an unwanted leading path during normal operation (IEC 151-14-49).",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcElectricCurrentMeasure"
+            }
+          }
+        }
+      }
+    }
+  }
+}

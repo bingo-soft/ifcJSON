@@ -1,0 +1,63 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "d0a4f800d20411e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SensorPHistory",
+    "Definition": "Properties for history of controller values.  HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSensor"
+    },
+    "ApplicableTypeValue": "IfcSensor",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "d569ac00d20411e1800000215ad4efdf",
+          "Name": "Value",
+          "Definition": "Indicates sensed values over time which may be recorded continuously or only when changed beyond a particular deadband.  The range of possible values is defined by the SetPoint property of the corresponding sensor type property set.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "d8fd3300d20411e1800000215ad4efdf",
+          "Name": "Direction",
+          "Definition": "Indicates sensed direction for sensors capturing magnitude and direction measured from True North (0 degrees) in a clockwise direction.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "dbf82380d20411e1800000215ad4efdf",
+          "Name": "Quality",
+          "Definition": "Indicates the quality of measurement or failure condition, which may be further qualified by the Status.  True: measured values are considered reliable; False: measured values are considered not reliable (i.e. a fault has been detected); Unknown: reliability of values is uncertain.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "def31400d20411e1800000215ad4efdf",
+          "Name": "Status",
+          "Definition": "Indicates an error code or identifier, whose meaning is specific to the particular automation system.  Example values include: 'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

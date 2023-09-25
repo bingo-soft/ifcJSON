@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "e6a9bd00d1f211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PipeFittingTypeBend",
+    "Definition": "Pipe fitting type attributes for bend shapes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPipeFitting/BEND"
+    },
+    "ApplicableTypeValue": "IfcPipeFitting/BEND",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "ed383480d1f211e1800000215ad4efdf",
+          "Name": "BendAngle",
+          "Definition": "The change of direction of flow.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositivePlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f2957f00d1f211e1800000215ad4efdf",
+          "Name": "BendRadius",
+          "Definition": "The radius of bending if circular arc or zero if sharp bend.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

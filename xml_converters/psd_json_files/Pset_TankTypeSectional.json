@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "b83ada80d21011e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_TankTypeSectional",
+    "Definition": "Fixed vessel constructed from sectional parts with one or more compartments for storing a liquid.\n\nNote (1): All sectional construction tanks are considered to be rectangular by default.\nNote (2): Generally, it is not expected that sectional construction tanks will be used for the purposes of gas storage.\n\nPset renamed from Pset_TankTypeSectionalTank to Pset_TankTypeSectional in IFC2x2 Pset Addendum.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcTank/SECTIONAL"
+    },
+    "ApplicableTypeValue": "IfcTank/SECTIONAL",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "bd982500d21011e1800000215ad4efdf",
+          "Name": "NumberOfSections",
+          "Definition": "Number of sections used in the construction of the tank\n\nNote: All sections assumed to be the same size.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c4269c80d21011e1800000215ad4efdf",
+          "Name": "SectionLength",
+          "Definition": "The length of a section used in the construction of the tank.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cd176e00d21011e1800000215ad4efdf",
+          "Name": "SectionWidth",
+          "Definition": "The width of a section used in the construction of the tank.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

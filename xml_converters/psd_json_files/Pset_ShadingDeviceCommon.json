@@ -1,0 +1,368 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "3eeaba00d20711e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ShadingDeviceCommon",
+    "Definition": "Shading device properties associated with an element that represents a shading device",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcShadingDevice"
+    },
+    "ApplicableTypeValue": "IfcShadingDevice",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "47db8b80d20711e1800000215ad4efdf",
+          "Name": "Reference",
+          "Definition": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4e6a0300d20711e1800000215ad4efdf",
+          "Name": "Status",
+          "Definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_ElementStatus",
+                "EnumItem": [
+                  "NEW",
+                  "EXISTING",
+                  "DEMOLISH",
+                  "TEMPORARY",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "NEW",
+                    "Definition": "element designed as new addition",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "New"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "EXISTING",
+                    "Definition": "element exists and is to remain",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Existing"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DEMOLISH",
+                    "Definition": "element exists but is to be demolished",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Demolish"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TEMPORARY",
+                    "Definition": "element will exist only temporarily (such as a temporary support structure)",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Temporary"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5de94c00d20711e1800000215ad4efdf",
+          "Name": "ShadingDeviceType",
+          "Definition": "Specifies the type of shading device.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_ElementShading",
+                "EnumItem": [
+                  "FIXED",
+                  "MOVABLE",
+                  "OVERHANG",
+                  "SIDEFIN",
+                  "USERDEFINED",
+                  "NOTDEFINED"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "FIXED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Fixed"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MOVABLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Movable"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OVERHANG",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Overhang"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SIDEFIN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Sidefin"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6f325880d20711e1800000215ad4efdf",
+          "Name": "MechanicalOperated",
+          "Definition": "Indication whether the element is operated machanically (TRUE) or not, i.e. manually  (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "79eced80d20711e1800000215ad4efdf",
+          "Name": "SolarTransmittance",
+          "Definition": "(Tsol): The ratio of incident solar radiation that directly passes through a shading system (also named \u03c4e). Note the following equation Asol + Rsol + Tsol = 1",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "85401900d20711e1800000215ad4efdf",
+          "Name": "SolarReflectance",
+          "Definition": "(Rsol): The ratio of incident solar radiation that is reflected by a shading system (also named \u03c1e). Note the following equation Asol + Rsol + Tsol = 1",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7f4a3800d20711e1800000215ad4efdf",
+          "Name": "VisibleLightTransmittance",
+          "Definition": "Fraction of the visible light that passes the shading system  at normal incidence. It is a value without unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9c7f0680d20711e1800000215ad4efdf",
+          "Name": "VisibleLightReflectance",
+          "Definition": "Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "75283980d20711e1800000215ad4efdf",
+          "Name": "ThermalTransmittance",
+          "Definition": "Thermal transmittance coefficient (U-Value) of a material of a certain thickness for this element.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermalTransmittanceMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "69d50e00d20711e1800000215ad4efdf",
+          "Name": "IsExternal",
+          "Definition": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a1dc5100d20711e1800000215ad4efdf",
+          "Name": "Roughness",
+          "Definition": "A measure of the vertical deviations of the surface.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a86ac880d20711e1800000215ad4efdf",
+          "Name": "SurfaceColor",
+          "Definition": "The color of the surface.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

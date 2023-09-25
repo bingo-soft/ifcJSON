@@ -1,0 +1,267 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "2d051900d1ff11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_RampCommon",
+    "Definition": "Properties common to the definition of all occurrences of IfcRamp.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcRamp"
+    },
+    "ApplicableTypeValue": "IfcRamp",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "33939080d1ff11e1800000215ad4efdf",
+          "Name": "Reference",
+          "Definition": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "38f0db00d1ff11e1800000215ad4efdf",
+          "Name": "Status",
+          "Definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_ElementStatus",
+                "EnumItem": [
+                  "NEW",
+                  "EXISTING",
+                  "DEMOLISH",
+                  "TEMPORARY",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "NEW",
+                    "Definition": "element designed as new addition",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "New"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "EXISTING",
+                    "Definition": "element exists and is to remain",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Existing"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DEMOLISH",
+                    "Definition": "element exists but is to be demolished",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Demolish"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TEMPORARY",
+                    "Definition": "element will exist only temporarily (such as a temporary support structure)",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Temporary"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "45753380d1ff11e1800000215ad4efdf",
+          "Name": "RequiredHeadroom",
+          "Definition": "Required headroom clearance for the passageway according to the applicable building code or additional requirements.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4c03ab00d1ff11e1800000215ad4efdf",
+          "Name": "RequiredSlope",
+          "Definition": "Required sloping angle of the object  - relative to horizontal (0.0 degrees).\nRequired maximum slope for the passageway according to the applicable building code or additional requirements.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "60e03e80d1ff11e1800000215ad4efdf",
+          "Name": "HandicapAccessible",
+          "Definition": "Indication that this object is designed to be accessible by the handicapped. \nSet to (TRUE) if this ramp is rated as handicap accessible  according the local building codes, otherwise (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "663d8900d1ff11e1800000215ad4efdf",
+          "Name": "HasNonSkidSurface",
+          "Definition": "Indication whether the surface finish is designed to prevent slippery (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5b82f400d1ff11e1800000215ad4efdf",
+          "Name": "FireExit",
+          "Definition": "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).\nHere it defines an exit ramp in accordance to the national building code.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "502fc880d1ff11e1800000215ad4efdf",
+          "Name": "IsExternal",
+          "Definition": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d656025ed2cd424598c8b1b57aa9e3a0",
+          "Name": "ThermalTransmittance",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": null
+            }
+          }
+        },
+        {
+          "ifdguid": "761e9ee4c87544849c2a57a17935596e",
+          "Name": "LoadBearing",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": null
+            }
+          }
+        },
+        {
+          "ifdguid": "558d1300d1ff11e1800000215ad4efdf",
+          "Name": "FireRating",
+          "Definition": "Fire rating for this object.\nIt is given according to the national fire safety classification.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

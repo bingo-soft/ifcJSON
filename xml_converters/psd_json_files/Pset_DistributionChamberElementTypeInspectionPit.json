@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "daface00d1d311e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionChamberElementTypeInspectionPit",
+    "Definition": "Recess or chamber formed to permit access for inspection of substructure and services (definition modified from BS6100 221 4128).",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionChamberElement/INSPECTIONPIT"
+    },
+    "ApplicableTypeValue": "IfcDistributionChamberElement/INSPECTIONPIT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "e0581880d1d311e1800000215ad4efdf",
+          "Name": "Length",
+          "Definition": "The length of the pit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e6e69000d1d311e1800000215ad4efdf",
+          "Name": "Width",
+          "Definition": "The width of the pit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ec43da80d1d311e1800000215ad4efdf",
+          "Name": "Depth",
+          "Definition": "The depth of the pit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

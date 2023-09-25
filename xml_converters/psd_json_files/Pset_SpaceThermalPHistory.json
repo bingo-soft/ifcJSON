@@ -1,0 +1,83 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "229d4c00d20c11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SpaceThermalPHistory",
+    "Definition": "Thermal and air flow conditions of a space or zone.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSpace"
+    },
+    "ApplicableTypeValue": "IfcSpace",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "27fa9680d20c11e1800000215ad4efdf",
+          "Name": "CoolingAirFlowRate",
+          "Definition": "Cooling air flow rate in the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "2b8e1d80d20c11e1800000215ad4efdf",
+          "Name": "HeatingAirFlowRate",
+          "Definition": "Heating air flow rate in the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "2e890e00d20c11e1800000215ad4efdf",
+          "Name": "VentilationAirFlowRate",
+          "Definition": "Ventilation air flow rate in the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "3183fe80d20c11e1800000215ad4efdf",
+          "Name": "ExhaustAirFlowRate",
+          "Definition": "Exhaust air flow rate in the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "35178580d20c11e1800000215ad4efdf",
+          "Name": "SpaceTemperature",
+          "Definition": "Temperature of the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "38ab0c80d20c11e1800000215ad4efdf",
+          "Name": "SpaceRelativeHumidity",
+          "Definition": "The relative humidity of the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

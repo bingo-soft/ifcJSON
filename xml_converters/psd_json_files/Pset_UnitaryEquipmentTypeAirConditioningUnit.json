@@ -1,0 +1,131 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "53cd4a80d21311e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_UnitaryEquipmentTypeAirConditioningUnit",
+    "Definition": "Air conditioning unit equipment type attributes.\nNote that these attributes were formely Pset_PackagedACUnit prior to IFC2x2.\nHeatingEnergySource attribute deleted in IFC2x2 Pset Addendum: Use IfcEnergyProperties, IfcFuelProperties, etc. instead.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcUnitaryEquipment/AIRCONDITIONINGUNIT"
+    },
+    "ApplicableTypeValue": "IfcUnitaryEquipment/AIRCONDITIONINGUNIT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "5a5bc200d21311e1800000215ad4efdf",
+          "Name": "SensibleCoolingCapacity",
+          "Definition": "Sensible cooling capacity.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "75c6cd00d21311e1800000215ad4efdf",
+          "Name": "LatentCoolingCapacity",
+          "Definition": "Latent cooling capacity.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7bbcae00d21311e1800000215ad4efdf",
+          "Name": "CoolingEfficiency",
+          "Definition": "Coefficient of Performance: Ratio of cooling energy output to energy input under full load operating conditions.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "824b2580d21311e1800000215ad4efdf",
+          "Name": "HeatingCapacity",
+          "Definition": "Heating capacity.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "88410680d21311e1800000215ad4efdf",
+          "Name": "HeatingEfficiency",
+          "Definition": "Heating efficiency under full load heating conditions.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8d9e5100d21311e1800000215ad4efdf",
+          "Name": "CondenserFlowrate",
+          "Definition": "Flow rate of fluid through the condenser.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "93943200d21311e1800000215ad4efdf",
+          "Name": "CondenserEnteringTemperature",
+          "Definition": "Temperature of fluid entering condenser.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9b53d680d21311e1800000215ad4efdf",
+          "Name": "CondenserLeavingTemperature",
+          "Definition": "Termperature of fluid leaving condenser.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a149b780d21311e1800000215ad4efdf",
+          "Name": "OutsideAirFlowrate",
+          "Definition": "Flow rate of outside air entering the unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

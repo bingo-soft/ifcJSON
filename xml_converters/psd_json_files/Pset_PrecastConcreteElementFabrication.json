@@ -1,0 +1,124 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "376de580d1f411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PrecastConcreteElementFabrication",
+    "Definition": "Production and manufacturing related properties common to different types of precast concrete elements. The Pset applies to manufactured pieces. It can be used by a number of subtypes of IfcBuildingElement. If the precast concrete ele",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcBeam",
+        "IfcBuildingElementProxy",
+        "IfcChimney",
+        "IfcColumn",
+        "IfcFooting",
+        "IfcMember",
+        "IfcPile",
+        "IfcPlate",
+        "IfcRamp",
+        "IfcRampFlight",
+        "IfcRoof",
+        "IfcSlab",
+        "IfcStair",
+        "IfcStairFlight",
+        "IfcWall",
+        "IfcCivilElement"
+      ]
+    },
+    "ApplicableTypeValue": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "3d63c680d1f411e1800000215ad4efdf",
+          "Name": "TypeDesignator",
+          "Definition": "Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4359a780d1f411e1800000215ad4efdf",
+          "Name": "ProductionLotId",
+          "Definition": "The manufacturer's production lot identifier.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "48b6f200d1f411e1800000215ad4efdf",
+          "Name": "SerialNumber",
+          "Definition": "The manufacturer's serial number for the precast concrete element.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "608e7600d1f411e1800000215ad4efdf",
+          "Name": "PieceMark",
+          "Definition": "Defines a unique piece for production purposes. All pieces with the same piece mark value are identical and interchangeable. The piece mark may be composed of sub-parts that have specific locally defined meaning (e.g. B-1A may denote a beam, of generic type \u20181\u2019 and specific shape \u2018A\u2019).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "671ced80d1f411e1800000215ad4efdf",
+          "Name": "AsBuiltLocationNumber",
+          "Definition": "Defines a unique location within a structure, the \u2018slot\u2019 into which the piece was installed. Where pieces share the same piece mark, they can be interchanged. The value is only known after erection.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6dab6500d1f411e1800000215ad4efdf",
+          "Name": "ActualProductionDate",
+          "Definition": "Production date (stripped from form).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDateTime"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "72701900d1f411e1800000215ad4efdf",
+          "Name": "ActualErectionDate",
+          "Definition": "Date erected.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDateTime"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

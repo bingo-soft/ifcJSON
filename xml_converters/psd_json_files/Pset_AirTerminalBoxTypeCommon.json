@@ -1,0 +1,534 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "6ec19f80d1be11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AirTerminalBoxTypeCommon",
+    "Definition": "Air terminal box type common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAirTerminalBox"
+    },
+    "ApplicableTypeValue": "IfcAirTerminalBox",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "76814400d1be11e1800000215ad4efdf",
+          "Name": "Reference",
+          "Definition": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7d0fbb80d1be11e1800000215ad4efdf",
+          "Name": "Status",
+          "Definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_ElementStatus",
+                "EnumItem": [
+                  "NEW",
+                  "EXISTING",
+                  "DEMOLISH",
+                  "TEMPORARY",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "NEW",
+                    "Definition": "element designed as new addition",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "New"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "EXISTING",
+                    "Definition": "element exists and is to remain",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Existing"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DEMOLISH",
+                    "Definition": "element exists but is to be demolished",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Demolish"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TEMPORARY",
+                    "Definition": "element will exist only temporarily (such as a temporary support structure)",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Temporary"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8c8f0480d1be11e1800000215ad4efdf",
+          "Name": "AirflowRateRange",
+          "Definition": "Range of airflow that can be delivered.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "99135d00d1be11e1800000215ad4efdf",
+          "Name": "AirPressureRange",
+          "Definition": "Allowable air static pressure range at the entrance of the air terminal box.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a16b9800d1be11e1800000215ad4efdf",
+          "Name": "NominalAirFlowRate",
+          "Definition": "Nominal airflow rate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a7617900d1be11e1800000215ad4efdf",
+          "Name": "ArrangementType",
+          "Definition": "Terminal box arrangement.\nSingleDuct: Terminal box receives warm or cold air from a single air supply duct.\nDualDuct: Terminal box receives warm and cold air from separate air supply ducts.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_AirTerminalBoxArrangementType",
+                "EnumItem": [
+                  "SINGLEDUCT",
+                  "DUALDUCT",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "SINGLEDUCT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Single Duct"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DUALDUCT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Dual Duct"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b5af9500d1be11e1800000215ad4efdf",
+          "Name": "ReheatType",
+          "Definition": "Terminal box reheat type.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_AirTerminalBoxReheatType",
+                "EnumItem": [
+                  "ELECTRICALREHEAT",
+                  "WATERCOILREHEAT",
+                  "STEAMCOILREHEAT",
+                  "GASREHEAT",
+                  "NONE",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "ELECTRICALREHEAT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Electrical Reheat"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "WATERCOILREHEAT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Water Coil Reheat"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "STEAMCOILREHEAT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Steam Coil Reheat"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "GASREHEAT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Gas Reheat"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NONE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "None"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c829ce80d1be11e1800000215ad4efdf",
+          "Name": "HasSoundAttenuator",
+          "Definition": "Terminal box has a sound attenuator.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cd871900d1be11e1800000215ad4efdf",
+          "Name": "HasReturnAir",
+          "Definition": "Terminal box has return air mixed with supply air from duct work.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d37cfa00d1be11e1800000215ad4efdf",
+          "Name": "HasFan",
+          "Definition": "Terminal box has a fan inside (fan powered box).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d972db00d1be11e1800000215ad4efdf",
+          "Name": "NominalInletAirPressure",
+          "Definition": "Nominal airflow inlet static pressure.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "df68bc00d1be11e1800000215ad4efdf",
+          "Name": "NominalDamperDiameter",
+          "Definition": "Nominal damper diameter.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e4c60680d1be11e1800000215ad4efdf",
+          "Name": "HousingThickness",
+          "Definition": "Air terminal box housing material thickness.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "eabbe780d1be11e1800000215ad4efdf",
+          "Name": "OperationTemperatureRange",
+          "Definition": "Allowable operational range of the ambient air temperature.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f1e2f580d1be11e1800000215ad4efdf",
+          "Name": "ReturnAirFractionRange",
+          "Definition": "Allowable return air fraction range as a fraction of discharge airflow.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

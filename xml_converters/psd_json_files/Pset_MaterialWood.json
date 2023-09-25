@@ -1,0 +1,131 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "45206c80d1ee11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_MaterialWood",
+    "Definition": "This is a collection of properties applicable to wood-based materials that specify kind and grade of material as well as moisture related parameters.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcMaterial/Wood"
+    },
+    "ApplicableTypeValue": "IfcMaterial/Wood",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "494c8a00d1ee11e1800000215ad4efdf",
+          "Name": "Species",
+          "Definition": "Wood species of a solid wood or laminated wood product.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4ea9d480d1ee11e1800000215ad4efdf",
+          "Name": "StrengthGrade",
+          "Definition": "Grade with respect to mechanical strength and stiffness.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "54071f00d1ee11e1800000215ad4efdf",
+          "Name": "AppearanceGrade",
+          "Definition": "Grade with respect to visual quality.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "59646980d1ee11e1800000215ad4efdf",
+          "Name": "Layup",
+          "Definition": "Configuration of the lamination.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5f5a4a80d1ee11e1800000215ad4efdf",
+          "Name": "Layers",
+          "Definition": "Number of layers.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "63866800d1ee11e1800000215ad4efdf",
+          "Name": "Plies",
+          "Definition": "Number of plies.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "67b28580d1ee11e1800000215ad4efdf",
+          "Name": "MoistureContent",
+          "Definition": "Total weight of moisture relative to oven-dried weight of the wood.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6bdea300d1ee11e1800000215ad4efdf",
+          "Name": "DimensionalChangeCoefficient",
+          "Definition": "Weighted dimensional change coefficient, relative to 1% change in moisture content.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "70a35700d1ee11e1800000215ad4efdf",
+          "Name": "ThicknessSwelling",
+          "Definition": "Swelling ratio relative to board depth.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

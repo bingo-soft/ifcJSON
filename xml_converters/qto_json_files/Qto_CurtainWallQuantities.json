@@ -1,0 +1,46 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_CurtainWallQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of curtain walls.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCurtainWall"
+    },
+    "ApplicableTypeValue": "IfcCurtainWall",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "Length",
+          "Definition": "Total length of the curtain wall along the cutain wall center line (even if different to the curtain wall path).",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "Height",
+          "Definition": "Total height of the curtain wall. It should only be provided, if it is constant along the curtain wall path.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "Width",
+          "Definition": "Thickness of the curtain wall. It should only be provided, if it is constant along the curtain wall path.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "GrossSideArea",
+          "Definition": "Area of the curtain wall as viewed by an elevation view of the middle plane of the curtain wall.  It does not take into account any curtain wall modifications.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "NetSideArea",
+          "Definition": "Area of the curtain wall as viewed by an elevation view of the middle plane of the curtain wall. It does take into account all curtain wall modifications.",
+          "QtoType": "Q_AREA"
+        }
+      ]
+    }
+  }
+}

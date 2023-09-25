@@ -1,0 +1,83 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "a18b8800d1fe11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PumpPHistory",
+    "Definition": "Pump performance history attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPump"
+    },
+    "ApplicableTypeValue": "IfcPump",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "a6503c00d1fe11e1800000215ad4efdf",
+          "Name": "MechanicalEfficiency",
+          "Definition": "The pumps operational mechanical efficiency.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "a9e3c300d1fe11e1800000215ad4efdf",
+          "Name": "OverallEfficiency",
+          "Definition": "The pump and motor overall operational efficiency.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "ad774a00d1fe11e1800000215ad4efdf",
+          "Name": "PressureRise",
+          "Definition": "The developed pressure.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "b0723a80d1fe11e1800000215ad4efdf",
+          "Name": "RotationSpeed",
+          "Definition": "Pump rotational speed.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "b36d2b00d1fe11e1800000215ad4efdf",
+          "Name": "Flowrate",
+          "Definition": "The actual operational fluid flowrate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "b6681b80d1fe11e1800000215ad4efdf",
+          "Name": "Power",
+          "Definition": "The actual power consumption of the pump.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

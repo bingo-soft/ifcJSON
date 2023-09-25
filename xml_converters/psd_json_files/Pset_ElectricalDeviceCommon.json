@@ -1,0 +1,386 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "1ea70500d1df11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ElectricalDeviceCommon",
+    "Definition": "A collection of properties that are commonly used by electrical device types.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionElement"
+    },
+    "ApplicableTypeValue": "IfcDistributionElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "784d9d2144d440b5b30e2ad107609548",
+          "Name": "RatedCurrent",
+          "Definition": "The current that a device is designed to handle.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a2e15fb5e52e49e3b86731401fe07f86",
+          "Name": "RatedVoltage",
+          "Definition": "The voltage that a device is designed to handle.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcElectricVoltageMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f69a795455c74842825a54711d3b5abc",
+          "Name": "NominalFrequencyRange",
+          "Definition": "The upper and lower limits of frequency for which the operation of the device is certified.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcFrequencyMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cf5234358315441fa6c17c9b65bf62a0",
+          "Name": "PowerFactor",
+          "Definition": "The ratio between the rated electrical power and the product of the rated current and rated voltage",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f936102bd4824b7eb989a5571e353770",
+          "Name": "ConductorFunction",
+          "Definition": "Function of a line conductor to which a device  is intended to be connected where L1, L2 and L3 represent the phase lines according to IEC 60446 notation (sometimes phase lines may be referenced by color [Red, Blue, Yellow] or by number [1, 2, 3] etc). Protective Earth is sometimes also known as CPC or common protective conductor. Note that for an electrical device, a set of line conductor functions may be applied.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_ConductorFunctionEnum",
+                "EnumItem": [
+                  "L1",
+                  "L2",
+                  "L3"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "PHASE_L1",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Phase L1"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PHASE_L2",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Phase L2"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PHASE_L3",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Phase L3"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NEUTRAL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Neutral"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PROTECTIVEEARTH",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Protective Earth"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PROTECTIVEEARTHNEUTRAL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Protective Earth Neutral"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4b5b1c80d1df11e1800000215ad4efdf",
+          "Name": "NumberOfPoles",
+          "Definition": "The number of live lines that is intended to be handled by the device.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "50b86700d1df11e1800000215ad4efdf",
+          "Name": "HasProtectiveEarth",
+          "Definition": "Indicates whether the electrical device has a protective earth connection (=TRUE) or not (= FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5d3cbf80d1df11e1800000215ad4efdf",
+          "Name": "InsulationStandardClass",
+          "Definition": "Insulation standard classes provides basic protection information against electric shock. Defines levels of insulation required in terms of constructional requirements (creepage and clearance distances) and electrical requirements (compliance with electric strength tests). Basic insulation is considered to be shorted under single fault conditions. The actual values required depend on the working voltage to which the insulation is subjected, as well as other factors. Also indicates whether the electrical device has a protective earth connection.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": null,
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "CLASS0APPLIANCE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Class 0 Appliance"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CLASS0IAPPLIANCE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Class 0I Appliance"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CLASSIAPPLIANCE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Class I Appliance"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CLASSIIAPPLIANCE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Class II Appliance"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CLASSIIIAPPLIANCE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Class III Appliance"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "56ae4800d1df11e1800000215ad4efdf",
+          "Name": "IP_Code",
+          "Definition": "IP Code, the International Protection Marking, IEC 60529), classifies and rates the degree of protection provided against intrusion.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "aecd027ed5424357a5fd13331a99bc51",
+          "Name": "IK_Code",
+          "Definition": "IK Code according to IEC 62262 (2002) is a numeric classification for the degree of protection provided by enclosures for electrical equipment against external mechanical impacts.\n<blockquote class=\"note\">NOTE&nbsp; In earlier labeling, the third numeral (1..) had been occasionally added to the closely related IP Code on ingress protection, to indicate the level of impact protection.</blockquote>",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": null
+            }
+          }
+        }
+      ]
+    }
+  }
+}

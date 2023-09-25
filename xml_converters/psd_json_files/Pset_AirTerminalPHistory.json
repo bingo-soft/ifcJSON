@@ -1,0 +1,113 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "248cee00d1bf11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AirTerminalPHistory",
+    "Definition": "Air terminal performance history common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAirTerminal"
+    },
+    "ApplicableTypeValue": "IfcAirTerminal",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2b1b6580d1bf11e1800000215ad4efdf",
+          "Name": "AirFlowRate",
+          "Definition": "Volumetric flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "2eaeec80d1bf11e1800000215ad4efdf",
+          "Name": "NeckAirVelocity",
+          "Definition": "Air velocity at the neck.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "32db0a00d1bf11e1800000215ad4efdf",
+          "Name": "SupplyAirTemperatureHeating",
+          "Definition": "Supply air temperature in heating mode.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "366e9100d1bf11e1800000215ad4efdf",
+          "Name": "SupplyAirTemperatureCooling",
+          "Definition": "Supply air temperature in cooling mode.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "3a9aae80d1bf11e1800000215ad4efdf",
+          "Name": "PressureDrop",
+          "Definition": "Drop in total pressure between inlet and outlet at nominal air-flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "3d959f00d1bf11e1800000215ad4efdf",
+          "Name": "InductionRatio",
+          "Definition": "Induction ratio versus distance from the diffuser and its discharge direction; induction ratio (or entrainment ratio) is the ratio of the volumetric flow rate in the jet to the volumetric flow rate at the air terminal.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcReal"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcLengthMeasure"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "46867080d1bf11e1800000215ad4efdf",
+          "Name": "CenterlineAirVelocity",
+          "Definition": "Centerline air velocity versus distance from the diffuser and temperature differential; a function of distance from diffuser and temperature difference between supply air and room air.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcLinearVelocityMeasure"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcLengthMeasure"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

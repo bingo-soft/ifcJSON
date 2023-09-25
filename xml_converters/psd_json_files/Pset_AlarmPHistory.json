@@ -1,0 +1,73 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "e4c70600d1c011e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AlarmPHistory",
+    "Definition": "Properties for history of alarm values.  HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAlarm"
+    },
+    "ApplicableTypeValue": "IfcAlarm",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "ea245080d1c011e1800000215ad4efdf",
+          "Name": "Enabled",
+          "Definition": "Indicates whether alarm is enabled or disabled over time.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "ef819b00d1c011e1800000215ad4efdf",
+          "Name": "Condition",
+          "Definition": "Indicates alarm condition over time.  The range of possible values and their meanings is defined by Pset_AlarmTypeCommon.Condition.  An empty value indicates no present alarm condition.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f3adb880d1c011e1800000215ad4efdf",
+          "Name": "Severity",
+          "Definition": "Indicates alarm severity over time, where the scale of values is determined by the control system configuration.  A zero value indicates no present alarm.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f90b0300d1c011e1800000215ad4efdf",
+          "Name": "Acknowledge",
+          "Definition": "Indicates acknowledgement status where False indicates acknowlegement is required and outstanding, True indicates condition has been acknowedged, and Unknown indicates no acknowledgement is required.  Upon resetting the condition, then acknowledgement reverts to Unknown.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "fc9e8a00d1c011e1800000215ad4efdf",
+          "Name": "User",
+          "Definition": "Indicates acknowledging user over time by identification corresponding to IfcPerson.Identification on an IfcActor.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

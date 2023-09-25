@@ -1,0 +1,132 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "ece66c00d1e711e1800000215ad4efdf",
+    "templatetype": "PSET_OCCURRENCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FlowMeterOccurrence",
+    "Definition": "Flow meter occurrence common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFlowMeter"
+    },
+    "ApplicableTypeValue": "IfcFlowMeter",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "f374e380d1e711e1800000215ad4efdf",
+        "Name": "Purpose",
+        "Definition": "Enumeration defining the purpose of the flow meter occurrence.",
+        "PropertyType": {
+          "TypePropertyEnumeratedValue": {
+            "EnumList": {
+              "name": "PEnum_FlowMeterPurpose",
+              "EnumItem": [
+                "MASTER",
+                "SUBMASTER",
+                "SUBMETER",
+                "OTHER",
+                "NOTKNOWN",
+                "UNSET"
+              ]
+            },
+            "ConstantList": {
+              "ConstantDef": [
+                {
+                  "Name": "MASTER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Master"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "SUBMASTER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Submaster"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "SUBMETER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Submeter"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "OTHER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(other)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is not listed."
+                    }
+                  }
+                },
+                {
+                  "Name": "NOTKNOWN",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unknown)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is unknown."
+                    }
+                  }
+                },
+                {
+                  "Name": "UNSET",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unset)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value has not been specified."
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

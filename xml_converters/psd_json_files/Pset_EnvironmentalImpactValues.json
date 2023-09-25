@@ -1,0 +1,227 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "fe2c7a00d1e111e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_EnvironmentalImpactValues",
+    "Definition": "The following properties capture environmental impact values of an element. They correspond to the indicators defined into Pset_EnvironmentalImpactIndicators. \nEnvironmental impact values are obtained multiplying indicator value per unit by the relevant quantity of the element.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcElement"
+    },
+    "ApplicableTypeValue": "IfcElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "04225b00d1e211e1800000215ad4efdf",
+          "Name": "TotalPrimaryEnergyConsumption",
+          "Definition": "Quantity of energy used as defined in ISO21930:2007.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcEnergyMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "097fa580d1e211e1800000215ad4efdf",
+          "Name": "WaterConsumption",
+          "Definition": "Quantity of water used.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0f758680d1e211e1800000215ad4efdf",
+          "Name": "HazardousWaste",
+          "Definition": "Quantity of hazardous waste generated.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "14d2d100d1e211e1800000215ad4efdf",
+          "Name": "NonHazardousWaste",
+          "Definition": "Quantity of non hazardous waste generated.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1a301b80d1e211e1800000215ad4efdf",
+          "Name": "ClimateChange",
+          "Definition": "Quantity of greenhouse gases emitted calculated in equivalent CO2.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1f8d6600d1e211e1800000215ad4efdf",
+          "Name": "AtmosphericAcidification",
+          "Definition": "Quantity of gases responsible for the atmospheric acidification calculated in equivalent SO2.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "25834700d1e211e1800000215ad4efdf",
+          "Name": "RenewableEnergyConsumption",
+          "Definition": "Quantity of renewable energy used as defined in ISO21930:2007",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcEnergyMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2ae09180d1e211e1800000215ad4efdf",
+          "Name": "NonRenewableEnergyConsumption",
+          "Definition": "Quantity of non-renewable energy used as defined in ISO21930:2007",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcEnergyMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "303ddc00d1e211e1800000215ad4efdf",
+          "Name": "ResourceDepletion",
+          "Definition": "Quantity of resources used calculated in equivalent antimony.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "359b2680d1e211e1800000215ad4efdf",
+          "Name": "InertWaste",
+          "Definition": "Quantity of inert waste generated .",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3b910780d1e211e1800000215ad4efdf",
+          "Name": "RadioactiveWaste",
+          "Definition": "Quantity of radioactive waste generated.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "40ee5200d1e211e1800000215ad4efdf",
+          "Name": "StratosphericOzoneLayerDestruction",
+          "Definition": "Quantity of gases destroying the stratospheric ozone layer calculated in equivalent CFC-R11.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "46e43300d1e211e1800000215ad4efdf",
+          "Name": "PhotochemicalOzoneFormation",
+          "Definition": "Quantity of gases creating the photochemical ozone calculated in equivalent ethylene.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4cda1400d1e211e1800000215ad4efdf",
+          "Name": "Eutrophication",
+          "Definition": "Quantity of eutrophicating compounds calculated in equivalent PO4.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b8fbc6f7870b486e80cd661b9dd0c27c",
+          "Name": "LeadInTime",
+          "Definition": "Lead in time before start of process.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDuration"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b5b49d200bf249a49d558cef7acb75bd",
+          "Name": "Duration",
+          "Definition": "Duration of process.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDuration"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "88eae355e7df464a849be613af48fa32",
+          "Name": "LeadOutTime",
+          "Definition": "Lead out time after end of process.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDuration"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

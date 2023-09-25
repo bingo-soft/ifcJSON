@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "180c9380d1c711e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CableSegmentTypeBusBarSegment",
+    "Definition": "Properties specific to busbar cable segments.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCableSegment/BUSBARSEGMENT"
+    },
+    "ApplicableTypeValue": "IfcCableSegment/BUSBARSEGMENT",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "1e027480d1c711e1800000215ad4efdf",
+        "Name": "IsHorizontalBusbar",
+        "Definition": "Indication of whether the busbar occurrences are routed horizontally (= TRUE) or vertically (= FALSE).",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcBoolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

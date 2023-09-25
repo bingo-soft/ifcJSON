@@ -1,0 +1,43 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "d85ba100d1f211e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PipeFittingPHistory",
+    "Definition": "Pipe fitting performance history common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPipeFitting"
+    },
+    "ApplicableTypeValue": "IfcPipeFitting",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "de518200d1f211e1800000215ad4efdf",
+          "Name": "LossCoefficient",
+          "Definition": "Dimensionless loss coefficient used for calculating fluid resistance representing the ratio of total pressure loss to velocity pressure at a referenced cross-section.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "e14c7280d1f211e1800000215ad4efdf",
+          "Name": "FlowrateLeakage",
+          "Definition": "Leakage flowrate versus pressure difference.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

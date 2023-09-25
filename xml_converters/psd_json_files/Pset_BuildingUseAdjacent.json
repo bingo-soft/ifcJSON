@@ -1,0 +1,71 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "070f5280d1c611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_BuildingUseAdjacent",
+    "Definition": "Provides information on adjacent buildings and their uses to enable their impact on the building of interest to be determined. Note that for each instance of the property set used, where there is an existence of risk, there will be an instance of the property set Pset_Risk (q.v).",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcBuilding"
+    },
+    "ApplicableTypeValue": "IfcBuilding",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "0b3b7000d1c611e1800000215ad4efdf",
+          "Name": "MarketCategory",
+          "Definition": "Category of use e.g. residential, commercial, recreation etc.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1098ba80d1c611e1800000215ad4efdf",
+          "Name": "MarketSubCategory",
+          "Definition": "Subset of category of use e.g. multi-family, 2 bedroom, low rise.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "168e9b80d1c611e1800000215ad4efdf",
+          "Name": "PlanningControlStatus",
+          "Definition": "Label of zoning category or class, or planning control category for the site or facility.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1c847c80d1c611e1800000215ad4efdf",
+          "Name": "NarrativeText",
+          "Definition": "Added information relating to the adjacent building use that is not appropriate to the general descriptive text associated with an entity through the inherited IfcRoot.Description.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

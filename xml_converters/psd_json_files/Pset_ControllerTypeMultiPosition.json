@@ -1,0 +1,181 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "78063880d1cd11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ControllerTypeMultiPosition",
+    "Definition": "Properties for discrete inputs, outputs, and values within a programmable logic controller. HISTORY: New in IFC4, replaces Pset_MultiStateInput and Pset_MultiStateOutput.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcController/MULTIPOSITION"
+    },
+    "ApplicableTypeValue": "IfcController/MULTIPOSITION",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "7e94b000d1cd11e1800000215ad4efdf",
+          "Name": "ControlType",
+          "Definition": "The type of signal modification effected and applicable ports:\n\nINPUT: Controller element is a dedicated input.\nOUTPUT: Controller element is a dedicated output.\nVARIABLE: Controller element is an in-memory variable.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_ControllerMultiPositionType",
+                "EnumItem": [
+                  "INPUT",
+                  "OUTPUT",
+                  "VARIABLE",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "INPUT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Input"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Controller element is a dedicated input"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OUTPUT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Output"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Controller element is a dedicated output"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Controller element is an in-memory variable"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "89e7db80d1cd11e1800000215ad4efdf",
+          "Name": "Labels",
+          "Definition": "Table mapping values to labels, where each entry corresponds to an integer within the ValueRange.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcInteger"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "910ee980d1cd11e1800000215ad4efdf",
+          "Name": "Range",
+          "Definition": "The physical range of values supported by the device.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "95d39d80d1cd11e1800000215ad4efdf",
+          "Name": "Value",
+          "Definition": "The expected range and default value.  The LowerLimitValue and UpperLimitValue must fall within the physical Range.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

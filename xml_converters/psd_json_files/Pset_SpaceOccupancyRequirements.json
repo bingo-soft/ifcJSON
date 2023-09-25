@@ -1,0 +1,111 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c259da80d20a11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SpaceOccupancyRequirements",
+    "Definition": "Properties concerning work activities occurring or expected to occur within one or a set of similar spatial structure elements.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcSpace",
+        "IfcSpatialZone",
+        "IfcZone"
+      ]
+    },
+    "ApplicableTypeValue": "IfcSpace, IfcSpatialZone, IfcZone",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "c84fbb80d20a11e1800000215ad4efdf",
+          "Name": "OccupancyType",
+          "Definition": "Occupancy type for this object. It is defined according to the presiding national building code.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cf76c980d20a11e1800000215ad4efdf",
+          "Name": "OccupancyNumber",
+          "Definition": "Number of people required for the activity assigned to this space.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcCountMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d4d41400d20a11e1800000215ad4efdf",
+          "Name": "OccupancyNumberPeak",
+          "Definition": "Maximal number of people required for the activity assigned to this space in peak time.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcCountMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "dac9f500d20a11e1800000215ad4efdf",
+          "Name": "OccupancyTimePerDay",
+          "Definition": "The amount of time during the day that the activity is required within this space.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e0bfd600d20a11e1800000215ad4efdf",
+          "Name": "AreaPerOccupant",
+          "Definition": "Design occupancy loading for this type of usage assigned to this space.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcAreaMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e61d2080d20a11e1800000215ad4efdf",
+          "Name": "MinimumHeadroom",
+          "Definition": "Headroom required for the activity assigned to this space.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "eae1d480d20a11e1800000215ad4efdf",
+          "Name": "IsOutlookDesirable",
+          "Definition": "An indication of whether the outlook is desirable (set TRUE) or not (set FALSE)",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

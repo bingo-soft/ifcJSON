@@ -1,0 +1,143 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "9427cb00d20911e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SpaceHeaterPHistory",
+    "Definition": "Space heater performance history common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSpaceHeater"
+    },
+    "ApplicableTypeValue": "IfcSpaceHeater",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "9a1dac00d20911e1800000215ad4efdf",
+          "Name": "FractionRadiantHeatTransfer",
+          "Definition": "Fraction of the total heat transfer rate as the radiant heat transfer.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "9c800600d20911e1800000215ad4efdf",
+          "Name": "FractionConvectiveHeatTransfer",
+          "Definition": "Fraction of the total heat transfer rate as the convective heat transfer.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "a0ac2380d20911e1800000215ad4efdf",
+          "Name": "Effectiveness",
+          "Definition": "Ratio of the real heat transfer rate to the maximum possible heat transfer rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "a30e7d80d20911e1800000215ad4efdf",
+          "Name": "SurfaceTemperature",
+          "Definition": "Average surface temperature of the component.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "a6096e00d20911e1800000215ad4efdf",
+          "Name": "SpaceAirTemperature",
+          "Definition": "Dry bulb temperature in the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "a99cf500d20911e1800000215ad4efdf",
+          "Name": "SpaceMeanRadiantTemperature",
+          "Definition": "Mean radiant temperature in the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "adc91280d20911e1800000215ad4efdf",
+          "Name": "AuxiliaryEnergySourceConsumption",
+          "Definition": "Auxiliary energy source consumption.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "b15c9980d20911e1800000215ad4efdf",
+          "Name": "UACurve",
+          "Definition": "UA curve as function of ambient temperature and surface temperature; UA = f (Tambient, Tsurface)",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "b6b9e400d20911e1800000215ad4efdf",
+          "Name": "OutputCapacityCurve",
+          "Definition": "Partial output capacity curve (as a function of water temperature); Q = f (Twater).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "b9b4d480d20911e1800000215ad4efdf",
+          "Name": "AirResistanceCurve",
+          "Definition": "Air resistance curve (w/ fan only); Pressure = f ( flow rate).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "bde0f200d20911e1800000215ad4efdf",
+          "Name": "Exponent",
+          "Definition": "Characteristic exponent, slope of log(heat output) vs log (surface temperature minus environmental temperature).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "c1747900d20911e1800000215ad4efdf",
+          "Name": "HeatOutputRate",
+          "Definition": "Overall heat transfer rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "d1219c80d1cc11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_Condition",
+    "Definition": "Determines the state or condition of an element at a particular point in time.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcElement"
+    },
+    "ApplicableTypeValue": "IfcElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "d7177d80d1cc11e1800000215ad4efdf",
+          "Name": "AssessmentDate",
+          "Definition": "Date on which the overall condition is assessed",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDate"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "dbdc3180d1cc11e1800000215ad4efdf",
+          "Name": "AssessmentCondition",
+          "Definition": "The overall condition of a product based on an assessment of the contributions to the overall condition made by the various criteria considered. The meanings given to the values of assessed condition should be agreed and documented by local agreements. For instance, is overall condition measured on a scale of 1 - 10 or by assigning names such as Good, OK, Poor.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e1397c00d1cc11e1800000215ad4efdf",
+          "Name": "AssessmentDescription",
+          "Definition": "Qualitative description of the condition.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

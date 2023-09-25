@@ -1,0 +1,145 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "6e4df680d20811e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SoundAttenuation",
+    "Definition": "Common definition to capture sound pressure at a point on behalf of a device typically used within the context of building services and flow distribution systems.   To indicate sound values from an instance of IfcDistributionFlowElement at a particular location, IfcAnnotation instance(s) should be assigned to the IfcDistributionFlowElement through the IfcRelAssignsToProduct relationship. The IfcAnnotation should specify ObjectType of 'Sound' and geometric representation of 'Annotation Point' consisting of a single IfcPoint subtype as described at IfcAnnotation.  This property set is instantiated multiple times on an object for each frequency band.  HISTORY: New property set in IFC Release 2x4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAnnotation/SOUND"
+    },
+    "ApplicableTypeValue": "IfcAnnotation/SOUND",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "7443d780d20811e1800000215ad4efdf",
+          "Name": "SoundScale",
+          "Definition": "The reference sound scale.  \n\nDBA: Decibels in an A-weighted scale\nDBB: Decibels in an B-weighted scale\nDBC: Decibels in an C-weighted scale\nNC: Noise criteria\nNR: Noise rating",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_SoundScale",
+                "EnumItem": [
+                  "DBA",
+                  "DBB",
+                  "DBC",
+                  "NC",
+                  "NR"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "DBA",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "dB-A"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Decibels in an A-weighted scale"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DBB",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "dB-B"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Decibels in an B-weighted scale"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DBC",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "dB-C"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Decibels in an C-weighted scale"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NC",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Nc"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Noise criteria"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NR",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Nr"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Noise rating"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "80c83000d20811e1800000215ad4efdf",
+          "Name": "SoundFrequency",
+          "Definition": "List of nominal sound frequencies, correlated to the SoundPressure time series values (IfcTimeSeries.ListValues)",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcFrequencyMeasure"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "858ce400d20811e1800000215ad4efdf",
+          "Name": "SoundPressure",
+          "Definition": "A time series of sound pressure values measured in decibels at a reference pressure of 20 microPascals for the referenced octave band frequency.  Each value in IfcTimeSeries.ListValues is correlated to the sound frequency at the same position within SoundFrequencies.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

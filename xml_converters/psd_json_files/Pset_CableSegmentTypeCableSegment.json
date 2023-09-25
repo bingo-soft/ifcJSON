@@ -1,0 +1,203 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "25298280d1c711e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CableSegmentTypeCableSegment",
+    "Definition": "Electrical cable with a specific purpose to lead electric current within a circuit or any other electric construction. Includes all types of electric cables, mainly several electrical segments wrapped together, e.g. cable, tube, busbar. Note that the number of conductors within a cable is determined by an aggregation mechanism that aggregates the conductors within the cable. A single-core cable is defined in IEV 461-06-02 as being 'a cable having only one core'; a multiconductor cable is defined in IEV 461-06-03 as b eing 'a cable having more than one conductor, some of which may be uninsulated'; a mulicore cable is defined in IEV 461-06-04 as being 'a cable having more than one core'.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCableSegment/CABLESEGMENT"
+    },
+    "ApplicableTypeValue": "IfcCableSegment/CABLESEGMENT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2b1f6380d1c711e1800000215ad4efdf",
+          "Name": "Standard",
+          "Definition": "The designation of the standard applicable for the definition of the Cable/Bus used.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "31154480d1c711e1800000215ad4efdf",
+          "Name": "NumberOfCores",
+          "Definition": "The number of cores in Cable/Bus.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "38d4e900d1c711e1800000215ad4efdf",
+          "Name": "OverallDiameter",
+          "Definition": "The overall diameter of a Cable/Bus.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3ecaca00d1c711e1800000215ad4efdf",
+          "Name": "RatedVoltage",
+          "Definition": "The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcElectricVoltageMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "44c0ab00d1c711e1800000215ad4efdf",
+          "Name": "RatedTemperature",
+          "Definition": "The range of allowed temerature that a device is certified to handle. The upper bound of this value is the maximum.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4ab68c00d1c711e1800000215ad4efdf",
+          "Name": "ScreenDiameter",
+          "Definition": "The diameter of the screen around a cable or bus segment (if present).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5904a800d1c711e1800000215ad4efdf",
+          "Name": "HasProtectiveEarth",
+          "Definition": "One core has protective earth marked insulation, Yellow/Green.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6de13b80d1c711e1800000215ad4efdf",
+          "Name": "MaximumOperatingTemperature",
+          "Definition": "The maximum temperature at which a cable or bus is certified to operate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7f2a4800d1c711e1800000215ad4efdf",
+          "Name": "MaximumShortCircuitTemperature",
+          "Definition": "The maximum short circuit temperature at which a cable or bus is certified to operate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "87828300d1c711e1800000215ad4efdf",
+          "Name": "SpecialConstruction",
+          "Definition": "Special construction capabilities like self-supporting, flat devidable cable or bus flat non devidable cable or bus supporting elements inside (steal, textile, concentric conductor). Note that materials used should be agreed between exchange participants before use.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8ea99100d1c711e1800000215ad4efdf",
+          "Name": "Weight",
+          "Definition": "Weight of cable kg/km.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "936e4500d1c711e1800000215ad4efdf",
+          "Name": "SelfExtinguishing60332_1",
+          "Definition": "Self Extinguishing cable/core according to IEC 60332.1.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "99642600d1c711e1800000215ad4efdf",
+          "Name": "SelfExtinguishing60332_3",
+          "Definition": "Self Extinguishing cable/core according to IEC 60332.3.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9ff29d80d1c711e1800000215ad4efdf",
+          "Name": "HalogenProof",
+          "Definition": "Produces small amount of smoke and irritating Deaerator/Gas.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a54fe800d1c711e1800000215ad4efdf",
+          "Name": "FunctionReliable",
+          "Definition": "Cable/bus maintain given properties/functions over a given (tested) time and conditions. According to IEC standard.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

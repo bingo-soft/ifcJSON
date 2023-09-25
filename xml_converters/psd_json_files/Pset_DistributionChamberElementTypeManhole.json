@@ -1,0 +1,173 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "f2d25200d1d311e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionChamberElementTypeManhole",
+    "Definition": "Chamber constructed on a drain, sewer or pipeline and with a removable cover, that permits the entry of a person.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionChamberElement/MANHOLE"
+    },
+    "ApplicableTypeValue": "IfcDistributionChamberElement/MANHOLE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "f7970600d1d311e1800000215ad4efdf",
+          "Name": "InvertLevel",
+          "Definition": "Level of the lowest part of the cross section as measured from ground level.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "fc5bba00d1d311e1800000215ad4efdf",
+          "Name": "SoffitLevel",
+          "Definition": "Level of the highest internal part of the cross section as measured from ground level.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "01206e00d1d411e1800000215ad4efdf",
+          "Name": "WallMaterial",
+          "Definition": "The material from which the wall of the chamber is constructed.\nNOTE: It is assumed that chamber walls will be constructed of a single material.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        },
+        {
+          "ifdguid": "04b3f500d1d411e1800000215ad4efdf",
+          "Name": "WallThickness",
+          "Definition": "The thickness of the chamber wall construction\nNOTE: It is assumed that chamber walls will be constructed at a single thickness.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0a113f80d1d411e1800000215ad4efdf",
+          "Name": "BaseMaterial",
+          "Definition": "The material from which the base of the chamber is constructed.\nNOTE: It is assumed that chamber base will be constructed of a single material.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        },
+        {
+          "ifdguid": "0da4c680d1d411e1800000215ad4efdf",
+          "Name": "BaseThickness",
+          "Definition": "The thickness of the chamber base construction\nNOTE: It is assumed that chamber base will be constructed at a single thickness.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "13021100d1d411e1800000215ad4efdf",
+          "Name": "IsShallow",
+          "Definition": "Indicates whether the chamber has been designed as being shallow (TRUE) or deep (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "185f5b80d1d411e1800000215ad4efdf",
+          "Name": "HasSteps",
+          "Definition": "Indicates whether the chamber has steps (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1dbca600d1d411e1800000215ad4efdf",
+          "Name": "WithBackdrop",
+          "Definition": "Indicates whether the chamber has a backdrop or tumbling bay (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "23b28700d1d411e1800000215ad4efdf",
+          "Name": "AccessCoverMaterial",
+          "Definition": "The material from which the access cover to the chamber is constructed.\nNOTE: It is assumed that chamber walls will be constructed of a single material.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        },
+        {
+          "ifdguid": "26ad7780d1d411e1800000215ad4efdf",
+          "Name": "AccessLengthOrRadius",
+          "Definition": "The length of the chamber access cover or, where the plan shape of the cover is circular, the radius.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2ca35880d1d411e1800000215ad4efdf",
+          "Name": "AccessWidth",
+          "Definition": "The width of the chamber access cover where the plan shape of the cover is not circular.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "32993980d1d411e1800000215ad4efdf",
+          "Name": "AccessCoverLoadRating",
+          "Definition": "The load rating of the access cover (which may be a value or an alphanumerically defined class rating).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

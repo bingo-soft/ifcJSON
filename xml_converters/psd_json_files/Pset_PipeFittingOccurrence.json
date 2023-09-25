@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c417a400d1f211e1800000215ad4efdf",
+    "templatetype": "PSET_OCCURRENCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PipeFittingOccurrence",
+    "Definition": "Pipe segment occurrence attributes attached to an instance of IfcPipeSegment.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPipeFitting"
+    },
+    "ApplicableTypeValue": "IfcPipeFitting",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "c974ee80d1f211e1800000215ad4efdf",
+          "Name": "InteriorRoughnessCoefficient",
+          "Definition": "The interior roughness coefficient of the pipe segment.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d0036600d1f211e1800000215ad4efdf",
+          "Name": "Color",
+          "Definition": "The color of the pipe segment.\n\nNote: This is typically used only for plastic pipe segments. However, it may be used for any pipe segments with a painted surface which is not otherwise specified as a covering.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

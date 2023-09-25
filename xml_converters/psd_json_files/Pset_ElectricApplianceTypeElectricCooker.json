@@ -1,0 +1,176 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c6bcce00d1df11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ElectricApplianceTypeElectricCooker",
+    "Definition": "Common properties for electric cooker appliances.  HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcElectricAppliance/ELECTRICCOOKER"
+    },
+    "ApplicableTypeValue": "IfcElectricAppliance/ELECTRICCOOKER",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "cb818200d1df11e1800000215ad4efdf",
+        "Name": "ElectricCookerType",
+        "Definition": "Type of electric cooker.",
+        "PropertyType": {
+          "TypePropertyEnumeratedValue": {
+            "EnumList": {
+              "name": "PEnum_ElectricApplianceElectricCookerType",
+              "EnumItem": [
+                "STEAMCOOKER",
+                "DEEPFRYER",
+                "STOVE",
+                "OVEN",
+                "TILTINGFRYINGPAN",
+                "COOKINGKETTLE",
+                "OTHER",
+                "UNKNOWN",
+                "UNSET"
+              ]
+            },
+            "ConstantList": {
+              "ConstantDef": [
+                {
+                  "Name": "STEAMCOOKER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Steam Cooker"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "DEEPFRYER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Deep Fryer"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "STOVE",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Stove"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "OVEN",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Oven"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "TILTINGFRYINGPAN",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Tilting Frying Pan"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "COOKINGKETTLE",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Cooking Kettle"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "OTHER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(other)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is not listed."
+                    }
+                  }
+                },
+                {
+                  "Name": "UNKNOWN",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Unknown"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "UNSET",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unset)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value has not been specified."
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

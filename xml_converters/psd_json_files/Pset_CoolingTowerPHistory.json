@@ -1,0 +1,73 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "44c4a900d1cf11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CoolingTowerPHistory",
+    "Definition": "Cooling tower performance history attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCoolingTower"
+    },
+    "ApplicableTypeValue": "IfcCoolingTower",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "4aba8a00d1cf11e1800000215ad4efdf",
+          "Name": "Capacity",
+          "Definition": "Cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "4db57a80d1cf11e1800000215ad4efdf",
+          "Name": "HeatTransferCoefficient",
+          "Definition": "Heat transfer coefficient-area product.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "50b06b00d1cf11e1800000215ad4efdf",
+          "Name": "SumpHeaterPower",
+          "Definition": "Electrical heat power of sump heater.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "5443f200d1cf11e1800000215ad4efdf",
+          "Name": "UACurve",
+          "Definition": "UA value as a  function of fan speed at certain water flow rate, UA = f ( fan speed).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "57d77900d1cf11e1800000215ad4efdf",
+          "Name": "Performance",
+          "Definition": "Water temperature change as a function of wet-bulb temperature, water entering temperature, water flow rate, air flow rate, Tdiff = f ( Twet-bulb, Twater,in, mwater, mair).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

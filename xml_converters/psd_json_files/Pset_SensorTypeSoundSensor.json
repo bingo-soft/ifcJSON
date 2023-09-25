@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "7016ba80d20611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SensorTypeSoundSensor",
+    "Definition": "A device that senses or detects sound. HISTORY: SoundSensorSensorSetPoint changed to SetPointSound. Range, accuracy and time constant deleted.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSensor/SOUNDSENSOR"
+    },
+    "ApplicableTypeValue": "IfcSensor/SOUNDSENSOR",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "7442d800d20611e1800000215ad4efdf",
+        "Name": "SetPointSound",
+        "Definition": "The sound pressure value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+        "PropertyType": {
+          "TypePropertyBoundedValue": {
+            "DataType": {
+              "type": "IfcSoundPressureMeasure"
+            }
+          }
+        }
+      }
+    }
+  }
+}

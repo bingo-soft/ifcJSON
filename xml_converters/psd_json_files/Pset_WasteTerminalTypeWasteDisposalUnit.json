@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "61390380d21811e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_WasteTerminalTypeWasteDisposalUnit",
+    "Definition": "Electrically operated device that reduces kitchen or other waste into fragments small enough to be flushed into a drainage system.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcWasteTerminal/WASTEDISPOSALUNIT"
+    },
+    "ApplicableTypeValue": "IfcWasteTerminal/WASTEDISPOSALUNIT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "65fdb780d21811e1800000215ad4efdf",
+          "Name": "DrainConnectionSize",
+          "Definition": "Size of the drain connection inlet to the waste disposal unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6e55f280d21811e1800000215ad4efdf",
+          "Name": "OutletConnectionSize",
+          "Definition": "Size of the outlet connection from the waste disposal unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "76ae2d80d21811e1800000215ad4efdf",
+          "Name": "NominalDepth",
+          "Definition": "Nominal or quoted depth of the object measured from the inlet drain connection to the base of the unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

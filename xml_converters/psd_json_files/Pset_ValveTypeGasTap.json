@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "00f49280d21511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ValveTypeGasTap",
+    "Definition": "A small diameter valve, used to discharge gas from a system.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcValve/GASTAP"
+    },
+    "ApplicableTypeValue": "IfcValve/GASTAP",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "0651dd00d21511e1800000215ad4efdf",
+        "Name": "HasHoseUnion",
+        "Definition": "Indicates whether the gas tap is fitted with a hose union connection (= TRUE) or not (= FALSE).",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcBoolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

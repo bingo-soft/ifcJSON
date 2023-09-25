@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "73d81c00d1c911e1800000215ad4efdf",
+    "templatetype": "PSET_OCCURRENCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CoilOccurrence",
+    "Definition": "Coil occurrence attributes attached to an instance of IfcCoil.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCoil"
+    },
+    "ApplicableTypeValue": "IfcCoil",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "789cd000d1c911e1800000215ad4efdf",
+        "Name": "HasSoundAttenuation",
+        "Definition": "TRUE if the coil has sound attenuation, FALSE if it does not.",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcBoolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "0dfd8b80d1ed11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_MaterialEnergy",
+    "Definition": "A set of extended material properties for energy calculation purposes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcMaterial"
+    },
+    "ApplicableTypeValue": "IfcMaterial",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "1229a900d1ed11e1800000215ad4efdf",
+          "Name": "ViscosityTemperatureDerivative",
+          "Definition": "Viscosity temperature derivative.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "181f8a00d1ed11e1800000215ad4efdf",
+          "Name": "MoistureCapacityThermalGradient",
+          "Definition": "Thermal gradient coefficient for moisture capacity. Based on water vapor density.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1e156b00d1ed11e1800000215ad4efdf",
+          "Name": "ThermalConductivityTemperatureDerivative",
+          "Definition": "Thermal conductivity temperature derivative.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "22da1f00d1ed11e1800000215ad4efdf",
+          "Name": "SpecificHeatTemperatureDerivative",
+          "Definition": "Specific heat temperature derivative.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "28d00000d1ed11e1800000215ad4efdf",
+          "Name": "VisibleRefractionIndex",
+          "Definition": "Index of refraction (visible) defines the \"bending\" of the sola! r ray in the visible spectrum when it passes from one medium into another.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2f5e7780d1ed11e1800000215ad4efdf",
+          "Name": "SolarRefractionIndex",
+          "Definition": "Index of refraction (solar) defines the \"bending\" of the solar ray when it passes from one medium into another.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "34bbc200d1ed11e1800000215ad4efdf",
+          "Name": "GasPressure",
+          "Definition": "Fill pressure (e.g. for between-pane gas fills): the pressure exerted by a mass of gas confined in a constant volume.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

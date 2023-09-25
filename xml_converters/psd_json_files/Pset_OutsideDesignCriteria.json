@@ -1,0 +1,238 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "ed840000d1f111e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_OutsideDesignCriteria",
+    "Definition": "Outside air conditions used as the basis for calculating thermal loads at peak conditions, as well as the weather data location from which these conditions were obtained. HISTORY: New property set in IFC Release 1.0.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcBuilding"
+    },
+    "ApplicableTypeValue": "IfcBuilding",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "f2e14a80d1f111e1800000215ad4efdf",
+          "Name": "HeatingDryBulb",
+          "Definition": "Outside dry bulb temperature for heating design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f8d72b80d1f111e1800000215ad4efdf",
+          "Name": "HeatingWetBulb",
+          "Definition": "Outside wet bulb temperature for heating design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "fecd0c80d1f111e1800000215ad4efdf",
+          "Name": "HeatingDesignDay",
+          "Definition": "The month, day and time that has been selected for the heating design calculations.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDateTime"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0391c080d1f211e1800000215ad4efdf",
+          "Name": "CoolingDryBulb",
+          "Definition": "Outside dry bulb temperature for cooling design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "08ef0b00d1f211e1800000215ad4efdf",
+          "Name": "CoolingWetBulb",
+          "Definition": "Outside wet bulb temperature for cooling design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0e4c5580d1f211e1800000215ad4efdf",
+          "Name": "CoolingDesignDay",
+          "Definition": "The month, day  and time that has been selected for the cooling design calculations.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDateTime"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "13110980d1f211e1800000215ad4efdf",
+          "Name": "WeatherDataStation",
+          "Definition": "The site weather data station description or reference to the data source from which weather data was obtained for use in calculations.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "186e5400d1f211e1800000215ad4efdf",
+          "Name": "WeatherDataDate",
+          "Definition": "The date for which the weather data was gathered.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDateTime"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1c9a7180d1f211e1800000215ad4efdf",
+          "Name": "BuildingThermalExposure",
+          "Definition": "The thermal exposure expected by the building based on surrounding site conditions.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_BuildingThermalExposure",
+                "EnumItem": [
+                  "LIGHT",
+                  "MEDIUM",
+                  "HEAVY",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "LIGHT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Light"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MEDIUM",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Medium"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "HEAVY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Heavy"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "27ed9d00d1f211e1800000215ad4efdf",
+          "Name": "PrevailingWindDirection",
+          "Definition": "The prevailing wind angle direction measured from True North (0 degrees) in a clockwise direction.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2d4ae780d1f211e1800000215ad4efdf",
+          "Name": "PrevailingWindVelocity",
+          "Definition": "The design wind velocity coming from the direction specified by the PrevailingWindDirection attribute.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLinearVelocityMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

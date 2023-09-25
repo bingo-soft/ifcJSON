@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "4ab2a15067674090b54aa91ccf4928c6",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SensorTypeCO2Sensor",
+    "Definition": "A device that senses or detects carbon dioxide.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSensor/CO2SENSOR"
+    },
+    "ApplicableTypeValue": "IfcSensor/CO2SENSOR",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "e4ab0c98841748269c10ddef20bb5aa9",
+        "Name": "SetPointConcentration",
+        "Definition": "The carbon dioxide concentration to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+        "PropertyType": {
+          "TypePropertyBoundedValue": {
+            "DataType": {
+              "type": "IfcPositiveRatioMeasure"
+            }
+          }
+        }
+      }
+    }
+  }
+}

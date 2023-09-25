@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "e6bab480d21411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ValveTypeFlushing",
+    "Definition": "Valve that flushes a predetermined quantity of water to cleanse a WC, urinal or slop hopper.\nNote that a flushing valve is constrained to have a 2 port  pattern.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcValve/FLUSHING"
+    },
+    "ApplicableTypeValue": "IfcValve/FLUSHING",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "ec17ff00d21411e1800000215ad4efdf",
+          "Name": "FlushingRate",
+          "Definition": "The predetermined quantity of water to be flushed.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f20de000d21411e1800000215ad4efdf",
+          "Name": "HasIntegralShutOffDevice",
+          "Definition": "Indication of whether the flushing valve has an integral shut off device fitted (set TRUE) or not (set FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f89c5780d21411e1800000215ad4efdf",
+          "Name": "IsHighPressure",
+          "Definition": "Indication of whether the flushing valve is suitable for use on a high pressure water main (set TRUE) or not (set FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "dcc98f00d1dd11e1800000215ad4efdf",
+    "templatetype": "PSET_OCCURRENCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DuctFittingOccurrence",
+    "Definition": "Duct fitting occurrence attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDuctFitting"
+    },
+    "ApplicableTypeValue": "IfcDuctFitting",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "e0f5ac80d1dd11e1800000215ad4efdf",
+          "Name": "InteriorRoughnessCoefficient",
+          "Definition": "The interior roughness of the duct fitting material.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e652f700d1dd11e1800000215ad4efdf",
+          "Name": "HasLiner",
+          "Definition": "TRUE if the fitting has interior duct insulating lining, FALSE if it does not.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "eb17ab00d1dd11e1800000215ad4efdf",
+          "Name": "Color",
+          "Definition": "The color of the duct segment.\n\nNote: This is typically used for any duct segments with a painted surface which is not otherwise specified as a covering.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

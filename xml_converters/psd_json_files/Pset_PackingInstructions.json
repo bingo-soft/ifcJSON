@@ -1,0 +1,151 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "33d95f00d1f211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PackingInstructions",
+    "Definition": "Packing instructions are specific instructions relating to the packing that is required for an artifact in the event of a move (or transport).",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcTask/MOVE"
+    },
+    "ApplicableTypeValue": "IfcTask/MOVE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "3b990380d1f211e1800000215ad4efdf",
+          "Name": "PackingCareType",
+          "Definition": "Identifies the predefined types of care that may be required when handling the artefact during a move where:\n\nFragile: artefact may be broken during a move through careless handling.\nHandleWithCare: artefact may be damaged during a move through careless handling.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_PackingCareType",
+                "EnumItem": [
+                  "FRAGILE",
+                  "HANDLEWITHCARE",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "FRAGILE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Fragile"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "HANDLEWITHCARE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Handle With Care"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4784c580d1f211e1800000215ad4efdf",
+          "Name": "WrappingMaterial",
+          "Definition": "Special requirements for material used to wrap an artefact.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        },
+        {
+          "ifdguid": "4eabd380d1f211e1800000215ad4efdf",
+          "Name": "ContainerMaterial",
+          "Definition": "Special requirements for material used to contain an artefact.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        },
+        {
+          "ifdguid": "510e2d80d1f211e1800000215ad4efdf",
+          "Name": "SpecialInstructions",
+          "Definition": "Special instructions for packing.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

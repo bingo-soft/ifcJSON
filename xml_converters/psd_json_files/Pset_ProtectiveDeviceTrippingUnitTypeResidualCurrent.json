@@ -1,0 +1,177 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c67efb80d1fc11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProtectiveDeviceTrippingUnitTypeResidualCurrent",
+    "Definition": "Information on tripping units that are activated by residual current.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProtectiveDeviceTrippingUnit/RESIDUALCURRENT"
+    },
+    "ApplicableTypeValue": "IfcProtectiveDeviceTrippingUnit/RESIDUALCURRENT",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "cb43af80d1fc11e1800000215ad4efdf",
+        "Name": "TrippingUnitReleaseCurrent",
+        "Definition": "The value of tripping or residual current for which the device has the possibility to be equipped. The values are given in mA.",
+        "PropertyType": {
+          "TypePropertyEnumeratedValue": {
+            "EnumList": {
+              "name": "PEnum_TrippingUnitReleaseCurrent",
+              "EnumItem": [
+                "10",
+                "30",
+                "100",
+                "300",
+                "500",
+                "1000",
+                "OTHER",
+                "NOTKNOWN",
+                "UNSET"
+              ]
+            },
+            "ConstantList": {
+              "ConstantDef": [
+                {
+                  "Name": "10",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "10"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "30",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "30"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "100",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "100"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "300",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "300"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "500",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "500"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "1000",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "1000"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "OTHER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(other)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is not listed."
+                    }
+                  }
+                },
+                {
+                  "Name": "NOTKNOWN",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unknown)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is unknown."
+                    }
+                  }
+                },
+                {
+                  "Name": "UNSET",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unset)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value has not been specified."
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

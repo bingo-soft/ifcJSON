@@ -1,0 +1,83 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "be10cb80d1d011e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DamperPHistory",
+    "Definition": "Damper performance history attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDamper"
+    },
+    "ApplicableTypeValue": "IfcDamper",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "c36e1600d1d011e1800000215ad4efdf",
+          "Name": "AirFlowRate",
+          "Definition": "Air flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "c7019d00d1d011e1800000215ad4efdf",
+          "Name": "Leakage",
+          "Definition": "Air leakage rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "c9fc8d80d1d011e1800000215ad4efdf",
+          "Name": "PressureDrop",
+          "Definition": "Pressure drop.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "cc5ee780d1d011e1800000215ad4efdf",
+          "Name": "BladePositionAngle",
+          "Definition": "Blade position angle; angle between the blade and flow direction ( 0 - 90).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "cff26e80d1d011e1800000215ad4efdf",
+          "Name": "DamperPosition",
+          "Definition": "Damper position (0-1); damper position ( 0=closed=90deg position angle, 1=open=0deg position angle.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "d2ed5f00d1d011e1800000215ad4efdf",
+          "Name": "PressureLossCoefficient",
+          "Definition": "Pressure loss coefficient.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

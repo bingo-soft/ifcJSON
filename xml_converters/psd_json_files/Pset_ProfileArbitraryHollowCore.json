@@ -1,0 +1,299 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c7605f00d1f511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProfileArbitraryHollowCore",
+    "Definition": "This is a collection of geometric properties of hollow core section profiles of precast concrete elements, to be used in conjunction with IfcArbitraryProfileDefWithVoids when profile designation alone does not fulfill the information requirements.  \n\nIn all cases, the cores are symmetrically distributed on either side of the plank center line, irrespective of whether the number of cores is odd or even. For planks with a center core with different geometry to that of the other cores, provide the property CenterCoreSpacing. When the number of cores is even, no Center Core properties shall be asserted.\n\nKey chamfers and draft chamfer are all 45 degree chamfers.\n\nThe CoreTopRadius and CoreBaseRadius parameters can be derived and are therefore not listed in the property set. They are shown to define that the curves are arcs. The parameters for the center core are the same as above, but with the prefix \"Center\".",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcArbitraryProfileDefWithVoids"
+    },
+    "ApplicableTypeValue": "IfcArbitraryProfileDefWithVoids",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "ccbda980d1f511e1800000215ad4efdf",
+          "Name": "OverallWidth",
+          "Definition": "Overall width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d34c2100d1f511e1800000215ad4efdf",
+          "Name": "OverallDepth",
+          "Definition": "Overall depth of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "da732f00d1f511e1800000215ad4efdf",
+          "Name": "EdgeDraft",
+          "Definition": "Edge draft of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "df37e300d1f511e1800000215ad4efdf",
+          "Name": "DraftBaseOffset",
+          "Definition": "Draft base offset of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e3fc9700d1f511e1800000215ad4efdf",
+          "Name": "DraftSideOffset",
+          "Definition": "Draft side offset of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e959e180d1f511e1800000215ad4efdf",
+          "Name": "BaseChamfer",
+          "Definition": "Base chamfer of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ee1e9580d1f511e1800000215ad4efdf",
+          "Name": "KeyDepth",
+          "Definition": "Key depth of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f2e34980d1f511e1800000215ad4efdf",
+          "Name": "KeyHeight",
+          "Definition": "Key height of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f7a7fd80d1f511e1800000215ad4efdf",
+          "Name": "KeyOffset",
+          "Definition": "Key offset of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "fc6cb180d1f511e1800000215ad4efdf",
+          "Name": "BottomCover",
+          "Definition": "Bottom cover of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "042c5600d1f611e1800000215ad4efdf",
+          "Name": "CoreSpacing",
+          "Definition": "Core spacing of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0b536400d1f611e1800000215ad4efdf",
+          "Name": "CoreBaseHeight",
+          "Definition": "Core base height of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "11e1db80d1f611e1800000215ad4efdf",
+          "Name": "CoreMiddleHeight",
+          "Definition": "Core middle height of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1908e980d1f611e1800000215ad4efdf",
+          "Name": "CoreTopHeight",
+          "Definition": "Core top height of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "202ff780d1f611e1800000215ad4efdf",
+          "Name": "CoreBaseWidth",
+          "Definition": "Core base width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "26be6f00d1f611e1800000215ad4efdf",
+          "Name": "CoreTopWidth",
+          "Definition": "Core top width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2de57d00d1f611e1800000215ad4efdf",
+          "Name": "CenterCoreSpacing",
+          "Definition": "Center core spacing of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "363db800d1f611e1800000215ad4efdf",
+          "Name": "CenterCoreBaseHeight",
+          "Definition": "Center core base height of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3d64c600d1f611e1800000215ad4efdf",
+          "Name": "CenterCoreMiddleHeight",
+          "Definition": "Center core middle height of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "448bd400d1f611e1800000215ad4efdf",
+          "Name": "CenterCoreTopHeight",
+          "Definition": "Center core top height of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4bb2e200d1f611e1800000215ad4efdf",
+          "Name": "CenterCoreBaseWidth",
+          "Definition": "Center core base width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "53728680d1f611e1800000215ad4efdf",
+          "Name": "CenterCoreTopWidth",
+          "Definition": "Center core top width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5a999480d1f611e1800000215ad4efdf",
+          "Name": "NumberOfCores",
+          "Definition": "Number of cores.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcCountMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

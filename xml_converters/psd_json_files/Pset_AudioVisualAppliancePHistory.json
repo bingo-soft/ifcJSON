@@ -1,0 +1,63 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "b695f600d1c111e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AudioVisualAppliancePHistory",
+    "Definition": "Captures realtime information for audio-video devices, such as for security camera footage and retail information displays.  HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAudioVisualAppliance"
+    },
+    "ApplicableTypeValue": "IfcAudioVisualAppliance",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "bd246d80d1c111e1800000215ad4efdf",
+          "Name": "PowerState",
+          "Definition": "Indicates the power state of the device where True is on and False is off.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "c31a4e80d1c111e1800000215ad4efdf",
+          "Name": "MediaSource",
+          "Definition": "Indicates the media source where the identifier corresponds to an entry within the table of available media sources on Pset_AudioVisualApplianceTypeCommon.MediaSource.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "c7466c00d1c111e1800000215ad4efdf",
+          "Name": "MediaContent",
+          "Definition": "Indicates the media content storage location, such as URLs to camera footage within particular time periods.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "cad9f300d1c111e1800000215ad4efdf",
+          "Name": "AudioVolume",
+          "Definition": "Indicates the audio volume level where the integer level corresponds to an entry or interpolation within Pset_AudioVisualApplianceTypeCommon.AudioVolume.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "5782b200d1be11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AirTerminalBoxPHistory",
+    "Definition": "Air terminal box performance history attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAirTerminalBox"
+    },
+    "ApplicableTypeValue": "IfcAirTerminalBox",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "5d789300d1be11e1800000215ad4efdf",
+          "Name": "DamperPosition",
+          "Definition": "Control damper position, ranging from 0 to 1.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "61a4b080d1be11e1800000215ad4efdf",
+          "Name": "AtmosphericPressure",
+          "Definition": "Ambient atmospheric pressure.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "65383780d1be11e1800000215ad4efdf",
+          "Name": "Sound",
+          "Definition": "Sound performance.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "68cbbe80d1be11e1800000215ad4efdf",
+          "Name": "AirflowCurve",
+          "Definition": "Air flowrate versus damper position relationship;airflow = f ( valve position).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

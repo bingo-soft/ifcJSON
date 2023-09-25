@@ -133,5 +133,5 @@ dmypy.json
 # qto_xml_files
 
 # JSON files
-psd_json_files
-qto_json_files
+# psd_json_files
+# qto_json_files

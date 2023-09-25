@@ -1,0 +1,43 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "7f403d00d1f311e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PipeSegmentPHistory",
+    "Definition": "Pipe segment performance history common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPipeSegment"
+    },
+    "ApplicableTypeValue": "IfcPipeSegment",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "849d8780d1f311e1800000215ad4efdf",
+          "Name": "LeakageCurve",
+          "Definition": "Leakage per unit length curve versus working pressure.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "87987800d1f311e1800000215ad4efdf",
+          "Name": "FluidFlowLeakage",
+          "Definition": "Volumetric leakage flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

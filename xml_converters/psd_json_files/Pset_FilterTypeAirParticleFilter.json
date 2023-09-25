@@ -1,0 +1,510 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "413c1c80d1e511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FilterTypeAirParticleFilter",
+    "Definition": "Air particle filter type attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFilter/AIRPARTICLEFILTER"
+    },
+    "ApplicableTypeValue": "IfcFilter/AIRPARTICLEFILTER",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "4731fd80d1e511e1800000215ad4efdf",
+          "Name": "AirParticleFilterType",
+          "Definition": "A panel dry type extended surface filter is a dry-type air filter with random fiber mats or blankets in the forms of pockets, V-shaped or radial pleats, and include the following:\n\nCoarseFilter: Filter with a efficiency lower than 30% for atmosphere dust-spot.\nCoarseMetalScreen: Filter made of metal screen.\nCoarseCellFoams: Filter made of cell foams.\nCoarseSpunGlass: Filter made of spun glass.\nMediumFilter: Filter with an efficiency between 30-98% for atmosphere dust-spot.\nMediumElectretFilter: Filter with fine electret synthetic fibers.\nMediumNaturalFiberFilter: Filter with natural fibers.\nHEPAFilter: High efficiency particulate air filter.\nULPAFilter: Ultra low penetration air filter.\nMembraneFilters: Filter made of membrane for certain pore diameters in flat sheet and pleated form.\nA renewable media with a moving curtain viscous filter are random-fiber media coated with viscous substance in roll form or curtain where fresh media is fed across the face of the filter and the dirty media is rewound onto a roll at the bottom or to into a reservoir:\nRollForm: Viscous filter used in roll form.\nAdhesiveReservoir: Viscous filter used in moving curtain form.\nA renewable moving curtain dry media filter is a random-fiber dry media of relatively high porosity used in moving-curtain(roll) filters.\nAn electrical filter uses electrostatic precipitation to remove and collect particulate contaminants.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_FilterAirParticleFilterType",
+                "EnumItem": [
+                  "COARSEMETALSCREEN",
+                  "COARSECELLFOAMS",
+                  "COARSESPUNGLASS",
+                  "MEDIUMELECTRETFILTER",
+                  "MEDIUMNATURALFIBERFILTER",
+                  "HEPAFILTER",
+                  "ULPAFILTER",
+                  "MEMBRANEFILTERS",
+                  "RENEWABLEMOVINGCURTIANDRYMEDIAFILTER",
+                  "ELECTRICALFILTER",
+                  "ROLLFORM",
+                  "ADHESIVERESERVOIR",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "COARSEMETALSCREEN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Coarse Metal Screen"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "COARSECELLFOAMS",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Coarse Cell Foams"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "COARSESPUNGLASS",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Coarse Spun Glass"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MEDIUMELECTRETFILTER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Medium Electret Filter"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MEDIUMNATURALFIBERFILTER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Medium Natural Fiber Filter"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "HEPAFILTER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "HEPA Filter"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "ULPAFILTER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "ULPA Filter"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MEMBRANEFILTERS",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Membrane Filters"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "RENEWABLEMOVINGCURTIANDRYMEDIAFILTER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Renewable Moving Curtian Dry Media Filter"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "ELECTRICALFILTER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Electrical Filter"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "ROLLFORM",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Roll Form"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "ADHESIVERESERVOIR",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Adhesive Reservoir"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "63359f00d1e511e1800000215ad4efdf",
+          "Name": "FrameMaterial",
+          "Definition": "Filter frame material.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        },
+        {
+          "ifdguid": "66308f80d1e511e1800000215ad4efdf",
+          "Name": "SeparationType",
+          "Definition": "Air particulate filter media separation type.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_FilterAirParticleFilterSeparationType",
+                "EnumItem": [
+                  "BAG",
+                  "PLEAT",
+                  "TREADSEPARATION",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "BAG",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Bag"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PLEAT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Pleat"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TREADSEPARATION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Tread Separation"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "747eab80d1e511e1800000215ad4efdf",
+          "Name": "DustHoldingCapacity",
+          "Definition": "Maximum filter dust holding capacity.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "79435f80d1e511e1800000215ad4efdf",
+          "Name": "FaceSurfaceArea",
+          "Definition": "Face area of filter frame.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcAreaMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7fd1d700d1e511e1800000215ad4efdf",
+          "Name": "MediaExtendedArea",
+          "Definition": "Total extended media area.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcAreaMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "852f2180d1e511e1800000215ad4efdf",
+          "Name": "NominalCountedEfficiency",
+          "Definition": "Nominal filter efficiency based the particle count concentration before and after the filter against particles with a certain size distribution.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8a8c6c00d1e511e1800000215ad4efdf",
+          "Name": "NominalWeightedEfficiency",
+          "Definition": "Nominal filter efficiency based the particle weight concentration before and after the filter against particles with a certain size distribution.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8fe9b680d1e511e1800000215ad4efdf",
+          "Name": "PressureDropCurve",
+          "Definition": "Under certain dust holding weight, DelPressure = f (fluidflowRate)",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcVolumetricFlowRateMeasure"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcPressureMeasure"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9a0bb500d1e511e1800000215ad4efdf",
+          "Name": "CountedEfficiencyCurve",
+          "Definition": "Counted efficiency curve as a function of dust holding weight, efficiency = f (dust holding weight).",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcMassMeasure"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcReal"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a5f77700d1e511e1800000215ad4efdf",
+          "Name": "WeightedEfficiencyCurve",
+          "Definition": "Weighted efficiency curve as a function of dust holding weight, efficiency = f (dust holding weight).",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcMassMeasure"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcReal"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

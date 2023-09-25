@@ -1,0 +1,41 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_WindowBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of windows.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcWindow"
+    },
+    "ApplicableTypeValue": "IfcWindow",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "Width",
+          "Definition": "Total outer width of the window lining. It should only be provided, if it is a rectangular window.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "Height",
+          "Definition": "Total outer heigth of the window lining. It should only be provided, if it is a rectangular window.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "Perimeter",
+          "Definition": "Total perimeter of the outer lining of the window.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "Area",
+          "Definition": "Total area of the outer lining of the window.",
+          "QtoType": "Q_AREA"
+        }
+      ]
+    }
+  }
+}

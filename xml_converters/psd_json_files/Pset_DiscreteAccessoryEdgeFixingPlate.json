@@ -1,0 +1,71 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "87d44b80d1d211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DiscreteAccessoryEdgeFixingPlate",
+    "Definition": "Properties specific to edge fixing plates.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDiscreteAccessory/Edge fixing plate"
+    },
+    "ApplicableTypeValue": "IfcDiscreteAccessory/Edge fixing plate",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "8d319600d1d211e1800000215ad4efdf",
+          "Name": "EdgeFixingPlateLength",
+          "Definition": "The length of the L-shaped edge plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "928ee080d1d211e1800000215ad4efdf",
+          "Name": "EdgeFixingPlateThickness",
+          "Definition": "The thickness of the L-shaped edge plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "97ec2b00d1d211e1800000215ad4efdf",
+          "Name": "EdgeFixingPlateFlangeWidthInPlaneZ",
+          "Definition": "The flange width of the L-shaped edge plate in plane Z.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9d497580d1d211e1800000215ad4efdf",
+          "Name": "EdgeFixingPlateFlangeWidthInPlaneX",
+          "Definition": "The flange width of the L-shaped edge plate in plane X.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

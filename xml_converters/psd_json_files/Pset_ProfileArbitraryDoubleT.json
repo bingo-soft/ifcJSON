@@ -1,0 +1,203 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "62a50480d1f511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProfileArbitraryDoubleT",
+    "Definition": "This is a collection of geometric properties of double-T section profiles of precast concrete elements, to be used in conjunction with IfcArbitraryProfileDef when profile designation alone does not fulfill the information requirements.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcArbitraryClosedProfileDef"
+    },
+    "ApplicableTypeValue": "IfcArbitraryClosedProfileDef",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "69337c00d1f511e1800000215ad4efdf",
+          "Name": "OverallWidth",
+          "Definition": "Overall width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "705a8a00d1f511e1800000215ad4efdf",
+          "Name": "LeftFlangeWidth",
+          "Definition": "Left flange width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "77819800d1f511e1800000215ad4efdf",
+          "Name": "RightFlangeWidth",
+          "Definition": "Right flange width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7e100f80d1f511e1800000215ad4efdf",
+          "Name": "OverallDepth",
+          "Definition": "Overall depth of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "849e8700d1f511e1800000215ad4efdf",
+          "Name": "FlangeDepth",
+          "Definition": "Flange depth of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8cf6c200d1f511e1800000215ad4efdf",
+          "Name": "FlangeDraft",
+          "Definition": "Flange draft of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "92540c80d1f511e1800000215ad4efdf",
+          "Name": "FlangeChamfer",
+          "Definition": "Flange chamfer of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "98e28400d1f511e1800000215ad4efdf",
+          "Name": "FlangeBaseFillet",
+          "Definition": "Flange base fillet of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9e3fce80d1f511e1800000215ad4efdf",
+          "Name": "FlangeTopFillet",
+          "Definition": "Flange top fillet of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a39d1900d1f511e1800000215ad4efdf",
+          "Name": "StemBaseWidth",
+          "Definition": "Stem base width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "aa2b9080d1f511e1800000215ad4efdf",
+          "Name": "StemTopWidth",
+          "Definition": "Stem top width of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b0ba0800d1f511e1800000215ad4efdf",
+          "Name": "StemBaseChamfer",
+          "Definition": "Stem base chamfer of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b6175280d1f511e1800000215ad4efdf",
+          "Name": "StemTopChamfer",
+          "Definition": "Stem top chamfer of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "bc0d3380d1f511e1800000215ad4efdf",
+          "Name": "StemBaseFillet",
+          "Definition": "Stem base fillet of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c0d1e780d1f511e1800000215ad4efdf",
+          "Name": "StemTopFillet",
+          "Definition": "Stem top fillet of the profile.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

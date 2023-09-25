@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "1bbf0b00d20511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SensorTypeFireSensor",
+    "Definition": "A device that senses or detects the presence of fire.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSensor/FIRESENSOR"
+    },
+    "ApplicableTypeValue": "IfcSensor/FIRESENSOR",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2083bf00d20511e1800000215ad4efdf",
+          "Name": "FireSensorSetPoint",
+          "Definition": "The temperature value to be sensed to indicate the presence of fire.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2679a000d20511e1800000215ad4efdf",
+          "Name": "AccuracyOfFireSensor",
+          "Definition": "The accuracy of the sensor.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2c6f8100d20511e1800000215ad4efdf",
+          "Name": "TimeConstant",
+          "Definition": "The time constant of the sensor.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

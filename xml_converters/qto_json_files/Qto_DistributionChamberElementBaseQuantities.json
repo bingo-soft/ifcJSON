@@ -1,0 +1,41 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_DistributionChamberElementBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of distribution chamber elements.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionChamberElement"
+    },
+    "ApplicableTypeValue": "IfcDistributionChamberElement",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "GrossSurfaceArea",
+          "Definition": "Total gross area of the inner surface of the chamber, not taking into account openings such as for pipes, ducts, or cables.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "NetSurfaceArea",
+          "Definition": "Total net area of the inner surface of the chamber, subtracting any openings such as for pipes, ducts, or cables.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "GrossVolume",
+          "Definition": "Total gross volume of the chamber, not taking into account any enclosed elements such as pipes, ducts, cables, or equipment.",
+          "QtoType": "Q_VOLUME"
+        },
+        {
+          "Name": "NetVolume",
+          "Definition": "Total net volume of the chamber, subtracting any enclosed elements such as pipes, ducts, cables, or equipment.",
+          "QtoType": "Q_VOLUME"
+        }
+      ]
+    }
+  }
+}

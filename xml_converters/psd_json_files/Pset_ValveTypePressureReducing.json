@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "53ce4a00d21511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ValveTypePressureReducing",
+    "Definition": "Valve that reduces the pressure of a fluid immediately downstream of its position in a pipeline to a preselected value or by a predetermined ratio.\nNote that a pressure reducing valve is constrained to have a 2 port  pattern.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcValve/PRESSUREREDUCING"
+    },
+    "ApplicableTypeValue": "IfcValve/PRESSUREREDUCING",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "59c42b00d21511e1800000215ad4efdf",
+          "Name": "UpstreamPressure",
+          "Definition": "The operating pressure of the fluid upstream of the pressure reducing valve.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5fba0c00d21511e1800000215ad4efdf",
+          "Name": "DownstreamPressure",
+          "Definition": "The operating pressure of the fluid downstream of the pressure reducing valve.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

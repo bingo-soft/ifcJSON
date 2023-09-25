@@ -1,0 +1,30 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "f3661022f34f48e891c841acde090991",
+    "templatetype": "",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ElectricFlowStorageDevicePHistory",
+    "Definition": "Electric flow storage device performance history common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": null,
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "a277fb1fcdca4fcc9c298634518b1066",
+        "Name": "Level",
+        "Definition": "The fraction of usable energy stored.",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcNormalisedRatioMeasure"
+            }
+          }
+        }
+      }
+    }
+  }
+}

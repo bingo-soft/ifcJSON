@@ -1,0 +1,185 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "7f2c4700d1cb11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ConcreteElementGeneral",
+    "Definition": "General properties common to different types of concrete elements, including reinforced concrete elements. The property set can be used by a number of subtypes of IfcBuildingElement, indicated that such element is designed or constructed using a concrete construction method.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcBeam",
+        "IfcBuildingElementProxy",
+        "IfcChimney",
+        "IfcColumn",
+        "IfcFooting",
+        "IfcMember",
+        "IfcPile",
+        "IfcPlate",
+        "IfcRailing",
+        "IfcRamp",
+        "IfcRampFlight",
+        "IfcRoof",
+        "IfcSlab",
+        "IfcStair",
+        "IfcStairFlight",
+        "IfcWall",
+        "IfcCivilElement"
+      ]
+    },
+    "ApplicableTypeValue": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "64af56b30b4540c2b43d74b49a28b9db",
+          "Name": "ConstructionMethod",
+          "Definition": "Designator for whether the concrete element is constructed on site or prefabricated. Allowed values are: 'In-Situ' vs 'Precast'.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "84899180d1cb11e1800000215ad4efdf",
+          "Name": "StructuralClass",
+          "Definition": "The structural class defined for the concrete structure (e.g. '1').",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "96390dc443fd41d88cb6aca86dce4993",
+          "Name": "StrengthClass",
+          "Definition": "Classification of the concrete strength in accordance with the concrete design code which is applied in the project.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9bee0bf72ad34a66bef57b71b7ca175b",
+          "Name": "ExposureClass",
+          "Definition": "Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a1c0e785c9bc41878ddbc67fd0ff3d26",
+          "Name": "ReinforcementVolumeRatio",
+          "Definition": "The required ratio of the effective mass of the reinforcement to the effective volume of the concrete of a reinforced concrete structural element.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassDensityMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "036938642cbf49e2a90d346134ac7475",
+          "Name": "ReinforcementAreaRatio",
+          "Definition": "The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcAreaDensityMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a4b95080d1cb11e1800000215ad4efdf",
+          "Name": "DimensionalAccuracyClass",
+          "Definition": "Classification designation of the dimensional accuracy requirement according to local standards.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "abe05e80d1cb11e1800000215ad4efdf",
+          "Name": "ConstructionToleranceClass",
+          "Definition": "Classification designation of the on-site construction tolerances according to local standards.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0764b8e36a7c4275859f1534ea3eec09",
+          "Name": "ConcreteCover",
+          "Definition": "The protective concrete cover at the reinforcing bars according to local building regulations.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b8fd4d80d1cb11e1800000215ad4efdf",
+          "Name": "ConcreteCoverAtMainBars",
+          "Definition": "The protective concrete cover at the main reinforcing bars according to local building regulations.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "bef32e80d1cb11e1800000215ad4efdf",
+          "Name": "ConcreteCoverAtLinks",
+          "Definition": "The protective concrete cover at the reinforcement links according to local building regulations.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b88ca2252c4b4014bcf289bbbd596398",
+          "Name": "ReinforcementStrengthClass",
+          "Definition": "Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

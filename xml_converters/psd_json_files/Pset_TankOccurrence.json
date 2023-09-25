@@ -1,0 +1,141 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "9b51d780d20f11e1800000215ad4efdf",
+    "templatetype": "PSET_OCCURRENCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_TankOccurrence",
+    "Definition": "Properties that relate to a tank. Note that a partial tank may be considered as a compartment within a compartmentalized tank.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcTank"
+    },
+    "ApplicableTypeValue": "IfcTank",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "a0af2200d20f11e1800000215ad4efdf",
+          "Name": "TankComposition",
+          "Definition": "Defines the level of element composition where.\n\nCOMPLEX: A set of elementary units aggregated together to fulfill the overall  required purpose.\nELEMENT: A single elementary unit that may exist of itself or as an aggregation of partial units..\nPARTIAL: A partial elementary unit.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": null,
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "COMPLEX",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Complex"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "A set of elementary units aggregated together to fulfill the overall  required purpose"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "ELEMENT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Element"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "A single elementary unit that may exist of itself or as an aggregation of partial units"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PARTIAL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Partial"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "A partial elementary unit"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ad337a80d20f11e1800000215ad4efdf",
+          "Name": "HasLadder",
+          "Definition": "Indication of whether the tank is provided with a ladder (set TRUE) for access to the top. If no ladder is provided then value is set FALSE.\n\nNote: No indication is given of the type of ladder (gooseneck etc.)",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b3c1f200d20f11e1800000215ad4efdf",
+          "Name": "HasVisualIndicator",
+          "Definition": "Indication of whether the tank is provided with a visual indicator (set TRUE) that shows the water level in the tank. If no visual indicator is provided then value is set FALSE.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

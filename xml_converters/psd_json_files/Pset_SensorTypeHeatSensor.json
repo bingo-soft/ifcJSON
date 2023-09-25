@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "7a848480d20511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SensorTypeHeatSensor",
+    "Definition": "A device that senses or detects heat. HISTORY: In IFC4, incorporates Fire Sensor. HeatSensorSetPoint changed to SetPointTemperature",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSensor/HEATSENSOR"
+    },
+    "ApplicableTypeValue": "IfcSensor/HEATSENSOR",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "7f493880d20511e1800000215ad4efdf",
+          "Name": "CoverageArea",
+          "Definition": "The area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcAreaMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "84a68300d20511e1800000215ad4efdf",
+          "Name": "SetPointTemperature",
+          "Definition": "The temperature value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8cfebe00d20511e1800000215ad4efdf",
+          "Name": "RateOfTemperatureRise",
+          "Definition": "The rate of temperature rise that is to be sensed as being hazardous.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTemperatureRateOfChangeMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "16f65900d1fd11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProtectiveDeviceTypeCircuitBreaker",
+    "Definition": "A coherent set of attributes representing different capacities of a circuit breaker or of a motor protection device, defined in accordance with IEC 60947. Note - A protective device may be associated with different instances of this property set providing information related to different basic characteristics.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProtectiveDevice/CIRCUITBREAKER"
+    },
+    "ApplicableTypeValue": "IfcProtectiveDevice/CIRCUITBREAKER",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "1bbb0d00d1fd11e1800000215ad4efdf",
+          "Name": "PerformanceClasses",
+          "Definition": "A set of designations of performance classes for the breaker unit for which the data of this instance is valid. A breaker unit being a circuit breaker may be\nconstructed for different levels of breaking capacities. A maximum of 7 different\nperformance classes may be provided. Examples of performance classes that may be specified include B, C, N, S, H, L, V.",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "22e21b00d1fd11e1800000215ad4efdf",
+          "Name": "VoltageLevel",
+          "Definition": "The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_VoltageLevels",
+                "EnumItem": [
+                  "U230",
+                  "U400",
+                  "U440",
+                  "U525",
+                  "U690",
+                  "U1000",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "U230",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U230"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U400",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U400"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U440",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U440"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U525",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U525"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U690",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U690"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U1000",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U1000"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "355c5480d1fd11e1800000215ad4efdf",
+          "Name": "ICU60947",
+          "Definition": "The ultimate breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3ab99f00d1fd11e1800000215ad4efdf",
+          "Name": "ICS60947",
+          "Definition": "The service breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "40af8000d1fd11e1800000215ad4efdf",
+          "Name": "ICW60947",
+          "Definition": "The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "47d68e00d1fd11e1800000215ad4efdf",
+          "Name": "ICM60947",
+          "Definition": "The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

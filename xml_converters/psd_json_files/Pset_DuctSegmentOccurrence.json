@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "2a45fc00d1de11e1800000215ad4efdf",
+    "templatetype": "PSET_OCCURRENCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DuctSegmentOccurrence",
+    "Definition": "Duct segment occurrence attributes attached to an instance of IfcDuctSegment.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDuctSegment"
+    },
+    "ApplicableTypeValue": "IfcDuctSegment",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2e721980d1de11e1800000215ad4efdf",
+          "Name": "InteriorRoughnessCoefficient",
+          "Definition": "The interior roughness of the duct fitting material.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3467fa80d1de11e1800000215ad4efdf",
+          "Name": "HasLiner",
+          "Definition": "TRUE if the fitting has interior duct insulating lining, FALSE if it does not.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3a5ddb80d1de11e1800000215ad4efdf",
+          "Name": "Color",
+          "Definition": "The color of the duct segment.\n\nNote: This is typically used for any duct segments with a painted surface which is not otherwise specified as a covering.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

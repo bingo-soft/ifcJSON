@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "92173980d21411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ValveTypeDrawOffCock",
+    "Definition": "A small diameter valve, used to drain water from a cistern or water filled system.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcValve/DRAWOFFCOCK"
+    },
+    "ApplicableTypeValue": "IfcValve/DRAWOFFCOCK",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "96dbed80d21411e1800000215ad4efdf",
+        "Name": "HasHoseUnion",
+        "Definition": "Indicates whether the drawoff cock is fitted with a hose union connection (= TRUE) or not (= FALSE).",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcBoolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

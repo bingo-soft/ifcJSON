@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "7007c200d1e811e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FlowMeterTypeOilMeter",
+    "Definition": "Device that measures, indicates and sometimes records, the volume of oil that passes through it without interrupting the flow.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFlowMeter/OILMETER"
+    },
+    "ApplicableTypeValue": "IfcFlowMeter/OILMETER",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "75650c80d1e811e1800000215ad4efdf",
+          "Name": "ConnectionSize",
+          "Definition": "Defines the size of inlet and outlet pipe connections to the meter.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7bf38400d1e811e1800000215ad4efdf",
+          "Name": "MaximumFlowRate",
+          "Definition": "Maximum rate of flow which the meter is expected to pass.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

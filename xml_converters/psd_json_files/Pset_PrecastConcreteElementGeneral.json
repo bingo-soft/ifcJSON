@@ -1,0 +1,278 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "8287f880d1f411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PrecastConcreteElementGeneral",
+    "Definition": "Production and manufacturing related properties common to different types of precast concrete elements. The Pset can be used by a number of subtypes of IfcBuildingElement. If the precast concrete element is a sandwich wall panel each structural layer or shell represented by an IfcBuildingElementPart may be attached to a separate Pset of this type, if needed. Some of the properties apply only for specific types of precast concrete elements.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcBeam",
+        "IfcBuildingElementProxy",
+        "IfcChimney",
+        "IfcColumn",
+        "IfcFooting",
+        "IfcMember",
+        "IfcPile",
+        "IfcPlate",
+        "IfcRamp",
+        "IfcRampFlight",
+        "IfcRoof",
+        "IfcSlab",
+        "IfcStair",
+        "IfcStairFlight",
+        "IfcWall",
+        "IfcCivilElement"
+      ]
+    },
+    "ApplicableTypeValue": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "94699b80d1f411e1800000215ad4efdf",
+          "Name": "TypeDesignator",
+          "Definition": "Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "aba88900d1f411e1800000215ad4efdf",
+          "Name": "CornerChamfer",
+          "Definition": "The chamfer in the corners of the precast element. The chamfer is presumed to be equal in both directions.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b4995a80d1f411e1800000215ad4efdf",
+          "Name": "ManufacturingToleranceClass",
+          "Definition": "Classification designation of the manufacturing tolerances according to local standards.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "bb27d200d1f411e1800000215ad4efdf",
+          "Name": "FormStrippingStrength",
+          "Definition": "The minimum required compressive strength of the concrete at form stripping time.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c1b64980d1f411e1800000215ad4efdf",
+          "Name": "LiftingStrength",
+          "Definition": "The minimum required compressive strength of the concrete when the concrete element is lifted.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c975ee00d1f411e1800000215ad4efdf",
+          "Name": "ReleaseStrength",
+          "Definition": "The minimum required compressive strength of the concrete when the tendon stress is released. This property applies to prestressed concrete elements only.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cf6bcf00d1f411e1800000215ad4efdf",
+          "Name": "MinimumAllowableSupportLength",
+          "Definition": "The minimum allowable support length.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d5fa4680d1f411e1800000215ad4efdf",
+          "Name": "InitialTension",
+          "Definition": "The initial stress of the tendon. This property applies to prestressed concrete elements only.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "dbf02780d1f411e1800000215ad4efdf",
+          "Name": "TendonRelaxation",
+          "Definition": "The maximum allowable relaxation of the tendon (usually expressed as %/1000 h).This property applies to prestressed concrete elements only.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e14d7200d1f411e1800000215ad4efdf",
+          "Name": "TransportationStrength",
+          "Definition": "The minimum required compressive strength of the concrete required for transportation.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e7435300d1f411e1800000215ad4efdf",
+          "Name": "SupportDuringTransportDescription",
+          "Definition": "Textual description of how the concrete element is supported during transportation.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ed393400d1f411e1800000215ad4efdf",
+          "Name": "SupportDuringTransportDocReference",
+          "Definition": "Reference to an external document defining how the concrete element is supported during transportation.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcExternalReference"
+            }
+          }
+        },
+        {
+          "ifdguid": "f0342480d1f411e1800000215ad4efdf",
+          "Name": "HollowCorePlugging",
+          "Definition": "A descriptive label for how the hollow core ends are treated: they may be left open, closed with a plug, or sealed with cast concrete. Values would be, for example: 'Unplugged', 'Plugged', 'SealedWithConcrete'. This property applies to  hollow core slabs only.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f6c29c00d1f411e1800000215ad4efdf",
+          "Name": "CamberAtMidspan",
+          "Definition": "The camber deflection, measured from the midpoint of a cambered face of a piece to the midpoint of the chord joining the ends of the same face, as shown in the figure below, divided by the original (nominal) straight length of the face of the piece.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "fb875000d1f411e1800000215ad4efdf",
+          "Name": "BatterAtStart",
+          "Definition": "The angle, in radians, by which the formwork at the starting face of a piece is to be rotated from the vertical in order to compensate for the rotation of the face that will occur once the piece is stripped from its form, inducing camber due to eccentric prestressing.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "00e49a80d1f511e1800000215ad4efdf",
+          "Name": "BatterAtEnd",
+          "Definition": "The angle, in radians, by which the formwork at the ending face of a piece is to be rotated from the vertical in order to compensate for the rotation of the face that will occur once the piece is stripped from its form, inducing camber due to eccentric prestressing.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "06da7b80d1f511e1800000215ad4efdf",
+          "Name": "Twisting",
+          "Definition": "The angle, in radians, through which the end face of a precast piece is rotated with respect to its starting face, along its longitudinal axis, as a result of non-aligned supports. This measure is also termed the \u2018warping\u2019 angle.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0c37c600d1f511e1800000215ad4efdf",
+          "Name": "Shortening",
+          "Definition": "The ratio of the distance by which a precast piece is shortened after release from its form (due to compression induced by prestressing) to its original (nominal) length.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "122da700d1f511e1800000215ad4efdf",
+          "Name": "PieceMark",
+          "Definition": "Defines a unique piece for production purposes. All pieces with the same piece mark value are identical and interchangeable. The piece mark may be composed of sub-parts that have specific locally defined meaning (e.g. B-1A may denote a beam, of generic type \u20181\u2019 and specific shape \u2018A\u2019).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "18238800d1f511e1800000215ad4efdf",
+          "Name": "DesignLocationNumber",
+          "Definition": "Defines a unique location within a structure, the \u2018slot\u2019 for which the piece was designed.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

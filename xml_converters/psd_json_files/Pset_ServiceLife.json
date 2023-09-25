@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "bd932780d20611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ServiceLife",
+    "Definition": "Captures the period of time that an artifact will last.  HISTORY: Introduced in IFC2X4 as replacement for IfcServiceLife.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcElement"
+    },
+    "ApplicableTypeValue": "IfcElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "eadfd580d20611e1800000215ad4efdf",
+          "Name": "ServiceLifeDuration",
+          "Definition": "The length or duration of a service life.  \n\nThe lower bound indicates pessimistic service life, the upper bound indicates optimistic service life, and the setpoint indicates the typical service life.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcDuration"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8eb2f46791c242e7b997996569152d4f",
+          "Name": "MeanTimeBetweenFailure",
+          "Definition": "The average time duration between instances of failure of a product.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDuration"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

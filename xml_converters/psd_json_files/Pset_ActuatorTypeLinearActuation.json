@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "82203b00d1bd11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ActuatorTypeLinearActuation",
+    "Definition": "Characteristics of linear actuation of an actuator\nHistory: Replaces Pset_LinearActuator",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcActuator"
+    },
+    "ApplicableTypeValue": "IfcActuator",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "877d8580d1bd11e1800000215ad4efdf",
+          "Name": "Force",
+          "Definition": "Indicates the maximum close-off force for the actuator.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcForceMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8cdad000d1bd11e1800000215ad4efdf",
+          "Name": "Stroke",
+          "Definition": "Indicates the maximum distance the actuator must traverse.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

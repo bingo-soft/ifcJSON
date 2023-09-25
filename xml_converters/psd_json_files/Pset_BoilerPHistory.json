@@ -1,0 +1,113 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "3e7cff80d1c411e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_BoilerPHistory",
+    "Definition": "Boiler performance history common attributes.\nWaterQuality attribute deleted in IFC2x2 Pset Addendum: Use IfcWaterProperties instead. CombustionProductsMaximulLoad and CombustionProductsPartialLoad attributes deleted in IFC2x2 Pset Addendum: Use IfcProductsOfCombustionProperties instead.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcBoiler"
+    },
+    "ApplicableTypeValue": "IfcBoiler",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "43da4a00d1c411e1800000215ad4efdf",
+          "Name": "EnergySourceConsumption",
+          "Definition": "Energy consumption.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "476dd100d1c411e1800000215ad4efdf",
+          "Name": "OperationalEfficiency",
+          "Definition": "Operational efficiency: boiler output divided by total energy input (electrical and fuel).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "4a68c180d1c411e1800000215ad4efdf",
+          "Name": "CombustionEfficiency",
+          "Definition": "Combustion efficiency under nominal condition.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "4dfc4880d1c411e1800000215ad4efdf",
+          "Name": "WorkingPressure",
+          "Definition": "Boiler working pressure.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "50f73900d1c411e1800000215ad4efdf",
+          "Name": "CombustionTemperature",
+          "Definition": "Average combustion chamber temperature.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "53f22980d1c411e1800000215ad4efdf",
+          "Name": "PartLoadRatio",
+          "Definition": "Ratio of the real to the nominal capacity.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "56548380d1c411e1800000215ad4efdf",
+          "Name": "Load",
+          "Definition": "Boiler real load.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "594f7400d1c411e1800000215ad4efdf",
+          "Name": "PrimaryEnergyConsumption",
+          "Definition": "Boiler primary energy source consumption (i.e., the fuel consumed for changing the thermodynamic state of the fluid).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "5bb1ce00d1c411e1800000215ad4efdf",
+          "Name": "AuxiliaryEnergyConsumption",
+          "Definition": "Boiler secondary energy source consumption (i.e., the electricity consumed by electrical devices such as fans and pumps).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

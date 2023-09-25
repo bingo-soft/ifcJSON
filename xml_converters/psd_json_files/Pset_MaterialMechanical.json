@@ -1,0 +1,83 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "72204f80d1ed11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_MaterialMechanical",
+    "Definition": "A set of mechanical material properties normally used for structural analysis purpose. It contains all properties which are independent of the actual material type.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcMaterial"
+    },
+    "ApplicableTypeValue": "IfcMaterial",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "764c6d00d1ed11e1800000215ad4efdf",
+          "Name": "DynamicViscosity",
+          "Definition": "A measure of the viscous resistance of the material.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDynamicViscosityMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7b112100d1ed11e1800000215ad4efdf",
+          "Name": "YoungModulus",
+          "Definition": "A measure of the Young's modulus of elasticity of the material.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcModulusOfElasticityMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "806e6b80d1ed11e1800000215ad4efdf",
+          "Name": "ShearModulus",
+          "Definition": "A measure of the shear modulus of elasticity of the material.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcModulusOfElasticityMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "85331f80d1ed11e1800000215ad4efdf",
+          "Name": "PoissonRatio",
+          "Definition": "A measure of the lateral deformations in the elastic range.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8b290080d1ed11e1800000215ad4efdf",
+          "Name": "ThermalExpansionCoefficient",
+          "Definition": "A measure of the expansion coefficient for warming up the material about one Kelvin.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermalExpansionCoefficientMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

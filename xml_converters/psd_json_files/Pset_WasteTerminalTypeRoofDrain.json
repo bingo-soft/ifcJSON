@@ -1,0 +1,95 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "29ca5700d21811e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_WasteTerminalTypeRoofDrain",
+    "Definition": "Pipe fitting, set into the roof, that collects rainwater for discharge into the rainwater system.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcWasteTerminal/ROOFDRAIN"
+    },
+    "ApplicableTypeValue": "IfcWasteTerminal/ROOFDRAIN",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2df67480d21811e1800000215ad4efdf",
+          "Name": "NominalBodyLength",
+          "Definition": "Nominal or quoted length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the drain.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "364eaf80d21811e1800000215ad4efdf",
+          "Name": "NominalBodyWidth",
+          "Definition": "Nominal or quoted length measured along the y-axis in the local coordinate system of the drain.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3e0e5400d21811e1800000215ad4efdf",
+          "Name": "NominalBodyDepth",
+          "Definition": "Nominal or quoted length measured along the z-axis in the local coordinate system of the drain.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "46668f00d21811e1800000215ad4efdf",
+          "Name": "OutletConnectionSize",
+          "Definition": "Size of the outlet connection from the object.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4ebeca00d21811e1800000215ad4efdf",
+          "Name": "CoverLength",
+          "Definition": "The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the drain.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "57170500d21811e1800000215ad4efdf",
+          "Name": "CoverWidth",
+          "Definition": "The length measured along the y-axis in the local coordinate system of the cover of the  drain.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

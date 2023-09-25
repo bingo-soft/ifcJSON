@@ -1,0 +1,73 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "e968da00d21311e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_UtilityConsumptionPHistory",
+    "Definition": "Consumption of utility resources, typically applied to the IfcBuilding instance, used to identify how much was consumed on I.e., a monthly basis.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcBuilding"
+    },
+    "ApplicableTypeValue": "IfcBuilding",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "eec62480d21311e1800000215ad4efdf",
+          "Name": "Heat",
+          "Definition": "The amount of heat energy consumed during the period specified in the time series.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f1c11500d21311e1800000215ad4efdf",
+          "Name": "Electricity",
+          "Definition": "The amount of electricity consumed during the period specified in the time series.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f4bc0580d21311e1800000215ad4efdf",
+          "Name": "Water",
+          "Definition": "The amount of water consumed during the period specified in the time series.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f7b6f600d21311e1800000215ad4efdf",
+          "Name": "Fuel",
+          "Definition": "The amount of fuel consumed during the period specified in the time series.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "fab1e680d21311e1800000215ad4efdf",
+          "Name": "Steam",
+          "Definition": "The amount of steam consumed during the period specified in the time series.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

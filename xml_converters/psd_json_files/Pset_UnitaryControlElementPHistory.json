@@ -1,0 +1,63 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "0b159180d21311e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_UnitaryControlElementPHistory",
+    "Definition": "Properties for history and operating schedules of thermostats.  HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcUnitaryControlElement"
+    },
+    "ApplicableTypeValue": "IfcUnitaryControlElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "1072dc00d21311e1800000215ad4efdf",
+          "Name": "Temperature",
+          "Definition": "Indicates the current measured temperature.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "136dcc80d21311e1800000215ad4efdf",
+          "Name": "Mode",
+          "Definition": "Indicates operation mode corresponding to Pset_UnitaryControlTypeCommon.Mode.  For example, 'HEAT', 'COOL', 'AUTO'.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "17015380d21311e1800000215ad4efdf",
+          "Name": "Fan",
+          "Definition": "Indicates fan operation where True is on, False is off, and Unknown is automatic.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "1a94da80d21311e1800000215ad4efdf",
+          "Name": "SetPoint",
+          "Definition": "Indicates the temperature setpoint.  For thermostats with setbacks or separate high and low setpoints, then the time series may contain a pair of values at each entry where the first value is the heating setpoint (low) and the second value is the cooling setpoint (high).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

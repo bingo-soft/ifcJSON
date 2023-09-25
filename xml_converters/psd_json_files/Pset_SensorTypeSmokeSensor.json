@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "52e1ec00d20611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SensorTypeSmokeSensor",
+    "Definition": "A device that senses or detects smoke. HISTORY: PressureSensorSensorSetPoint (error in previous release) changed to SetPointConcentration. Range, accuracy and time constant deleted.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSensor/SMOKESENSOR"
+    },
+    "ApplicableTypeValue": "IfcSensor/SMOKESENSOR",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "58d7cd00d20611e1800000215ad4efdf",
+          "Name": "CoverageArea",
+          "Definition": "The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcAreaMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5f664480d20611e1800000215ad4efdf",
+          "Name": "SetPointConcentration",
+          "Definition": "The smoke concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "68571600d20611e1800000215ad4efdf",
+          "Name": "HasBuiltInAlarm",
+          "Definition": "Indicates whether the smoke sensor is included as an element within a smoke alarm/sensor unit (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

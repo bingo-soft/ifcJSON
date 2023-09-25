@@ -1,0 +1,53 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "65403380d1ce11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CooledBeamPHistoryActive",
+    "Definition": "Performance history attributes for an active cooled beam.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCooledBeam/ACTIVE"
+    },
+    "ApplicableTypeValue": "IfcCooledBeam/ACTIVE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "6c674180d1ce11e1800000215ad4efdf",
+          "Name": "AirFlowRate",
+          "Definition": "Air flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "6ffac880d1ce11e1800000215ad4efdf",
+          "Name": "Throw",
+          "Definition": "Distance cooled beam throws the air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "72f5b900d1ce11e1800000215ad4efdf",
+          "Name": "AirPressureDropCurves",
+          "Definition": "Air pressure drop as function of air flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "cecf3a80d1ec11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_MaterialCommon",
+    "Definition": "A set of general material properties.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcMaterial"
+    },
+    "ApplicableTypeValue": "IfcMaterial",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "d262c180d1ec11e1800000215ad4efdf",
+          "Name": "MolecularWeight",
+          "Definition": "Molecular weight of material (typically gas).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMolecularWeightMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d858a280d1ec11e1800000215ad4efdf",
+          "Name": "Porosity",
+          "Definition": "The void fraction of the total volume occupied by material (Vbr - Vnet)/Vbr.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ddb5ed00d1ec11e1800000215ad4efdf",
+          "Name": "MassDensity",
+          "Definition": "Material mass density.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassDensityMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

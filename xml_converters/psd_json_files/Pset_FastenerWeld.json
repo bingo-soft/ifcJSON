@@ -1,0 +1,215 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "bd823000d1e411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FastenerWeld",
+    "Definition": "Properties related to welded connections.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFastener/WELD"
+    },
+    "ApplicableTypeValue": "IfcFastener/WELD",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "c541d480d1e411e1800000215ad4efdf",
+          "Name": "Type1",
+          "Definition": "Type of weld seam according to ISO 2553.  Note, combined welds are given by two corresponding symbols in the direction of the normal axis of the coordinate system.  For example, an X weld is specified by Type1 = 'V' and Type2 = 'V'.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cc68e280d1e411e1800000215ad4efdf",
+          "Name": "Type2",
+          "Definition": "See Type1.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d25ec380d1e411e1800000215ad4efdf",
+          "Name": "Surface1",
+          "Definition": "Aspect of weld seam surface, i.e. 'plane', 'curved' or 'hollow'.  Combined welds are given by two corresponding symbols analogous to Type1 and Type2.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d854a480d1e411e1800000215ad4efdf",
+          "Name": "Surface2",
+          "Definition": "See Surface1.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "df7bb280d1e411e1800000215ad4efdf",
+          "Name": "Process",
+          "Definition": "Reference number of the welding process according to ISO 4063, an up to three digits long code",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e4d8fd00d1e411e1800000215ad4efdf",
+          "Name": "ProcessName",
+          "Definition": "Name of the welding process.  Alternative to the numeric Process property.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "eacede00d1e411e1800000215ad4efdf",
+          "Name": "a",
+          "Definition": "Measure a according to ISO 2553",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f3271900d1e411e1800000215ad4efdf",
+          "Name": "c",
+          "Definition": "Measure c according to ISO 2553",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f9b59080d1e411e1800000215ad4efdf",
+          "Name": "d",
+          "Definition": "Measure d according to ISO 2553",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "00dc9e80d1e511e1800000215ad4efdf",
+          "Name": "e",
+          "Definition": "Measure e according to ISO 2553",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "076b1600d1e511e1800000215ad4efdf",
+          "Name": "l",
+          "Definition": "Measure l according to ISO 2553",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0e922400d1e511e1800000215ad4efdf",
+          "Name": "n",
+          "Definition": "Count n according to ISO 2553",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcCountMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1356d800d1e511e1800000215ad4efdf",
+          "Name": "s",
+          "Definition": "Measure s according to ISO 2553",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1a7de600d1e511e1800000215ad4efdf",
+          "Name": "z",
+          "Definition": "Measure z according to ISO 2553",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "21a4f400d1e511e1800000215ad4efdf",
+          "Name": "Intermittent",
+          "Definition": "If fillet weld, intermittent or not",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "28336b80d1e511e1800000215ad4efdf",
+          "Name": "Staggered",
+          "Definition": "If intermittent weld, staggered or not",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

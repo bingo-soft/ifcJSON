@@ -1,0 +1,289 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "f9f06480d1c111e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AudioVisualApplianceTypeCamera",
+    "Definition": "An audio-visual camera is a device that captures video, such as for security.  HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAudioVisualAppliance/CAMERA"
+    },
+    "ApplicableTypeValue": "IfcAudioVisualAppliance/CAMERA",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "feb51880d1c111e1800000215ad4efdf",
+          "Name": "CameraType",
+          "Definition": "Indicates the type of camera.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_AudioVisualCameraType",
+                "EnumItem": [
+                  "PHOTO",
+                  "VIDEO",
+                  "AUDIOVIDEO",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET."
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "PHOTO",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Photo"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VIDEO",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Video"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "AUDIOVIDEO",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Audio/Video"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET.",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Unset."
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0e346180d1c211e1800000215ad4efdf",
+          "Name": "IsOutdoors",
+          "Definition": "Indicates if camera is designed to be used outdoors.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1391ac00d1c211e1800000215ad4efdf",
+          "Name": "VideoResolutionWidth",
+          "Definition": "Indicates the number of horizontal pixels (the largest native video resolution width).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "18eef680d1c211e1800000215ad4efdf",
+          "Name": "VideoResolutionHeight",
+          "Definition": "Indicates the number of vertical pixels (the largest native video resolution height).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1e4c4100d1c211e1800000215ad4efdf",
+          "Name": "VideoResolutionMode",
+          "Definition": "Indicates video resolution modes.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcIdentifier"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "25734f00d1c211e1800000215ad4efdf",
+          "Name": "VideoCaptureInterval",
+          "Definition": "Indicates video frame capture time intervals.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcIdentifier"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcTimeMeasure"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2d32f380d1c211e1800000215ad4efdf",
+          "Name": "PanTiltZoomPreset",
+          "Definition": "Indicates pan/tilt/zoom position presets.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcIdentifier"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "34f29800d1c211e1800000215ad4efdf",
+          "Name": "PanHorizontal",
+          "Definition": "Indicates horizontal range for panning.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3c19a600d1c211e1800000215ad4efdf",
+          "Name": "PanVertical",
+          "Definition": "Indicates vertical range for panning.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "42a81d80d1c211e1800000215ad4efdf",
+          "Name": "TiltHorizontal",
+          "Definition": "Indicates horizontal range for pivoting, where positive values indicate the camera rotating clockwise,",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "489dfe80d1c211e1800000215ad4efdf",
+          "Name": "TiltVertical",
+          "Definition": "Indicates vertical range for pivoting, where 0.0 is level, +90 degrees is looking up, -90 degrees is looking down.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4e93df80d1c211e1800000215ad4efdf",
+          "Name": "Zoom",
+          "Definition": "Indicates the zoom range.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

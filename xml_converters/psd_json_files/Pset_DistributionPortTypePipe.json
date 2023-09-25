@@ -1,0 +1,353 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "e85967d6b1c34c3c930301ef638f478f",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionPortTypePipe",
+    "Definition": "Pipe port occurrence attributes attached to an instance of IfcDistributionPort.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionPort/PIPE"
+    },
+    "ApplicableTypeValue": "IfcDistributionPort/PIPE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "f842a89d8ec5470cb8ba7fec7338c6e3",
+          "Name": "ConnectionType",
+          "Definition": "The end-style treatment of the pipe port:\n\nBRAZED: Brazed. \nCOMPRESSION: Compression. \nFLANGED: Flanged. \nGROOVED: Grooved. \nOUTSIDESLEEVE: Outside Sleeve. \nSOLDERED: Soldered. \nSWEDGE: Swedge. \nTHREADED: Threaded. \nWELDED: Welded. \nOTHER: Another type of end-style has been applied.\nNONE: No end-style has been applied.\nUSERDEFINED: User-defined port connection type. \nNOTDEFINED: Undefined port connection type.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_PipeEndStyleTreatment",
+                "EnumItem": [
+                  "BRAZED",
+                  "COMPRESSION",
+                  "FLANGED",
+                  "GROOVED",
+                  "OUTSIDESLEEVE",
+                  "SOLDERED",
+                  "SWEDGE",
+                  "THREADED",
+                  "WELDED",
+                  "OTHER",
+                  "NONE",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "BRAZED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Brazed"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Brazed"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "COMPRESSION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Compression"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Compression"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "FLANGED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Flanged"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Flanged"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "GROOVED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Grooved"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Grooved"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OUTSIDESLEEVE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Outside Sleeve"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Outside Sleeve"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SOLDERED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Soldered"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Soldered"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SWEDGE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Swedge"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Swedge"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "THREADED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Threaded"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Threaded"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "WELDED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Welded"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Welded"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NONE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "None"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "No end-style has been applied"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "df1d39774bb44a8d96c833058af039e0",
+          "Name": "ConnectionSubType",
+          "Definition": "The physical port connection subtype that further qualifies the ConnectionType.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ac9d798031fc44e1828a2cc76ae5d86c",
+          "Name": "NominalDiameter",
+          "Definition": "The nominal diameter of the pipe connection.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "fcd3dc22fdfd4ea084f200be83155aa3",
+          "Name": "InnerDiameter",
+          "Definition": "The actual inner diameter of the pipe.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4d18569df1264f3baceb2da495f1dfda",
+          "Name": "OuterDiameter",
+          "Definition": "The actual outer diameter of the pipe.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b6cb7483a65d4bd5ac6551b080116323",
+          "Name": "Temperature",
+          "Definition": "Temperature of the fluid.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b4252ef25858465d840e3539db7eed5e",
+          "Name": "VolumetricFlowRate",
+          "Definition": "The volumetric flow rate of the fluid.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a3db7690009f42a988a9f5683b29eb8f",
+          "Name": "MassFlowRate",
+          "Definition": "The mass flow rate of the fluid.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcMassFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a09f286511e94d0f939193c2e0155921",
+          "Name": "FlowCondition",
+          "Definition": "Defines the flow condition as a percentage of the cross-sectional area.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7faf6c2ffbd64304b38859166e006c4a",
+          "Name": "Velocity",
+          "Definition": "The velocity of the fluid.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcLinearVelocityMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cc4abc86f21d4ee3a86d3815019c5ab3",
+          "Name": "Pressure",
+          "Definition": "The pressure of the fluid.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

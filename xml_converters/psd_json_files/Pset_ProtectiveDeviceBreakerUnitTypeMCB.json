@@ -1,0 +1,253 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "7b171e00d1f911e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProtectiveDeviceBreakerUnitTypeMCB",
+    "Definition": "A coherent set of attributes representing the breaking capacities of an MCB. Note - A protective device may be associated with different instances of this property set providing information related to different  basic characteristics.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProtectiveDevice/CIRCUITBREAKER"
+    },
+    "ApplicableTypeValue": "IfcProtectiveDevice/CIRCUITBREAKER",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "84a08600d1f911e1800000215ad4efdf",
+          "Name": "PowerLoss",
+          "Definition": "The power loss in [W] per pole of the MCB  when the nominal current is flowing through the MCB.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8ec28480d1f911e1800000215ad4efdf",
+          "Name": "VoltageLevel",
+          "Definition": "The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_VoltageLevels",
+                "EnumItem": [
+                  "U230",
+                  "U400",
+                  "U440",
+                  "U525",
+                  "U690",
+                  "U1000",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "U230",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U230"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U400",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U400"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U440",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U440"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U525",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U525"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U690",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U690"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "U1000",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "U1000"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ae59ad00d1f911e1800000215ad4efdf",
+          "Name": "NominalCurrents",
+          "Definition": "A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the \nUltimateRatedCurrent associated with the same breaker unit.",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcElectricCurrentMeasure"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b6b1e800d1f911e1800000215ad4efdf",
+          "Name": "ICU60947",
+          "Definition": "The ultimate breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c0d3e680d1f911e1800000215ad4efdf",
+          "Name": "ICS60947",
+          "Definition": "The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c9c4b800d1f911e1800000215ad4efdf",
+          "Name": "ICN60898",
+          "Definition": "The nominal breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d2b58980d1f911e1800000215ad4efdf",
+          "Name": "ICS60898",
+          "Definition": "The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

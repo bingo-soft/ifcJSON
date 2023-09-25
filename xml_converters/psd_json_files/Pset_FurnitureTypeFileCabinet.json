@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "34212c80d1e911e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FurnitureTypeFileCabinet",
+    "Definition": "A set of specific properties for furniture type file cabinet HISTORY: First issued in IFC Release R1.5. Renamed from Pset_FileCabinet",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFurniture/FILECABINET"
+    },
+    "ApplicableTypeValue": "IfcFurniture/FILECABINET",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "38e5e080d1e911e1800000215ad4efdf",
+        "Name": "WithLock",
+        "Definition": "Indicates whether the file cabinet is lockable (= TRUE) or not (= FALSE).",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcBoolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

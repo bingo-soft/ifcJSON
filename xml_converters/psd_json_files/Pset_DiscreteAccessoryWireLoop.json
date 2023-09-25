@@ -1,0 +1,95 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "faddc200d1d211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DiscreteAccessoryWireLoop",
+    "Definition": "Shape properties common to wire loop joint connectors.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDiscreteAccessory/Wire loop"
+    },
+    "ApplicableTypeValue": "IfcDiscreteAccessory/Wire loop",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "003b0c80d1d311e1800000215ad4efdf",
+          "Name": "WireLoopBasePlateThickness",
+          "Definition": "The thickness of the base plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "05985700d1d311e1800000215ad4efdf",
+          "Name": "WireLoopBasePlateWidth",
+          "Definition": "The width of the base plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0e892880d1d311e1800000215ad4efdf",
+          "Name": "WireLoopBasePlateLength",
+          "Definition": "The length of the base plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1648cd00d1d311e1800000215ad4efdf",
+          "Name": "WireDiameter",
+          "Definition": "The nominal diameter of the wire.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "252f7f80d1d311e1800000215ad4efdf",
+          "Name": "WireEmbeddingLength",
+          "Definition": "The length of the part of wire which is embedded in the precast concrete element.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "32e50500d1d311e1800000215ad4efdf",
+          "Name": "WireLoopLength",
+          "Definition": "The length of the fastening loop part of the wire.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

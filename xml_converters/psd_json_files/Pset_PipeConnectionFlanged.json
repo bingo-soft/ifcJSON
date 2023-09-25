@@ -1,0 +1,119 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "8581e980d1f211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PipeConnectionFlanged",
+    "Definition": "This property set is used to define the specifics of a flanged pipe connection used between occurrences of pipe segments and fittings.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPipeSegment"
+    },
+    "ApplicableTypeValue": "IfcPipeSegment",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "8c106100d1f211e1800000215ad4efdf",
+          "Name": "FlangeTable",
+          "Definition": "Designation of the standard table to which the flange conforms.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "93d00580d1f211e1800000215ad4efdf",
+          "Name": "FlangeStandard",
+          "Definition": "Designation of the standard describing the flange table.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9a5e7d00d1f211e1800000215ad4efdf",
+          "Name": "BoreSize",
+          "Definition": "The nominal bore of the pipe flange.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a21e2180d1f211e1800000215ad4efdf",
+          "Name": "FlangeDiameter",
+          "Definition": "Overall diameter of the flange.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a9ddc600d1f211e1800000215ad4efdf",
+          "Name": "FlangeThickness",
+          "Definition": "Thickness of the material from which the pipe bend is constructed.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b104d400d1f211e1800000215ad4efdf",
+          "Name": "NumberOfBoltholes",
+          "Definition": "Number of boltholes in the flange.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b6621e80d1f211e1800000215ad4efdf",
+          "Name": "BoltSize",
+          "Definition": "Size of the bolts securing the flange.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "bc57ff80d1f211e1800000215ad4efdf",
+          "Name": "BoltholePitch",
+          "Definition": "Diameter of the circle along which the boltholes are placed.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

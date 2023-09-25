@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "8a30a880d1c611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CableCarrierSegmentTypeCableTraySegment",
+    "Definition": "An (typically) open carrier segment onto which cables are laid. \nHISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCableCarrierSegment/CABLETRAYSEGMENT"
+    },
+    "ApplicableTypeValue": "IfcCableCarrierSegment/CABLETRAYSEGMENT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "8f8df300d1c611e1800000215ad4efdf",
+          "Name": "NominalWidth",
+          "Definition": "The nominal width of the segment.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "94eb3d80d1c611e1800000215ad4efdf",
+          "Name": "NominalHeight",
+          "Definition": "The nominal height of the segment.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "99aff180d1c611e1800000215ad4efdf",
+          "Name": "HasCover",
+          "Definition": "Indication of whether the cable tray has a cover (=TRUE) or not (= FALSE). By default, this value should be set to FALSE..",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "6f23c50586f7455da261721bcc1fa9ea",
+    "templatetype": "",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SensorTypeIdentifierSensor",
+    "Definition": "A device that senses identification tags.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSensor/IDENTIFIERSENSOR"
+    },
+    "ApplicableTypeValue": "IfcSensor/IDENTIFIERSENSOR",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "51b07040b89147dda5f701b8e246bf62",
+        "Name": "SetPointIdentifier",
+        "Definition": "The detected tag value.",
+        "PropertyType": {
+          "TypePropertyBoundedValue": {
+            "DataType": {
+              "type": "IfcIdentifier"
+            }
+          }
+        }
+      }
+    }
+  }
+}

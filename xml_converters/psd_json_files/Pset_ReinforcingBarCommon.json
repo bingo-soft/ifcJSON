@@ -1,0 +1,255 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "420f74163290409197c2bcb30f5541c1",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ReinforcingBarCommon",
+    "Definition": "Properties common to the definition of all occurrences of IfcReinforcingBar.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcReinforcingBar"
+    },
+    "ApplicableTypeValue": "IfcReinforcingBar",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "d9c5cd9f0bb4453fb678181411558c5d",
+          "Name": "Reference",
+          "Definition": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7d7be887760d4fe3b1302963f7bccd8a",
+          "Name": "Status",
+          "Definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": null,
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "NEW",
+                    "Definition": "element designed as new addition",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "New"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "EXISTING",
+                    "Definition": "element exists and is to remain",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Existing"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DEMOLISH",
+                    "Definition": "element exists but is to be demolished",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Demolish"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TEMPORARY",
+                    "Definition": "element will exist only temporarily (such as a temporary support structure)",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Temporary"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e6ad105049cb411ba58e97fb9eade51e",
+          "Name": "NominalDiameter",
+          "Definition": "The nominal diameter defining the cross-section size of the reinforcing bar.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d2837eec2e95439f97cceef7c80d6580",
+          "Name": "BarLength",
+          "Definition": "The total length of the reinforcing bar. The total length of bended bars are calculated according to local standards with corrections for the bends.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "002c10a549c44cd3a02a7d3a7cc3e726",
+          "Name": "BarSpacing",
+          "Definition": "The spacing between bars if constant.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b4b939846b424bbe898721fbff0d6c8e",
+          "Name": "BarSurface",
+          "Definition": "Indicator for whether the bar surface is plain or textured.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": null,
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "PLAIN",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "TEXTURED",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "USERDEFINED",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  },
+                  {
+                    "Name": "NOTDEFINED",
+                    "NameAliases": null,
+                    "DefinitionAliases": null
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b89eecc8c2d445f3a26938ae697189aa",
+          "Name": "BendingShapeCode",
+          "Definition": "Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the <em>IfcProject</em> object through the <em>IfcDocumentReference</em> mechanism.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "766df352b926486a8cfae4e207790013",
+          "Name": "BendingParameters",
+          "Definition": "If this mesh type is bent rather than planar, this attribute provides bending shape parameters. Their meaning is defined by the bending shape code and the respective standard.",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcValue"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

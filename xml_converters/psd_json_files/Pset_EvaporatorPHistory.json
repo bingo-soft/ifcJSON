@@ -1,0 +1,133 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c8d45c00d1e211e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_EvaporatorPHistory",
+    "Definition": "Evaporator performance history attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcEvaporator"
+    },
+    "ApplicableTypeValue": "IfcEvaporator",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "ce31a680d1e211e1800000215ad4efdf",
+          "Name": "HeatRejectionRate",
+          "Definition": "Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "d12c9700d1e211e1800000215ad4efdf",
+          "Name": "ExteriorHeatTransferCoefficient",
+          "Definition": "Exterior heat transfer coefficient associated with exterior surface area.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "d4c01e00d1e211e1800000215ad4efdf",
+          "Name": "InteriorHeatTransferCoefficient",
+          "Definition": "Interior heat transfer coefficient associated with interior surface area.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "d8ec3b80d1e211e1800000215ad4efdf",
+          "Name": "RefrigerantFoulingResistance",
+          "Definition": "Fouling resistance on the refrigerant side.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "dbe72c00d1e211e1800000215ad4efdf",
+          "Name": "EvaporatingTemperature",
+          "Definition": "Refrigerant evaporating temperature.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "dee21c80d1e211e1800000215ad4efdf",
+          "Name": "LogarithmicMeanTemperatureDifference",
+          "Definition": "Logarithmic mean temperature difference between refrigerant and water or air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "e1dd0d00d1e211e1800000215ad4efdf",
+          "Name": "UAcurves",
+          "Definition": "UV = f (VExterior, VInterior), UV as a function of interior and exterior fluid flow velocity at the entrance.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "eef9fc00d1e211e1800000215ad4efdf",
+          "Name": "CompressorEvaporatorHeatGain",
+          "Definition": "Heat gain between the evaporator outlet and the compressor inlet.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f3beb000d1e211e1800000215ad4efdf",
+          "Name": "CompressorEvaporatorPressureDrop",
+          "Definition": "Pressure drop between the evaporator outlet and the compressor inlet.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f8836400d1e211e1800000215ad4efdf",
+          "Name": "EvaporatorMeanVoidFraction",
+          "Definition": "Mean void fraction in evaporator.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "fc16eb00d1e211e1800000215ad4efdf",
+          "Name": "WaterFoulingResistance",
+          "Definition": "Fouling resistance on water/air side.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

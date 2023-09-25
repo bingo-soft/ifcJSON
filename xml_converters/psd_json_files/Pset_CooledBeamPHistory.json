@@ -1,0 +1,153 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "345ffe80d1ce11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CooledBeamPHistory",
+    "Definition": "Common performance history attributes for a cooled beam.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCooledBeam"
+    },
+    "ApplicableTypeValue": "IfcCooledBeam",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "39bd4900d1ce11e1800000215ad4efdf",
+          "Name": "TotalCoolingCapacity",
+          "Definition": "Total cooling capacity. This includes cooling capacity of beam and cooling capacity of supply air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "3cb83980d1ce11e1800000215ad4efdf",
+          "Name": "TotalHeatingCapacity",
+          "Definition": "Total heating capacity. This includes heating capacity of beam and heating capacity of supply air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "404bc080d1ce11e1800000215ad4efdf",
+          "Name": "BeamCoolingCapacity",
+          "Definition": "Cooling capacity of beam. This excludes cooling capacity of supply air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "4346b100d1ce11e1800000215ad4efdf",
+          "Name": "BeamHeatingCapacity",
+          "Definition": "Heating capacity of beam. This excludes heating capacity of supply air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "4641a180d1ce11e1800000215ad4efdf",
+          "Name": "CoolingWaterFlowRate",
+          "Definition": "Water flow rate for cooling.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "493c9200d1ce11e1800000215ad4efdf",
+          "Name": "HeatingWaterFlowRate",
+          "Definition": "Water flow rate for heating.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "4cd01900d1ce11e1800000215ad4efdf",
+          "Name": "CorrectionFactorForCooling",
+          "Definition": "Correction factor k as a function of water flow rate (used to calculate cooling capacity).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "5063a000d1ce11e1800000215ad4efdf",
+          "Name": "CorrectionFactorForHeating",
+          "Definition": "Correction factor k as a function of water flow rate (used to calculate heating capacity).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "53f72700d1ce11e1800000215ad4efdf",
+          "Name": "WaterPressureDropCurves",
+          "Definition": "Water pressure drop as function of water flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "578aae00d1ce11e1800000215ad4efdf",
+          "Name": "SupplyWaterTemperatureCooling",
+          "Definition": "Supply water temperature in cooling mode.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "59ed0800d1ce11e1800000215ad4efdf",
+          "Name": "ReturnWaterTemperatureCooling",
+          "Definition": "Return water temperature in cooling mode.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "5ce7f880d1ce11e1800000215ad4efdf",
+          "Name": "SupplyWaterTemperatureHeating",
+          "Definition": "Supply water temperature in heating mode.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "607b7f80d1ce11e1800000215ad4efdf",
+          "Name": "ReturnWaterTemperatureHeating",
+          "Definition": "Return water temperature in heating mode.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

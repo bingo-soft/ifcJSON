@@ -1,0 +1,191 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "7e5e0c89424f46bfa2bbcd0cf72e03c4",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SpaceCoveringRequirements",
+    "Definition": "Properties common to the definition of covering requirements of IfcSpace. Those properties define the requirements coming from a space program in early project phases and can later be used to define the room book information, if such coverings are not modeled explicitly as covering elements.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSpace"
+    },
+    "ApplicableTypeValue": "IfcSpace",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "bfd1f6a6ca08440899165d31dda04831",
+          "Name": "FloorCovering",
+          "Definition": "Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.\n\nThe material information is provided in absence of an IfcCovering (type=FLOORING) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9650c4d3c07f4ccc9fd8147b099f0939",
+          "Name": "FloorCoveringThickness",
+          "Definition": "Thickness of the material layer(s) for the space flooring.  \n\nThe thickness information is provided in absence of an IfcCovering (type=FLOORING) object with own shape representation. In cases of inconsistency between the geometric parameters of an assigned IfcCovering and this attached property, the geometric parameters take precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "69193a7f647f4526bd7f1d3b9fdd1a9e",
+          "Name": "WallCovering",
+          "Definition": "Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.\n\nThe material information is provided in absence of an IfcCovering (type=CLADDING) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "44c775b14a0d46c58ad8c7e36c34a349",
+          "Name": "WallCoveringThickness",
+          "Definition": "Thickness of the material layer(s) for the space cladding.  \n\nThe thickness information is provided in absence of an IfcCovering (type=CLADDING) object with own shape representation. In cases of inconsistency between the geometric parameters of an assigned IfcCovering and this attached property, the geometric parameters take precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "da83c4235c1d40aba9510f6abe2412f6",
+          "Name": "CeilingCovering",
+          "Definition": "Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.\n\nThe material information is provided in absence of an IfcCovering (type=CEILING) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "abdab367fcc64b08b03d584baeb819c8",
+          "Name": "CeilingCoveringThickness",
+          "Definition": "Thickness of the material layer(s) for the space ceiling.  \n\nThe thickness information is provided in absence of an IfcCovering (type=CEILING) object with own shape representation. In cases of inconsistency between the geometric parameters of an assigned IfcCovering and this attached property, the geometric parameters take precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6d6b4d00a2234b90b4eb1901ca5be2b5",
+          "Name": "SkirtingBoard",
+          "Definition": "Label to indicate the material or construction of the skirting board around the space flooring. The label is used for room book information.\n\nThe material information is provided in absence of an IfcCovering (type=SKIRTINGBOARD) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "af1249f71eb24579aaec871aa4a6287b",
+          "Name": "SkirtingBoardHeight",
+          "Definition": "Height of the skirting board.\n\nThe height information is provided in absence of an IfcCovering (type=SKIRTINGBOARD) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements takes precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3f9ca576246247ff8bdca254b651a15a",
+          "Name": "Molding",
+          "Definition": "Label to indicate the material or construction of the molding around the space ceiling. The label is used for room book information.\n\nThe material information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1e0092682e5347b2b2c5050bd03ee111",
+          "Name": "MoldingHeight",
+          "Definition": "Height of the molding.\n\nThe height information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements takes precedence.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8650a689ba064df69f052a87ab070f02",
+          "Name": "ConcealedFlooring",
+          "Definition": "Indication whether this space is designed to have a concealed flooring space (TRUE) or not (FALSE). A concealed flooring space is normally meant to be the space beneath a raised floor.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "56029141a7c040c4aef51a242fa1611f",
+          "Name": "ConcealedFlooringOffset",
+          "Definition": "Distance between the floor slab and the floor covering, often used for cables and other installations. Often referred to as raised flooring.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7502fd34b7fa494280c610aec4787043",
+          "Name": "ConcealedCeiling",
+          "Definition": "Indication whether this space is designed to have a concealed flooring space (TRUE) or not (FALSE). A concealed ceiling space is normally meant to be the space between a slab and a ceiling.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a7d072c8df3245bd9c1b9424d7f35a87",
+          "Name": "ConcealedCeilingOffset",
+          "Definition": "Distance between the upper floor slab and the suspended ceiling, often used for distribution systems. Often referred to as plenum.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNonNegativeLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

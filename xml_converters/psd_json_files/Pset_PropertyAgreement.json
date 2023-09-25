@@ -1,0 +1,266 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "21622400d1f811e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PropertyAgreement",
+    "Definition": "A property agreement is an agreement that enables the occupation of a property for a period of time.\n\nThe objective is to capture the information within an  agreement that is relevant to a facilities manager. Design and construction information associated with the property is not considered. A property agreement may be applied to an instance of IfcSpatialStructureElement including to compositions defined through the IfcSpatialStructureElement.Element.CompositionEnum.\n\nNote that the associated actors are captured by the IfcOccupant class.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSpatialStructureElement"
+    },
+    "ApplicableTypeValue": "IfcSpatialStructureElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2c1cb900d1f811e1800000215ad4efdf",
+          "Name": "AgreementType",
+          "Definition": "Identifies the predefined types of property agreement from which the type required may be set.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_PropertyAgreementType",
+                "EnumItem": [
+                  "ASSIGNMENT",
+                  "LEASE",
+                  "TENANT",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "ASSIGNMENT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Assignment"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "LEASE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Lease"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TENANT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Tenant"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "46569700d1f811e1800000215ad4efdf",
+          "Name": "Identifier",
+          "Definition": "The identifier assigned to the agreement for the purposes of tracking.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "50789580d1f811e1800000215ad4efdf",
+          "Name": "Version",
+          "Definition": "The version number of the agreement that is identified.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5b332a80d1f811e1800000215ad4efdf",
+          "Name": "VersionDate",
+          "Definition": "The date on which the version of the agreement became applicable.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDate"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "638b6580d1f811e1800000215ad4efdf",
+          "Name": "PropertyName",
+          "Definition": "Addressing details of the property as stated within the agreement.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6e45fa80d1f811e1800000215ad4efdf",
+          "Name": "CommencementDate",
+          "Definition": "Date on which the agreement commences.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDate"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7736cc00d1f811e1800000215ad4efdf",
+          "Name": "TerminationDate",
+          "Definition": "Date on which the agreement terminates.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDate"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "80279d80d1f811e1800000215ad4efdf",
+          "Name": "Duration",
+          "Definition": "The period of time for the lease.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDuration"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "87e74200d1f811e1800000215ad4efdf",
+          "Name": "Options",
+          "Definition": "A statement of the options available in the agreement.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "90d81380d1f811e1800000215ad4efdf",
+          "Name": "ConditionCommencement",
+          "Definition": "Condition of property provided on commencement of the agreement e.g. cold shell, warm lit shell, broom clean, turn-key.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9a617b80d1f811e1800000215ad4efdf",
+          "Name": "Restrictions",
+          "Definition": "Restrictions that may be placed by a  competent authority.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a0575c80d1f811e1800000215ad4efdf",
+          "Name": "ConditionTermination",
+          "Definition": "Condition of property required on termination of the agreement e.g. cold shell, warm lit shell, broom clean, turn-key.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

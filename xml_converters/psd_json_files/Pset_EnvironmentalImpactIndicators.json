@@ -1,0 +1,617 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "7ba3ba80d1e111e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_EnvironmentalImpactIndicators",
+    "Definition": "Environmental impact indicators are related to a given \u201cfunctional unit\u201d (ISO 14040 concept). An example of functional unit is a \"Double glazing window with PVC frame\" and the unit to consider is \"one square meter of opening elements filled by this product\u201d.\nIndicators values are valid for the whole life cycle or only a specific phase (see LifeCyclePhase property). Values of all the indicators are expressed per year according to the expected service life. The first five properties capture the characteristics of the functional unit. The following properties are related to environmental indicators.\nThere is a consensus agreement international for the five one. Last ones are not yet fully and formally agreed at the international level.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcElement"
+    },
+    "ApplicableTypeValue": "IfcElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "82323200d1e111e1800000215ad4efdf",
+          "Name": "Reference",
+          "Definition": "Reference ID for this specified type in this project",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "88281300d1e111e1800000215ad4efdf",
+          "Name": "FunctionalUnitReference",
+          "Definition": "Reference to a database or a classification",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8f4f2100d1e111e1800000215ad4efdf",
+          "Name": "Unit",
+          "Definition": "The unit of the quantity the environmental indicators values are related with.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "96762f00d1e111e1800000215ad4efdf",
+          "Name": "LifeCyclePhase",
+          "Definition": "The whole life cycle or only a given phase  from which environmental data are valid.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_LifeCyclePhase",
+                "EnumItem": [
+                  "Acquisition",
+                  "Cradletosite",
+                  "Deconstruction",
+                  "Disposal",
+                  "Disposaltransport",
+                  "Growth",
+                  "Installation",
+                  "Maintenance",
+                  "Manufacture",
+                  "Occupancy",
+                  "Operation",
+                  "Procurement",
+                  "Production",
+                  "Productiontransport",
+                  "Recovery",
+                  "Refurbishment",
+                  "Repair",
+                  "Replacement",
+                  "Transport",
+                  "Usage",
+                  "Waste",
+                  "Wholelifecycle",
+                  "UserDefined",
+                  "NotDefined"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "ACQUISITION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Acquisition"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CRADLETOSITE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Cradletosite"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DECONSTRUCTION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Deconstruction"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DISPOSAL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Disposal"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DISPOSALTRANSPORT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Disposal Transport"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "GROWTH",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Growth"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "INSTALLATION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Installation"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MAINTENANCE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Maintenance"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MANUFACTURE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Manufacture"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OCCUPANCY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Occupancy"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OPERATION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Operation"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PROCUREMENT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Procurement"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PRODUCTION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Production"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PRODUCTIONTRANSPORT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Production Transport"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "RECOVERY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Recovery"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "REFURBISHMENT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Refurbishment"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "REPAIR",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Repair"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "REPLACEMENT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Replacement"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TRANSPORT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Transport"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "USAGE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Usage"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "WASTE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Waste"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "WHOLELIFECYCLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Wholelifecycle"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "USERDEFINED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "User Defined"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTDEFINED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Not Defined"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a7bf3b80d1e111e1800000215ad4efdf",
+          "Name": "ExpectedServiceLife",
+          "Definition": "Expected service life in years.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "adb51c80d1e111e1800000215ad4efdf",
+          "Name": "TotalPrimaryEnergyConsumptionPerUnit",
+          "Definition": "Quantity of energy used as defined in ISO21930:2007.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcEnergyMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b3126700d1e111e1800000215ad4efdf",
+          "Name": "WaterConsumptionPerUnit",
+          "Definition": "Quantity of water used.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b9084800d1e111e1800000215ad4efdf",
+          "Name": "HazardousWastePerUnit",
+          "Definition": "Quantity of hazardous waste generated",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "be659280d1e111e1800000215ad4efdf",
+          "Name": "NonHazardousWastePerUnit",
+          "Definition": "Quantity of non hazardous waste generated",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c32a4680d1e111e1800000215ad4efdf",
+          "Name": "ClimateChangePerUnit",
+          "Definition": "Quantity of greenhouse gases emitted calculated in equivalent CO2",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c9202780d1e111e1800000215ad4efdf",
+          "Name": "AtmosphericAcidificationPerUnit",
+          "Definition": "Quantity of gases responsible for the atmospheric acidification calculated in equivalent SO2",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cf160880d1e111e1800000215ad4efdf",
+          "Name": "RenewableEnergyConsumptionPerUnit",
+          "Definition": "Quantity of renewable energy used as defined in ISO21930:2007",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcEnergyMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d50be980d1e111e1800000215ad4efdf",
+          "Name": "NonRenewableEnergyConsumptionPerUnit",
+          "Definition": "Quantity of non-renewable energy used as defined in ISO21930:2007",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcEnergyMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "db01ca80d1e111e1800000215ad4efdf",
+          "Name": "ResourceDepletionPerUnit",
+          "Definition": "Quantity of resources used calculated in equivalent antimony",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e0f7ab80d1e111e1800000215ad4efdf",
+          "Name": "InertWastePerUnit",
+          "Definition": "Quantity of inert waste generated",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e6ed8c80d1e111e1800000215ad4efdf",
+          "Name": "RadioactiveWastePerUnit",
+          "Definition": "Quantity of radioactive waste generated",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ec4ad700d1e111e1800000215ad4efdf",
+          "Name": "StratosphericOzoneLayerDestructionPerUnit",
+          "Definition": "Quantity of gases destroying the stratospheric ozone layer calculated in equivalent CFC-R11",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f2d94e80d1e111e1800000215ad4efdf",
+          "Name": "PhotochemicalOzoneFormationPerUnit",
+          "Definition": "Quantity of gases creating the photochemical ozone calculated in equivalent ethylene",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f79e0280d1e111e1800000215ad4efdf",
+          "Name": "EutrophicationPerUnit",
+          "Definition": "Quantity of eutrophicating compounds calculated in equivalent PO4",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcMassMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

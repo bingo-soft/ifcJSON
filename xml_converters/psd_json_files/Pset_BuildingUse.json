@@ -1,0 +1,175 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "b8fa4f00d1c511e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_BuildingUse",
+    "Definition": "Provides information on on the real estate context of the building of interest both current and anticipated.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcBuilding"
+    },
+    "ApplicableTypeValue": "IfcBuilding",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "bd266c80d1c511e1800000215ad4efdf",
+          "Name": "MarketCategory",
+          "Definition": "Category of use e.g. residential, commercial, recreation etc.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c31c4d80d1c511e1800000215ad4efdf",
+          "Name": "MarketSubCategory",
+          "Definition": "Subset of category of use e.g. multi-family, 2 bedroom, low rise.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c9122e80d1c511e1800000215ad4efdf",
+          "Name": "PlanningControlStatus",
+          "Definition": "Label of zoning category or class, or planning control category for the site or facility.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cf080f80d1c511e1800000215ad4efdf",
+          "Name": "NarrativeText",
+          "Definition": "Added information relating to the adjacent building use that is not appropriate to the general descriptive text associated with an entity through the inherited IfcRoot.Description.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d3ccc380d1c511e1800000215ad4efdf",
+          "Name": "VacancyRateInCategoryNow",
+          "Definition": "Percentage of vacancy found in the particular category currently.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d92a0e00d1c511e1800000215ad4efdf",
+          "Name": "TenureModesAvailableNow",
+          "Definition": "A list of the tenure modes that are currently available expressed in terms of IfcLabel.",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "dfb88580d1c511e1800000215ad4efdf",
+          "Name": "MarketSubCategoriesAvailableNow",
+          "Definition": "A list of the sub categories of property that are currently available expressed in terms of IfcLabel.",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e5ae6680d1c511e1800000215ad4efdf",
+          "Name": "RentalRatesInCategoryNow",
+          "Definition": "Range of the cost rates for property currently available in the required category.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcMonetaryMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "eba44780d1c511e1800000215ad4efdf",
+          "Name": "VacancyRateInCategoryFuture",
+          "Definition": "Percentage of vacancy found in the particular category expected in the future.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f1019200d1c511e1800000215ad4efdf",
+          "Name": "TenureModesAvailableFuture",
+          "Definition": "A list of the tenure modes that are expected to be available in the future expressed in terms of IfcLabel.",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f6f77300d1c511e1800000215ad4efdf",
+          "Name": "MarketSubCategoriesAvailableFuture",
+          "Definition": "A list of the sub categories of property that are expected to be available in the future expressed in terms of IfcLabel.",
+          "PropertyType": {
+            "TypePropertyListValue": {
+              "ListValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ff4fae00d1c511e1800000215ad4efdf",
+          "Name": "RentalRatesInCategoryFuture",
+          "Definition": "Range of the cost rates for property expected to be available in the future in the required category.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcMonetaryMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

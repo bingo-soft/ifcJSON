@@ -1,0 +1,419 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "e3a0f7f7ae494e08baa3474d1816fafd",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionPortTypeDuct",
+    "Definition": "Duct port occurrence attributes attached to an instance of IfcDistributionPort.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionPort/DUCT"
+    },
+    "ApplicableTypeValue": "IfcDistributionPort/DUCT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "d2b239a61db14c2ab423e3d735a6de1f",
+          "Name": "ConnectionType",
+          "Definition": "The end-style treatment of the duct port:\n\nBEADEDSLEEVE: Beaded Sleeve. \nCOMPRESSION: Compression. \nCRIMP: Crimp. \nDRAWBAND: Drawband. \nDRIVESLIP: Drive slip. \nFLANGED: Flanged. \nOUTSIDESLEEVE: Outside Sleeve. \nSLIPON: Slipon. \nSOLDERED: Soldered. \nSSLIP: S-Slip. \nSTANDINGSEAM: Standing seam. \nSWEDGE: Swedge. \nWELDED: Welded. \nOTHER: Another type of end-style has been applied.\nNONE: No end-style has been applied.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_DuctConnectionType",
+                "EnumItem": [
+                  "BEADEDSLEEVE",
+                  "COMPRESSION",
+                  "CRIMP",
+                  "DRAWBAND",
+                  "DRIVESLIP",
+                  "FLANGED",
+                  "OUTSIDESLEEVE",
+                  "SLIPON",
+                  "SOLDERED",
+                  "SSLIP",
+                  "STANDINGSEAM",
+                  "SWEDGE",
+                  "WELDED",
+                  "OTHER",
+                  "NONE",
+                  "USERDEFINED",
+                  "NOTDEFINED"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "BEADEDSLEEVE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Beaded Sleeve"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Beaded Sleeve"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "COMPRESSION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Compression"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Compression"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CRIMP",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Crimp"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Crimp"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DRAWBAND",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Drawband"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Drawband"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DRIVESLIP",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Driveslip"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Drive slip"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "FLANGED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Flanged"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Flanged"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OUTSIDESLEEVE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Outside Sleeve"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Outside Sleeve"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SLIPON",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Slipon"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Slipon"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SOLDERED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Soldered"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Soldered"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SSLIP",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "S-Slip"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "S-Slip"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "STANDINGSEAM",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Standing seam"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Standing seam"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SWEDGE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Swedge"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Swedge"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "WELDED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Welded"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Welded"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NONE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "None"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "No end-style has been applied"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "USERDEFINED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Userdefined"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTDEFINED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Notdefined"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "15d916dd1d7340bc81481576f81d2a08",
+          "Name": "ConnectionSubType",
+          "Definition": "The physical port connection subtype that further qualifies the ConnectionType.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a28e9f226e204a909976810e633a45f4",
+          "Name": "NominalWidth",
+          "Definition": "The nominal width or diameter of the duct connection.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "90a90418907a41809a527bb1ef069005",
+          "Name": "NominalHeight",
+          "Definition": "The nominal height of the duct connection. Only provided for rectangular shaped ducts.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9aa93573818943ee9e7ad7e898fddfae",
+          "Name": "NominalThickness",
+          "Definition": "The nominal wall thickness of the duct at the connection point.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0e28d2efe50346319664f17e52ebd118",
+          "Name": "DryBulbTemperature",
+          "Definition": "Dry bulb temperature of the air.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "46e6cb4f3ecb4016b3d952ec26836ce6",
+          "Name": "WetBulbTemperature",
+          "Definition": "Wet bulb temperature of the air.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "639c0067eb444ed8b9d177247c1f1cc2",
+          "Name": "VolumetricFlowRate",
+          "Definition": "The volumetric flow rate of the fluid.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "26538518abf6475ba1562ce731d7975e",
+          "Name": "Velocity",
+          "Definition": "The velocity of the fluid.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcLinearVelocityMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7583cd7c5ea74d109e2b6ad6d0dafa4b",
+          "Name": "Pressure",
+          "Definition": "The pressure of the fluid.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

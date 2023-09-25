@@ -1,0 +1,701 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "72b9e580d1ef11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_MaterialWoodBasedPanel",
+    "Definition": "This is a collection of mechanical properties related to wood-based materials for panel-like products like plywood or OSB. The propositions given above for wood-based beam materials with respect to anisotropy, strength graduation according to element sizes (especially panel thickness) apply accordingly.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcMaterial/Wood"
+    },
+    "ApplicableTypeValue": "IfcMaterial/Wood",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "75b4d600d1ef11e1800000215ad4efdf",
+          "Name": "ApplicableStructuralDesignMethod",
+          "Definition": "Determines whether mechanical material properties are applicable to 'ASD' = allowable stress design (working stress design), 'LSD' = limit state design, or 'LRFD' = load and resistance factor design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7b122080d1ef11e1800000215ad4efdf",
+          "Name": "InPlane",
+          "Definition": "Mechanical properties with respect to in-plane load, i.e. for function as a membrane.",
+          "PropertyType": {
+            "TypeComplexProperty": {
+              "name": "CP_MaterialMechanicalPanel",
+              "PropertyDef": [
+                {
+                  "ifdguid": "f88795abf8e24e72b93a3f90f8c300ce",
+                  "Name": "YoungModulusBending",
+                  "Definition": "Defining values: \u03b1; defined values: elastic modulus in bending.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcModulusOfElasticityMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "2c404c72a4b849f6a69bce9d0f4f37fc",
+                  "Name": "YoungModulusTension",
+                  "Definition": "Defining values: \u03b1; defined values: elastic modulus in tension.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcModulusOfElasticityMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "358fc45434544169ac1e38cc58f61634",
+                  "Name": "YoungModulusCompression",
+                  "Definition": "Elastic modulus in compression.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcModulusOfElasticityMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "4bd9c7533884422e95e5f0a14e6de99a",
+                  "Name": "ShearModulus",
+                  "Definition": "Shear modulus.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcModulusOfElasticityMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "f82b0dc8ae43409cae6acaceaf171fb0",
+                  "Name": "BendingStrength",
+                  "Definition": "Defining values: \u03b1; defined values: bending strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "43cbe65a8d5c4a769b984d0da1ff6417",
+                  "Name": "CompressiveStrength",
+                  "Definition": "Defining values: \u03b1; defined values: compressive strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "aef7c8bcd73e434da20ffcf00ed7babc",
+                  "Name": "TensileStrength",
+                  "Definition": "Defining values: \u03b1; defined values: tensile strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "370ad6a14f8348dda7f7c1d8902fb274",
+                  "Name": "ShearStrength",
+                  "Definition": "Defining values: \u03b1; defined values: shear strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "c3c9c43178814262ad28abdc3d705f51",
+                  "Name": "BearingStrength",
+                  "Definition": "Defining values: \u03b1; defined values: bearing strength of bolt holes, i.e. intrados pressure.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "84e6e3df603f4f149a0f2d18e7bd8443",
+                  "Name": "RaisedCompressiveStrength",
+                  "Definition": "Alternative value for compressive strength which may be used under material and code dependent conditions (e.g. if deformation is tolerable, or far from ends of the member); conditions should be stated in SELF\\IfcProperty.Description.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcPressureMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "48b02192a22a4ebe9108903c05361ece",
+                  "Name": "ReferenceDepth",
+                  "Definition": "Depth in bending for which the mechanical properties are valid; provided as a means to check the integrity of material assignment.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcPositiveLengthMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ifdguid": "e52ac580d1ef11e1800000215ad4efdf",
+          "Name": "OutOfPlane",
+          "Definition": "Mechanical properties with respect to out-of-plane load, i.e. for function as a plate; tension zone of unbalanced layups is stressed in tension.",
+          "PropertyType": {
+            "TypeComplexProperty": {
+              "name": "CP_MaterialMechanicalPanel",
+              "PropertyDef": [
+                {
+                  "ifdguid": "ac7bb382cae843d2824737032f114b80",
+                  "Name": "YoungModulusBending",
+                  "Definition": "Defining values: \u03b1; defined values: elastic modulus in bending.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcModulusOfElasticityMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "6ab98e5d630444aa863fa5eacb7aa2e3",
+                  "Name": "YoungModulusTension",
+                  "Definition": "Defining values: \u03b1; defined values: elastic modulus in tension.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcModulusOfElasticityMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "9d2f0e63af8f437189664aa28915e8d4",
+                  "Name": "YoungModulusCompression",
+                  "Definition": "Elastic modulus in compression.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcModulusOfElasticityMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "95065e1627354f45903f0fd09b84b851",
+                  "Name": "ShearModulus",
+                  "Definition": "Shear modulus.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcModulusOfElasticityMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "f4028709b945497396211c0c70294fca",
+                  "Name": "BendingStrength",
+                  "Definition": "Defining values: \u03b1; defined values: bending strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "2aec861c2b6a4d91b19592ab6f03296c",
+                  "Name": "CompressiveStrength",
+                  "Definition": "Defining values: \u03b1; defined values: compressive strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "58fca2f87665483a942c2629a28a4aeb",
+                  "Name": "TensileStrength",
+                  "Definition": "Defining values: \u03b1; defined values: tensile strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "ddf4bd42acbb4e389441691a2c19e8ea",
+                  "Name": "ShearStrength",
+                  "Definition": "Defining values: \u03b1; defined values: shear strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "144dda8ccaf84972806a992577539696",
+                  "Name": "BearingStrength",
+                  "Definition": "Defining values: \u03b1; defined values: bearing strength of bolt holes, i.e. intrados pressure.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "9a6bd43de78c4ac19a19e9a963c9f95a",
+                  "Name": "RaisedCompressiveStrength",
+                  "Definition": "Alternative value for compressive strength which may be used under material and code dependent conditions (e.g. if deformation is tolerable, or far from ends of the member); conditions should be stated in SELF\\IfcProperty.Description.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcPressureMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "cac94447840b4eb7ba13f42234111fcc",
+                  "Name": "ReferenceDepth",
+                  "Definition": "Depth in bending for which the mechanical properties are valid; provided as a means to check the integrity of material assignment.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcPositiveLengthMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ifdguid": "510d2e00d1f011e1800000215ad4efdf",
+          "Name": "OutOfPlaneNegative",
+          "Definition": "Mechanical properties with respect to out-of-plane load i.e. for function as a plate; compression zone of unbalanced layups is stressed in tension.",
+          "PropertyType": {
+            "TypeComplexProperty": {
+              "name": "CP_MaterialMechanicalPanel",
+              "PropertyDef": [
+                {
+                  "ifdguid": "94babf4d76de4389be6c7ead799975f8",
+                  "Name": "YoungModulusBending",
+                  "Definition": "Defining values: \u03b1; defined values: elastic modulus in bending.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcModulusOfElasticityMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "b19610ec1ce0406e8fa92fd04ee8e882",
+                  "Name": "YoungModulusTension",
+                  "Definition": "Defining values: \u03b1; defined values: elastic modulus in tension.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcModulusOfElasticityMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "1e830245635c4ba9b2641fbfb34f21c6",
+                  "Name": "YoungModulusCompression",
+                  "Definition": "Elastic modulus in compression.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcModulusOfElasticityMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "f06cdc79454445ce932242432067a3b8",
+                  "Name": "ShearModulus",
+                  "Definition": "Shear modulus.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcModulusOfElasticityMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "724f6921b3154083935f315208f9274b",
+                  "Name": "BendingStrength",
+                  "Definition": "Defining values: \u03b1; defined values: bending strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "a6afa72425b248a9bfa46b6ccfb73306",
+                  "Name": "CompressiveStrength",
+                  "Definition": "Defining values: \u03b1; defined values: compressive strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "a4bd6014998d470092b4d2b6dd5aeeb9",
+                  "Name": "TensileStrength",
+                  "Definition": "Defining values: \u03b1; defined values: tensile strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "4a403dcf501d4e78b5cee728c2b6a0b6",
+                  "Name": "ShearStrength",
+                  "Definition": "Defining values: \u03b1; defined values: shear strength.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "6c1f8790752543e0a1d6e4ebf42fe435",
+                  "Name": "BearingStrength",
+                  "Definition": "Defining values: \u03b1; defined values: bearing strength of bolt holes, i.e. intrados pressure.",
+                  "PropertyType": {
+                    "TypePropertyTableValue": {
+                      "Expression": null,
+                      "DefiningValue": {
+                        "DataType": {
+                          "type": "IfcPositivePlaneAngleMeasure"
+                        }
+                      },
+                      "DefinedValue": {
+                        "DataType": {
+                          "type": "IfcPressureMeasure"
+                        }
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "f46c6856c20c4cab9d1cee76811b57f4",
+                  "Name": "RaisedCompressiveStrength",
+                  "Definition": "Alternative value for compressive strength which may be used under material and code dependent conditions (e.g. if deformation is tolerable, or far from ends of the member); conditions should be stated in SELF\\IfcProperty.Description.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcPressureMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                },
+                {
+                  "ifdguid": "f73420bb618440dbbe1146d9fb646fa0",
+                  "Name": "ReferenceDepth",
+                  "Definition": "Depth in bending for which the mechanical properties are valid; provided as a means to check the integrity of material assignment.",
+                  "PropertyType": {
+                    "TypePropertySingleValue": {
+                      "DataType": {
+                        "type": "IfcPositiveLengthMeasure"
+                      }
+                    }
+                  },
+                  "NameAliases": null,
+                  "DefinitionAliases": null
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

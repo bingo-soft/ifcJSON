@@ -1,0 +1,132 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "0c908b00d20e11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SwitchingDeviceTypeDimmerSwitch",
+    "Definition": "A dimmer switch is a switch that adjusts electrical power through a variable position level action.  HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSwitchingDevice/DIMMERSWITCH"
+    },
+    "ApplicableTypeValue": "IfcSwitchingDevice/DIMMERSWITCH",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "11edd580d20e11e1800000215ad4efdf",
+        "Name": "DimmerType",
+        "Definition": "A list of the available types of dimmer switch from which that required may be selected.",
+        "PropertyType": {
+          "TypePropertyEnumeratedValue": {
+            "EnumList": {
+              "name": "PEnum_SwitchingDeviceDimmerSwitchType",
+              "EnumItem": [
+                "ROCKER",
+                "SELECTOR",
+                "TWIST",
+                "OTHER",
+                "NOTKNOWN",
+                "UNSET"
+              ]
+            },
+            "ConstantList": {
+              "ConstantDef": [
+                {
+                  "Name": "ROCKER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Rocker"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "SELECTOR",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Selector"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "TWIST",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Twist"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "OTHER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(other)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is not listed."
+                    }
+                  }
+                },
+                {
+                  "Name": "NOTKNOWN",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unknown)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is unknown."
+                    }
+                  }
+                },
+                {
+                  "Name": "UNSET",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unset)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value has not been specified."
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

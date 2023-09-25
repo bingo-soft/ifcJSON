@@ -1,0 +1,101 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "915eb300d1d411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionChamberElementTypeValveChamber",
+    "Definition": "Chamber that houses a valve(s).",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionChamberElement/VALVECHAMBER"
+    },
+    "ApplicableTypeValue": "IfcDistributionChamberElement/VALVECHAMBER",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "96236700d1d411e1800000215ad4efdf",
+          "Name": "ChamberLengthOrRadius",
+          "Definition": "Length or, in the event of the shape being circular in plan, the radius of the chamber.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9c194800d1d411e1800000215ad4efdf",
+          "Name": "ChamberWidth",
+          "Definition": "Width, in the event of the shape being non circular in plan.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a20f2900d1d411e1800000215ad4efdf",
+          "Name": "WallMaterial",
+          "Definition": "The material from which the wall of the chamber is constructed.\nNOTE: It is assumed that chamber walls will be constructed of a single material.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        },
+        {
+          "ifdguid": "a5a2b000d1d411e1800000215ad4efdf",
+          "Name": "WallThickness",
+          "Definition": "The thickness of the chamber wall construction.\nNOTE: It is assumed that chamber walls will be constructed at a single thickness.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ac312780d1d411e1800000215ad4efdf",
+          "Name": "BaseMaterial",
+          "Definition": "The material from which the base of the chamber is constructed.\nNOTE: It is assumed that chamber base will be constructed of a single material.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        },
+        {
+          "ifdguid": "afc4ae80d1d411e1800000215ad4efdf",
+          "Name": "BaseThickness",
+          "Definition": "The thickness of the chamber base construction.\nNOTE: It is assumed that chamber base will be constructed at a single thickness.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b6532600d1d411e1800000215ad4efdf",
+          "Name": "AccessCoverMaterial",
+          "Definition": "The material from which the access cover to the chamber is constructed.\nNOTE: It is assumed that chamber walls will be constructed of a single material.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcMaterialDefinition"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

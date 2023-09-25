@@ -1,0 +1,170 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "ce6e7980d1c311e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AudioVisualApplianceTypeTuner",
+    "Definition": "An audio-visual tuner is a device that demodulates a signal into a stream of audio and/or video.  HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAudioVisualAppliance/TUNER"
+    },
+    "ApplicableTypeValue": "IfcAudioVisualAppliance/TUNER",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "d3cbc400d1c311e1800000215ad4efdf",
+          "Name": "TunerType",
+          "Definition": "Indicates the tuner type.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_AudioVisualTunerType",
+                "EnumItem": [
+                  "AUDIO",
+                  "VIDEO",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET."
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "AUDIO",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Audio"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VIDEO",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Video"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET.",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Unset."
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e219e000d1c311e1800000215ad4efdf",
+          "Name": "TunerMode",
+          "Definition": "Indicates the tuner modes (or bands).  For example, 'AnalogCable', 'DigitalAir', 'AM', 'FM'.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcIdentifier"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ea721b00d1c311e1800000215ad4efdf",
+          "Name": "TunerChannel",
+          "Definition": "Indicates the tuner channels, if applicable.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcIdentifier"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f231bf80d1c311e1800000215ad4efdf",
+          "Name": "TunerFrequency",
+          "Definition": "Indicates the tuner frequencies, if applicable.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcFrequencyMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

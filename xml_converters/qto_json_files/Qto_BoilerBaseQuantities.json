@@ -1,0 +1,36 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_BoilerBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all types of boilers.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcBoiler"
+    },
+    "ApplicableTypeValue": "IfcBoiler",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "GrossWeight",
+          "Definition": "Weight of the element, not including contained fluid.",
+          "QtoType": "Q_WEIGHT"
+        },
+        {
+          "Name": "NetWeight",
+          "Definition": "Weight of the element, including contained fluid as designed.",
+          "QtoType": "Q_WEIGHT"
+        },
+        {
+          "Name": "TotalSurfaceArea",
+          "Definition": "Total surface area of the element.",
+          "QtoType": "Q_AREA"
+        }
+      ]
+    }
+  }
+}

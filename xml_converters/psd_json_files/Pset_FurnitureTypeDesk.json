@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "279cd400d1e911e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FurnitureTypeDesk",
+    "Definition": "A set of specific properties for furniture type desk. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Desk",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFurniture/DESK"
+    },
+    "ApplicableTypeValue": "IfcFurniture/DESK",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "2cfa1e80d1e911e1800000215ad4efdf",
+        "Name": "WorksurfaceArea",
+        "Definition": "The value of the work surface area of the desk.",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcAreaMeasure"
+            }
+          }
+        }
+      }
+    }
+  }
+}

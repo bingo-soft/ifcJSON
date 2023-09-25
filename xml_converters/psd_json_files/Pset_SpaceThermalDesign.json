@@ -1,0 +1,179 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "14026500d20b11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SpaceThermalDesign",
+    "Definition": "Space or zone HVAC design requirements. HISTORY: New property set in IFC Release 1.0 (Pset_SpaceHvacInformation); renamed to Pset_SpaceThermalDesign and revised in IFC2x2.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSpace"
+    },
+    "ApplicableTypeValue": "IfcSpace",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "19f84600d20b11e1800000215ad4efdf",
+          "Name": "CoolingDesignAirflow",
+          "Definition": "The air flowrate required during the peak cooling conditions.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1fee2700d20b11e1800000215ad4efdf",
+          "Name": "HeatingDesignAirflow",
+          "Definition": "The air flowrate required during the peak heating conditions, but could also be determined by minimum ventilation requirement or minimum air change requirements.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "25e40800d20b11e1800000215ad4efdf",
+          "Name": "TotalSensibleHeatGain",
+          "Definition": "The total sensible heat or energy gained by the space during the peak cooling conditions.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2c727f80d20b11e1800000215ad4efdf",
+          "Name": "TotalHeatGain",
+          "Definition": "The total amount of heat or energy gained by the space at the time of the space's peak cooling conditions.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "31373380d20b11e1800000215ad4efdf",
+          "Name": "TotalHeatLoss",
+          "Definition": "The total amount of heat or energy lost by the space at the time of the space's peak heating conditions.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "385e4180d20b11e1800000215ad4efdf",
+          "Name": "CoolingDryBulb",
+          "Definition": "Inside dry bulb temperature for cooling design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3dbb8c00d20b11e1800000215ad4efdf",
+          "Name": "CoolingRelativeHumidity",
+          "Definition": "Inside relative humidity for cooling design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "43b16d00d20b11e1800000215ad4efdf",
+          "Name": "HeatingDryBulb",
+          "Definition": "Inside dry bulb temperature for heating design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "490eb780d20b11e1800000215ad4efdf",
+          "Name": "HeatingRelativeHumidity",
+          "Definition": "Inside relative humidity for heating design.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4f9d2f00d20b11e1800000215ad4efdf",
+          "Name": "VentilationAirFlowrate",
+          "Definition": "Ventilation outside air requirement for the space.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "54fa7980d20b11e1800000215ad4efdf",
+          "Name": "ExhaustAirFlowrate",
+          "Definition": "Design exhaust air flow rate for the space.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5a57c400d20b11e1800000215ad4efdf",
+          "Name": "CeilingRAPlenum",
+          "Definition": "Ceiling plenum used for return air or not. TRUE = Yes, FALSE = No.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "617ed200d20b11e1800000215ad4efdf",
+          "Name": "BoundaryAreaHeatLoss",
+          "Definition": "Heat loss per unit area for the boundary object. This is a design input value for use in the absence of calculated load data.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcHeatFluxDensityMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

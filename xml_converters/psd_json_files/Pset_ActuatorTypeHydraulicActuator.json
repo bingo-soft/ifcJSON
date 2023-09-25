@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "70d72e80d1bd11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ActuatorTypeHydraulicActuator",
+    "Definition": "A device that hydraulically actuates a control element.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcActuator/HYDRAULICACTUATOR"
+    },
+    "ApplicableTypeValue": "IfcActuator/HYDRAULICACTUATOR",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "759be280d1bd11e1800000215ad4efdf",
+          "Name": "InputPressure",
+          "Definition": "Maximum design pressure for the actuator.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7af92d00d1bd11e1800000215ad4efdf",
+          "Name": "InputFlowrate",
+          "Definition": "Maximum hydraulic flowrate requirement.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

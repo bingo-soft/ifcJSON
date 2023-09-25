@@ -1,0 +1,31 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_ConstructionEquipmentResourceBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of construction equipment resources.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcConstructionEquipmentResource"
+    },
+    "ApplicableTypeValue": "IfcConstructionEquipmentResource",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "UsageTime",
+          "Definition": "Total time using the equipment including operating time and idle time.",
+          "QtoType": "Q_TIME"
+        },
+        {
+          "Name": "OperatingTime",
+          "Definition": "Productive time using the equipment including operating time and excluding idle time.",
+          "QtoType": "Q_TIME"
+        }
+      ]
+    }
+  }
+}

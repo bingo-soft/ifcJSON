@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "1a141c5f26c74071b12b2c7edb270e1d",
+    "templatetype": "",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_MechanicalFastenerCommon",
+    "Definition": "Properties related to mechanical fasteners.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcMechanicalFastener"
+    },
+    "ApplicableTypeValue": "IfcMechanicalFastener",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "482e19c8276b41edb957d1de040e5e61",
+          "Name": "NominalDiameter",
+          "Definition": "The nominal diameter describing the cross-section size of the fastener type.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7de3f008a07a4194ba6c4bf07a65334e",
+          "Name": "NominalLength",
+          "Definition": "The nominal length describing the longitudinal dimensions of the fastener type.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

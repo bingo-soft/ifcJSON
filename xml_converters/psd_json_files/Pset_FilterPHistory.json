@@ -1,0 +1,53 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "2f5a7980d1e511e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FilterPHistory",
+    "Definition": "Filter performance history attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFilter"
+    },
+    "ApplicableTypeValue": "IfcFilter",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "35505a80d1e511e1800000215ad4efdf",
+          "Name": "CountedEfficiency",
+          "Definition": "Filter efficiency based the particle counts concentration before and after filter against particles with certain size distribution.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "397c7800d1e511e1800000215ad4efdf",
+          "Name": "WeightedEfficiency",
+          "Definition": "Filter efficiency based the particle weight concentration before and after filter against particles with certain size distribution.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "3c776880d1e511e1800000215ad4efdf",
+          "Name": "ParticleMassHolding",
+          "Definition": "Mass of particle holding in the filter.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

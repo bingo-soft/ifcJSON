@@ -1,0 +1,561 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c14e8c00d1bd11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AirSideSystemInformation",
+    "Definition": "Attributes that apply to an air side HVAC system. HISTORY: New property set in IFC Release 1.0.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcSpace",
+        "IfcZone",
+        "IfcSpatialZone"
+      ]
+    },
+    "ApplicableTypeValue": "IfcSpace,IfcZone,IfcSpatialZone",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "c9a6c700d1bd11e1800000215ad4efdf",
+          "Name": "Name",
+          "Definition": "The name of the air side system.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d0353e80d1bd11e1800000215ad4efdf",
+          "Name": "Description",
+          "Definition": "The description of the air side system.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d62b1f80d1bd11e1800000215ad4efdf",
+          "Name": "AirSideSystemType",
+          "Definition": "This enumeration specifies the basic types of possible air side systems (e.g., Constant Volume, Variable Volume, etc.).",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_AirSideSystemType",
+                "EnumItem": [
+                  "CONSTANTVOLUME",
+                  "CONSTANTVOLUMESINGLEZONE",
+                  "CONSTANTVOLUMEMULTIPLEZONEREHEAT",
+                  "CONSTANTVOLUMEBYPASS",
+                  "VARIABLEAIRVOLUME",
+                  "VARIABLEAIRVOLUMEREHEAT",
+                  "VARIABLEAIRVOLUMEINDUCTION",
+                  "VARIABLEAIRVOLUMEFANPOWERED",
+                  "VARIABLEAIRVOLUMEDUALCONDUIT",
+                  "VARIABLEAIRVOLUMEVARIABLEDIFFUSERS",
+                  "VARIABLEAIRVOLUMEVARIABLETEMPERATURE",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "CONSTANTVOLUME",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Constant Volume"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CONSTANTVOLUMESINGLEZONE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Constant Volume Single Zone"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CONSTANTVOLUMEMULTIPLEZONEREHEAT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Constant Volume Multiple Zone Reheat"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CONSTANTVOLUMEBYPASS",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Constant Volume Bypass"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLEAIRVOLUME",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable Air Volume"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLEAIRVOLUMEREHEAT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable Air Volume Reheat"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLEAIRVOLUMEINDUCTION",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable Air Volume Induction"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLEAIRVOLUMEFANPOWERED",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable Air Volume Fan Powered"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLEAIRVOLUMEDUALCONDUIT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable Air Volume Dual Conduit"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLEAIRVOLUMEVARIABLEDIFFUSERS",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable Air Volume Variable Diffusers"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLEAIRVOLUMEVARIABLETEMPERATURE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable Air Volume Variable Temperature"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f3f88480d1bd11e1800000215ad4efdf",
+          "Name": "AirSideSystemDistributionType",
+          "Definition": "This enumeration defines the basic types of air side systems (e.g., SingleDuct, DualDuct, Multizone, etc.).",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_AirSideSystemDistributionType",
+                "EnumItem": [
+                  "SINGLEDUCT",
+                  "DUALDUCT",
+                  "MULTIZONE",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "SINGLEDUCT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Single Duct"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DUALDUCT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Dual Duct"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MULTIZONE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Multizone"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0377cd80d1be11e1800000215ad4efdf",
+          "Name": "TotalAirflow",
+          "Definition": "The total design supply air flowrate required for the system for either heating or cooling conditions, whichever is greater.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "08d51800d1be11e1800000215ad4efdf",
+          "Name": "EnergyGainTotal",
+          "Definition": "The total amount of energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level total energy gains.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0ecaf900d1be11e1800000215ad4efdf",
+          "Name": "AirflowSensible",
+          "Definition": "The air flowrate required to satisfy the sensible peak loads.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "14284380d1be11e1800000215ad4efdf",
+          "Name": "EnergyGainSensible",
+          "Definition": "The sum of total energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level sensible energy gains.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1ab6bb00d1be11e1800000215ad4efdf",
+          "Name": "EnergyLoss",
+          "Definition": "The sum of energy losses for the spaces served by the system during the peak heating conditions.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "20ac9c00d1be11e1800000215ad4efdf",
+          "Name": "LightingDiversity",
+          "Definition": "Lighting diversity.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2609e680d1be11e1800000215ad4efdf",
+          "Name": "InfiltrationDiversitySummer",
+          "Definition": "Diversity factor for Summer infiltration.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2b673100d1be11e1800000215ad4efdf",
+          "Name": "InfiltrationDiversityWinter",
+          "Definition": "Diversity factor for Winter infiltration.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "31f5a880d1be11e1800000215ad4efdf",
+          "Name": "ApplianceDiversity",
+          "Definition": "Diversity of appliance load.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "37eb8980d1be11e1800000215ad4efdf",
+          "Name": "LoadSafetyFactor",
+          "Definition": "Load safety factor.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3de16a80d1be11e1800000215ad4efdf",
+          "Name": "HeatingTemperatureDelta",
+          "Definition": "Heating temperature difference for calculating space air flow rates.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "43d74b80d1be11e1800000215ad4efdf",
+          "Name": "CoolingTemperatureDelta",
+          "Definition": "Cooling temperature difference for calculating space air flow rates.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermodynamicTemperatureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "49cd2c80d1be11e1800000215ad4efdf",
+          "Name": "Ventilation",
+          "Definition": "Required outside air ventilation.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcVolumetricFlowRateMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4fc30d80d1be11e1800000215ad4efdf",
+          "Name": "FanPower",
+          "Definition": "Fan motor loads contributing to the cooling load.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPowerMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

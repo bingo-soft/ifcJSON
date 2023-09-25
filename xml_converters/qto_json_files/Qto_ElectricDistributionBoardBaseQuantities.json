@@ -1,0 +1,31 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_ElectricDistributionBoardBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of electric distribution board.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcElectricDistributionBoard"
+    },
+    "ApplicableTypeValue": "IfcElectricDistributionBoard",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "GrossWeight",
+          "Definition": "Weight of the element.",
+          "QtoType": "Q_WEIGHT"
+        },
+        {
+          "Name": "NumberOfCircuits",
+          "Definition": "Number of circuits in the distribution board.",
+          "QtoType": "Q_COUNT"
+        }
+      ]
+    }
+  }
+}

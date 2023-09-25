@@ -1,0 +1,133 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "59e60b80d1c011e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_AirToAirHeatRecoveryPHistory",
+    "Definition": "Air to Air Heat Recovery performance history common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcAirToAirHeatRecovery"
+    },
+    "ApplicableTypeValue": "IfcAirToAirHeatRecovery",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "60748300d1c011e1800000215ad4efdf",
+          "Name": "SensibleEffectiveness",
+          "Definition": "Sensible heat transfer effectiveness, where effectiveness is defined as the ratio of heat transfer to maximum possible heat transfer.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "64080a00d1c011e1800000215ad4efdf",
+          "Name": "TotalEffectiveness",
+          "Definition": "Total heat transfer effectiveness: The ratio of heat transfer to the maximum possible heat transfer.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "679b9100d1c011e1800000215ad4efdf",
+          "Name": "TemperatureEffectiveness",
+          "Definition": "Temperature heat transfer effectiveness: The ratio of primary airflow temperature changes to maximum possible temperature changes.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "6c604500d1c011e1800000215ad4efdf",
+          "Name": "DefrostTemperatureEffectiveness",
+          "Definition": "Temperature heat transfer effectiveness when defrosting is active.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "6f5b3580d1c011e1800000215ad4efdf",
+          "Name": "HumidityEffectiveness",
+          "Definition": "Humidity heat transfer effectiveness: The ratio of primary airflow absolute humidity changes to maximum possible absolute humidity changes.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "73875300d1c011e1800000215ad4efdf",
+          "Name": "SensibleHeatTransferRate",
+          "Definition": "Sensible heat transfer rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "77b37080d1c011e1800000215ad4efdf",
+          "Name": "LatentHeatTransferRate",
+          "Definition": "Latent heat transfer rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "7b46f780d1c011e1800000215ad4efdf",
+          "Name": "TotalHeatTransferRate",
+          "Definition": "Total heat transfer rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "7eda7e80d1c011e1800000215ad4efdf",
+          "Name": "SensibleEffectivenessTable",
+          "Definition": "Sensible heat transfer effectiveness curve as a function of the primary and secondary air flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "826e0580d1c011e1800000215ad4efdf",
+          "Name": "TotalEffectivenessTable",
+          "Definition": "Total heat transfer effectiveness curve as a function of the primary and secondary air flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "86018c80d1c011e1800000215ad4efdf",
+          "Name": "AirPressureDropCurves",
+          "Definition": "Air pressure drop as function of air flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

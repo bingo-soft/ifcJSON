@@ -1,0 +1,43 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "91b57900d1e911e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_HumidifierPHistory",
+    "Definition": "Humidifier performance history attributes.\nSound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcHumidifier"
+    },
+    "ApplicableTypeValue": "IfcHumidifier",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "9843f080d1e911e1800000215ad4efdf",
+          "Name": "AtmosphericPressure",
+          "Definition": "Ambient atmospheric pressure.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "a7c33980d1e911e1800000215ad4efdf",
+          "Name": "SaturationEfficiency",
+          "Definition": "Saturation efficiency: Ratio of leaving air absolute humidity to the maximum absolute humidity.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

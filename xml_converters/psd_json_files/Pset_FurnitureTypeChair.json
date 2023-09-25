@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "c412a680d1e811e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FurnitureTypeChair",
+    "Definition": "A set of specific properties for furniture type chair. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Chair",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFurniture/CHAIR"
+    },
+    "ApplicableTypeValue": "IfcFurniture/CHAIR",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "caa11e00d1e811e1800000215ad4efdf",
+          "Name": "SeatingHeight",
+          "Definition": "The value of seating height if the chair height is not adjustable.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d096ff00d1e811e1800000215ad4efdf",
+          "Name": "HighestSeatingHeight",
+          "Definition": "The value of seating height of high level if the chair height is adjustable.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e0164800d1e811e1800000215ad4efdf",
+          "Name": "LowestSeatingHeight",
+          "Definition": "The value of seating height of low level if the chair height is adjustable.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

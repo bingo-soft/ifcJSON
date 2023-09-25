@@ -1,0 +1,73 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "52cff500d1e211e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_EvaporativeCoolerPHistory",
+    "Definition": "Evaporative cooler performance history attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcEvaporativeCooler"
+    },
+    "ApplicableTypeValue": "IfcEvaporativeCooler",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "582d3f80d1e211e1800000215ad4efdf",
+          "Name": "WaterSumpTemperature",
+          "Definition": "Water sump temperature.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "5c595d00d1e211e1800000215ad4efdf",
+          "Name": "Effectiveness",
+          "Definition": "Ratio of the change in dry bulb temperature of the (primary) air stream to the difference between the entering dry bulb temperature of the (primary) air and the wet-bulb temperature of the (secondary) air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "5f544d80d1e211e1800000215ad4efdf",
+          "Name": "SensibleHeatTransferRate",
+          "Definition": "Sensible heat transfer rate to primary air flow.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "62e7d480d1e211e1800000215ad4efdf",
+          "Name": "LatentHeatTransferRate",
+          "Definition": "Latent heat transfer rate to primary air flow.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "65e2c500d1e211e1800000215ad4efdf",
+          "Name": "TotalHeatTransferRate",
+          "Definition": "Total heat transfer rate to primary air flow.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

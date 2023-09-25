@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "5f4d5100d1d411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionChamberElementTypeSump",
+    "Definition": "Recess or small chamber into which liquid is drained to facilitate its removal.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionChamberElement/SUMP"
+    },
+    "ApplicableTypeValue": "IfcDistributionChamberElement/SUMP",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "64aa9b80d1d411e1800000215ad4efdf",
+          "Name": "Length",
+          "Definition": "The length of the sump.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6aa07c80d1d411e1800000215ad4efdf",
+          "Name": "Width",
+          "Definition": "The width of the sump.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "70965d80d1d411e1800000215ad4efdf",
+          "Name": "InvertLevel",
+          "Definition": "The lowest point in the cross section of the sump.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "e39ed480d1d211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DiscreteAccessoryStandardFixingPlate",
+    "Definition": "Properties specific to standard fixing plates.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDiscreteAccessory/Standard fixing plate"
+    },
+    "ApplicableTypeValue": "IfcDiscreteAccessory/Standard fixing plate",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "e8fc1f00d1d211e1800000215ad4efdf",
+          "Name": "StandardFixingPlateWidth",
+          "Definition": "The width of the standard fixing plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "eef20000d1d211e1800000215ad4efdf",
+          "Name": "StandardFixingPlateDepth",
+          "Definition": "The depth of the standard fixing plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "f44f4a80d1d211e1800000215ad4efdf",
+          "Name": "StandardFixingPlateThickness",
+          "Definition": "The thickness of the standard fixing plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "ffe8ad25f7d74d55a8fa9a9338b297b2",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionPortPHistoryPipe",
+    "Definition": "Log of substance usage attached to an instance of IfcPerformanceHistory having an assigned IfcDistributionPort of type PIPE.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionPort/PIPE"
+    },
+    "ApplicableTypeValue": "IfcDistributionPort/PIPE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "36d77e7919364513b229f61c7632a638",
+          "Name": "Temperature",
+          "Definition": "The temperature of the fuel.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "d31964c0ab4f444aa3a526a72084e705",
+          "Name": "Pressure",
+          "Definition": "The pressure of the fuel.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "7a3f6bee58104037a997d1c2cbd68a4d",
+          "Name": "Flowrate",
+          "Definition": "The flowrate of the fuel.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,564 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "29f13500d1cd11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ControllerTypeFloating",
+    "Definition": "Properties for signal handling for an analog controller taking disparate valued multiple inputs and creating a single valued output.  HISTORY: IFC4 adapted from Pset_ControllerTypeCommon and applicable predefined type made specific to FLOATING; ACCUMULATOR and PULSECONVERTER types added; additional properties added to replace Pset_AnalogInput and Pset_AnalogOutput.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcController/FLOATING"
+    },
+    "ApplicableTypeValue": "IfcController/FLOATING",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2eb5e900d1cd11e1800000215ad4efdf",
+          "Name": "ControlType",
+          "Definition": "The type of signal modification effected and applicable ports: \n\nCONSTANT: No inputs; SignalOffset is written to the output value.\nMODIFIER: Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value.\nABSOLUTE: Single analog input is read and absolute value is written to the output value.\nINVERSE: Single analog input is read, 1.0 is divided by the input value and written to the output value.\nHYSTERISIS: Single analog input is read, delayed according to SignalTime, and written to the output value.\nRUNNINGAVERAGE: Single analog input is read, averaged over SignalTime, and written to the output value.\nDERIVATIVE: Single analog input is read and the rate of change during the SignalTime is written to the output value.\nINTEGRAL: Single analog input is read and the average value during the SignalTime is written to the output value.\nBINARY: Single binary input is read and SignalOffset is written to the output value if True.\nACCUMULATOR: Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one.\nPULSECONVERTER: Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value.\nSUM: Two analog inputs are read, added, and written to the output value.\nSUBTRACT: Two analog inputs are read, subtracted, and written to the output value.\nPRODUCT: Two analog inputs are read, multiplied, and written to the output value.\nDIVIDE: Two analog inputs are read, divided, and written to the output value.\nAVERAGE: Two analog inputs are read and the average is written to the output value.\nMAXIMUM: Two analog inputs are read and the maximum is written to the output value.\nMINIMUM: Two analog inputs are read and the minimum is written to the output value..\nINPUT: Controller element is a dedicated input.\nOUTPUT: Controller element is a dedicated output.\nVARIABLE: Controller element is an in-memory variable.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_ControllerTypeFloating",
+                "EnumItem": [
+                  "CONSTANT",
+                  "MODIFIER",
+                  "ABSOLUTE",
+                  "INVERSE",
+                  "HYSTERESIS",
+                  "RUNNINGAVERAGE",
+                  "DERIVATIVE",
+                  "INTEGRAL",
+                  "BINARY",
+                  "ACCUMULATOR",
+                  "PULSECONVERTER",
+                  "LOWERLIMITCONTROL",
+                  "UPPERLIMITCONTROL",
+                  "SUM",
+                  "SUBTRACT",
+                  "PRODUCT",
+                  "DIVIDE",
+                  "AVERAGE",
+                  "MAXIMUM",
+                  "MINIMUM",
+                  "REPORT",
+                  "SPLIT",
+                  "INPUT",
+                  "OUTPUT",
+                  "VARIABLE",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "CONSTANT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Constant"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "No inputs"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MODIFIER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Modifier"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "ABSOLUTE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Absolute"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single analog input is read and absolute value is written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "INVERSE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Inverse"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single analog input is read, 1"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "HYSTERESIS",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Hysteresis"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "RUNNINGAVERAGE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Running Average"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single analog input is read, averaged over SignalTime, and written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DERIVATIVE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Derivative"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single analog input is read and the rate of change during the SignalTime is written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "INTEGRAL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Integral"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single analog input is read and the average value during the SignalTime is written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "BINARY",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Binary"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single binary input is read and SignalOffset is written to the output value if True"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "ACCUMULATOR",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Accumulator"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PULSECONVERTER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Pulse Converter"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "LOWERLIMITCONTROL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Lower Limit Control"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UPPERLIMITCONTROL",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Upper Limit Control"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SUM",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Sum"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Two analog inputs are read, added, and written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SUBTRACT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Subtract"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Two analog inputs are read, subtracted, and written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "PRODUCT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Product"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Two analog inputs are read, multiplied, and written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DIVIDE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Divide"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Two analog inputs are read, divided, and written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "AVERAGE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Average"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Single analog input is read, averaged over SignalTime, and written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MAXIMUM",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Maximum"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Two analog inputs are read and the maximum is written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "MINIMUM",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Minimum"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Two analog inputs are read and the minimum is written to the output value"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "REPORT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Report"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SPLIT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Split"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "INPUT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Input"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Controller element is a dedicated input"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OUTPUT",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Output"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Controller element is a dedicated output"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "VARIABLE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Variable"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Controller element is an in-memory variable"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "56a54c80d1cd11e1800000215ad4efdf",
+          "Name": "Labels",
+          "Definition": "Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.",
+          "PropertyType": {
+            "TypePropertyTableValue": {
+              "Expression": null,
+              "DefiningValue": {
+                "DataType": {
+                  "type": "IfcReal"
+                }
+              },
+              "DefinedValue": {
+                "DataType": {
+                  "type": "IfcLabel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5efd8780d1cd11e1800000215ad4efdf",
+          "Name": "Range",
+          "Definition": "The physical range of values supported by the device.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "63c23b80d1cd11e1800000215ad4efdf",
+          "Name": "Value",
+          "Definition": "The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.  The LowerLimitValue and UpperLimitValue must fall within the physical Range and may be used to determine extents when charting Pset_ControllerPHistory.Value.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "69b81c80d1cd11e1800000215ad4efdf",
+          "Name": "SignalOffset",
+          "Definition": "Offset constant added to modfied signal.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6de43a00d1cd11e1800000215ad4efdf",
+          "Name": "SignalFactor",
+          "Definition": "Factor multiplied onto offset signal.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcReal"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "72a8ee00d1cd11e1800000215ad4efdf",
+          "Name": "SignalTime",
+          "Definition": "Time factor used for integral and running average controllers.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

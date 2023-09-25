@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "d6dea880d1f311e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PipeSegmentTypeCulvert",
+    "Definition": "Covered channel or large pipe that forms a watercourse below ground level, usually under a road or railway (BS6100).",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPipeSegment/CULVERT"
+    },
+    "ApplicableTypeValue": "IfcPipeSegment/CULVERT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "dba35c80d1f311e1800000215ad4efdf",
+          "Name": "InternalWidth",
+          "Definition": "The internal width of the culvert.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "e2ca6a80d1f311e1800000215ad4efdf",
+          "Name": "ClearDepth",
+          "Definition": "The clear depth of the culvert.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

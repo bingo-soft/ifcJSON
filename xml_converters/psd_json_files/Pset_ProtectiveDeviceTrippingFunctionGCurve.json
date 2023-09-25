@@ -1,0 +1,227 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "3f308880d1fa11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProtectiveDeviceTrippingFunctionGCurve",
+    "Definition": "Tripping functions are applied to electronic tripping units (i.e. tripping units having type property sets for electronic tripping defined). They are not applied to thermal, thermal magnetic or RCD tripping units.\nThis property set represent the ground fault protection (G-curve) of an electronic protection device",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProtectiveDeviceTrippingUnit"
+    },
+    "ApplicableTypeValue": "IfcProtectiveDeviceTrippingUnit",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "42c40f80d1fa11e1800000215ad4efdf",
+          "Name": "IsSelectable",
+          "Definition": "Indication whether the S-function can be switched off or not.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4a83b400d1fa11e1800000215ad4efdf",
+          "Name": "NominalCurrentAdjusted",
+          "Definition": "An indication if the tripping currents of the short time protection is related to the nominal current multiplied with the actual setting of the current adjustment, if any, of the long time protection part of the protective device, or not.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "51122b80d1fa11e1800000215ad4efdf",
+          "Name": "ExternalAdjusted",
+          "Definition": "An indication if the ground fault protection may be adjusted according to an external current coil or not.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "57080c80d1fa11e1800000215ad4efdf",
+          "Name": "ReleaseCurrent",
+          "Definition": "The release current in [x In] for the initial tripping of the S-function.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5bccc080d1fa11e1800000215ad4efdf",
+          "Name": "ReleaseTime",
+          "Definition": "The release time in [s] for the initial tripping of the relevant part. This time indicates that for current lower than the indicated release current, the tripping time will be longer than the indicated release time. The value is given as a mean value.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "61c2a180d1fa11e1800000215ad4efdf",
+          "Name": "CurrentTolerance1",
+          "Definition": "The tolerance for the current of time/current-curve in [%].",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "671fec00d1fa11e1800000215ad4efdf",
+          "Name": "CurrentToleranceLimit1",
+          "Definition": "The time limit in [s] limiting the application of CurrentTolerance1, if any. If the value is set to 0, the value of the CurrentTolerance1 is valid for the whole time/current-curve.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "6d15cd00d1fa11e1800000215ad4efdf",
+          "Name": "CurrentTolerance2",
+          "Definition": "The tolerance for the current of time/current-curve in [%] valid for times above CurrentTolereanceLimit1.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "73a44480d1fa11e1800000215ad4efdf",
+          "Name": "IsCurrentTolerancePositiveOnly",
+          "Definition": "Indication whether the value of  CurrentTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7a32bc00d1fa11e1800000215ad4efdf",
+          "Name": "TimeTolerance1",
+          "Definition": "The tolerance for the time of time/current-curve in [%].",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "80289d00d1fa11e1800000215ad4efdf",
+          "Name": "TimeToleranceLimit1",
+          "Definition": "The current limit in [x In] limiting the application of TimeTolerance1, if any. If the value is set to 0, the value of the TimeTolerance1 is valid for the whole time/current-curve.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "84ed5100d1fa11e1800000215ad4efdf",
+          "Name": "TimeTolerance2",
+          "Definition": "The tolerance for the time of the time/current-curve in [%] valid for currents above TimeToleranceLimit1.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8ae33200d1fa11e1800000215ad4efdf",
+          "Name": "IsTimeTolerancePositiveOnly",
+          "Definition": "Indication whether the value of  TimeTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9171a980d1fa11e1800000215ad4efdf",
+          "Name": "ReleaseCurrentI2tStart",
+          "Definition": "The release current in [x In] for the start point of the I2t tripping curve of the G-function, if any.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "96cef400d1fa11e1800000215ad4efdf",
+          "Name": "ReleaseTimeI2tStart",
+          "Definition": "The release time in [s] for the start point of the I2t tripping curve of the G-function, if any.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9c2c3e80d1fa11e1800000215ad4efdf",
+          "Name": "ReleaseCurrentI2tEnd",
+          "Definition": "The release current in [x In] for the end point of the I2t tripping curve of the G-function, if any. The value of ReleaseCurrentI2tEnd shall be larger than ReleaseCurrentI2tStart.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a2221f80d1fa11e1800000215ad4efdf",
+          "Name": "ReleaseTimeI2tEnd",
+          "Definition": "The release time in [s] for the end point of the I2 tripping curve of the G-function, if any. The value of ReleaseTimeI2tEnd shall be lower than ReleaseTimeI2tStart.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

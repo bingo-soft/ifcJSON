@@ -1,0 +1,103 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "af017348bac3492f866b43ce813c35f8",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionPortPHistoryCable",
+    "Definition": "Log of electrical activity attached to an instance of IfcPerformanceHistory having an assigned IfcDistributionPort of type CABLE.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionPort/CABLE"
+    },
+    "ApplicableTypeValue": "IfcDistributionPort/CABLE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "9fadeb7592de4a228764c24ee4f76b0b",
+          "Name": "Current",
+          "Definition": "Log of electrical current.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "6fa8730d435442e497527bd9defeb047",
+          "Name": "Voltage",
+          "Definition": "Log of electrical voltage.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "fbaec68991c14f8fb0c963eb65250f26",
+          "Name": "RealPower",
+          "Definition": "Real power.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "401dc737009748699b073ef617ef615c",
+          "Name": "ReactivePower",
+          "Definition": "Reactive power.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "af897460248b427685e28b50acfc7106",
+          "Name": "ApparentPower",
+          "Definition": "Apparent power.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "53e43bcebef54a4096fd8862a450903d",
+          "Name": "PowerFactor",
+          "Definition": "Power factor.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "c1d8b4f5077244d98bb7d96e3b9a3282",
+          "Name": "DataTransmitted",
+          "Definition": "For data ports, captures log of data transmitted.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "e72bcd7d84ae42c6b1e3f696451d1e6e",
+          "Name": "DataReceived",
+          "Definition": "For data ports, captures log of data received.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

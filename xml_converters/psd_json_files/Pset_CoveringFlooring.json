@@ -1,0 +1,50 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "5c506180d1d011e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CoveringFlooring",
+    "Definition": "Properties common to the definition of all occurrence and type objects of covering with the predefined type set to FLOORING.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcCovering/FLOORING",
+        null
+      ]
+    },
+    "ApplicableTypeValue": "IfcCovering/FLOORING,",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "62ded900d1d011e1800000215ad4efdf",
+          "Name": "HasNonSkidSurface",
+          "Definition": "Indication whether the surface finish is designed to prevent slippery (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "683c2380d1d011e1800000215ad4efdf",
+          "Name": "HasAntiStaticSurface",
+          "Definition": "Indication whether the surface finish is designed to prevent electrostatic charge (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

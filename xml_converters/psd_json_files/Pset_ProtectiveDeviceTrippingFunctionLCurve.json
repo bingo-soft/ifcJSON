@@ -1,0 +1,131 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "06dd7a00d1fb11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ProtectiveDeviceTrippingFunctionLCurve",
+    "Definition": "Tripping functions are applied to electronic tripping units (i.e. tripping units having type property sets for electronic tripping defined). They are not applied to thermal, thermal magnetic or RCD tripping units.\nThis property set represent the long time protection (L-curve) of an electronic protection device",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcProtectiveDeviceTrippingUnit"
+    },
+    "ApplicableTypeValue": "IfcProtectiveDeviceTrippingUnit",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "0a710100d1fb11e1800000215ad4efdf",
+          "Name": "IsSelectable",
+          "Definition": "Indication whether the L-function can be switched off or not.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "11980f00d1fb11e1800000215ad4efdf",
+          "Name": "UpperCurrent1",
+          "Definition": "The current in [x In], indicating that for currents larger than UpperCurrent1 the I2t part of the L-function will trip the current.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "16f55980d1fb11e1800000215ad4efdf",
+          "Name": "UpperCurrent2",
+          "Definition": "The current in [x In], indicating the upper current limit of the upper time/current curve of the I2t part of the L-function.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1c52a400d1fb11e1800000215ad4efdf",
+          "Name": "UpperTime1",
+          "Definition": "The time in [s], indicating that tripping times of the upper time/current curve lower than UpperTime1 is determined by the I2t part of the L-function.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "21afee80d1fb11e1800000215ad4efdf",
+          "Name": "UpperTime2",
+          "Definition": "The time in [s], indicating the tripping times of the upper time/current curve at the UpperCurrent2.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "27a5cf80d1fb11e1800000215ad4efdf",
+          "Name": "LowerCurrent1",
+          "Definition": "The current in [x In], indicating that for currents smaller than LowerCurrent1 the I2t part of the L-function will not trip the current,",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2eccdd80d1fb11e1800000215ad4efdf",
+          "Name": "LowerCurrent2",
+          "Definition": "The current in [x In], indicating the upper current limit of the lower time/current curve of the I2t part of the L-function.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcElectricCurrentMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "34c2be80d1fb11e1800000215ad4efdf",
+          "Name": "LowerTime1",
+          "Definition": "The time in [s], indicating that tripping times of the lower time/current curve lower than LowerTime1 is determined by the I2t part of the L-function.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "39877280d1fb11e1800000215ad4efdf",
+          "Name": "LowerTime2",
+          "Definition": "The time in [s], indicating the tripping times of the upper time/current curve at the LowerCurrent2.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcTimeMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

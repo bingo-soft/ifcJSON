@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "9e00fc80d21011e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_TankTypePressureVessel",
+    "Definition": "Common attributes of a pressure vessel.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcTank/PRESSUREVESSEL"
+    },
+    "ApplicableTypeValue": "IfcTank/PRESSUREVESSEL",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "a2c5b080d21011e1800000215ad4efdf",
+          "Name": "ChargePressure",
+          "Definition": "Nominal or design operating pressure of the tank.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "a9ecbe80d21011e1800000215ad4efdf",
+          "Name": "PressureRegulatorSetting",
+          "Definition": "Pressure that is automatically maintained in the tank.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b07b3600d21011e1800000215ad4efdf",
+          "Name": "ReliefValveSetting",
+          "Definition": "Pressure at which the relief valve activates.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPressureMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

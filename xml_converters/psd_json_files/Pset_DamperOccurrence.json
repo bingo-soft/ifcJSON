@@ -1,0 +1,103 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "ac2f2880d1d011e1800000215ad4efdf",
+    "templatetype": "PSET_OCCURRENCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DamperOccurrence",
+    "Definition": "Damper occurrence attributes attached to an instance of IfcDamper",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDamper"
+    },
+    "ApplicableTypeValue": "IfcDamper",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "b2250980d1d011e1800000215ad4efdf",
+        "Name": "SizingMethod",
+        "Definition": "Identifies whether the damper is sized nominally or with exact measurements:\n\nNOMINAL: Nominal sizing method. \nEXACT: Exact sizing method.",
+        "PropertyType": {
+          "TypePropertyEnumeratedValue": {
+            "EnumList": {
+              "name": "PEnum_DamperSizingMethod",
+              "EnumItem": [
+                "NOMINAL",
+                "EXACT",
+                "NOTKNOWN",
+                "UNSET"
+              ]
+            },
+            "ConstantList": {
+              "ConstantDef": [
+                {
+                  "Name": "NOMINAL",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Nominal"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Nominal sizing method"
+                    }
+                  }
+                },
+                {
+                  "Name": "EXACT",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Exact"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Exact sizing method"
+                    }
+                  }
+                },
+                {
+                  "Name": "NOTKNOWN",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unknown)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is unknown."
+                    }
+                  }
+                },
+                {
+                  "Name": "UNSET",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unset)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value has not been specified."
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

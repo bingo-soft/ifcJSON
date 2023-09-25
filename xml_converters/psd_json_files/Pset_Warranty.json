@@ -1,0 +1,119 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "01415d80d21611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_Warranty",
+    "Definition": "An assurance given by the seller or provider of an artefact that the artefact is without defects and will operate as described for a defined period of time without failure and that if a defect does arise during that time, that it will be corrected by the seller or provider.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcElement"
+    },
+    "ApplicableTypeValue": "IfcElement",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "08686b80d21611e1800000215ad4efdf",
+          "Name": "WarrantyIdentifier",
+          "Definition": "The identifier assigned to a warranty.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcIdentifier"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0ef6e300d21611e1800000215ad4efdf",
+          "Name": "WarrantyStartDate",
+          "Definition": "The date on which the warranty commences.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDate"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "14542d80d21611e1800000215ad4efdf",
+          "Name": "WarrantyEndDate",
+          "Definition": "The date on which the warranty expires.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDate"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "19b17800d21611e1800000215ad4efdf",
+          "Name": "IsExtendedWarranty",
+          "Definition": "Indication of whether this is an extended warranty whose duration is greater than that normally assigned to an artefact (=TRUE) or not (= FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "20d88600d21611e1800000215ad4efdf",
+          "Name": "WarrantyPeriod",
+          "Definition": "The time duration during which a manufacturer or supplier guarantees or warrants the performance of an artefact.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcDuration"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2a61ee00d21611e1800000215ad4efdf",
+          "Name": "WarrantyContent",
+          "Definition": "The content of the warranty.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2635d080d21611e1800000215ad4efdf",
+          "Name": "PointOfContact",
+          "Definition": "The organization that should be contacted for action under the terms of the warranty. Note that the role of the organization (manufacturer, supplier, installer etc.) is determined by the IfcActorRole attribute of IfcOrganization.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "30f06580d21611e1800000215ad4efdf",
+          "Name": "Exclusions",
+          "Definition": "Items, conditions or actions that may be excluded from the warranty or that may cause the warranty to become void.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

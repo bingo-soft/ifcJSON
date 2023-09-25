@@ -1,0 +1,41 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_ConstructionMaterialResourceBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of construction material resources.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcConstructionMaterialResource"
+    },
+    "ApplicableTypeValue": "IfcConstructionMaterialResource",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "GrossVolume",
+          "Definition": "Total gross volume of the material, including material placed and wasted.",
+          "QtoType": "Q_VOLUME"
+        },
+        {
+          "Name": "NetVolume",
+          "Definition": "Total net volume of the material, including material placed but excluding material wasted.",
+          "QtoType": "Q_VOLUME"
+        },
+        {
+          "Name": "GrossWeight",
+          "Definition": "Total gross weight of the material, including material placed and wasted.",
+          "QtoType": "Q_WEIGHT"
+        },
+        {
+          "Name": "NetWeight",
+          "Definition": "Total net weight of the material, including material placed but excluding material wasted.",
+          "QtoType": "Q_WEIGHT"
+        }
+      ]
+    }
+  }
+}

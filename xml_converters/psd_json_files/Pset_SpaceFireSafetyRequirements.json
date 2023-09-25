@@ -1,0 +1,99 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "2a0f2600d20911e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SpaceFireSafetyRequirements",
+    "Definition": "Properties related to fire protection of spaces that apply to the occurrences of IfcSpace or IfcZone.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcSpace",
+        "IfcSpatialZone",
+        "IfcZone"
+      ]
+    },
+    "ApplicableTypeValue": "IfcSpace, IfcSpatialZone, IfcZone",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "33988e00d20911e1800000215ad4efdf",
+          "Name": "FireRiskFactor",
+          "Definition": "Fire Risk factor assigned to the space according to local building regulations. It defines the fire risk of the space at several levels of fire hazard.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3c895f80d20911e1800000215ad4efdf",
+          "Name": "FlammableStorage",
+          "Definition": "Indication whether the space is intended to serve as a storage of flammable material (which is regarded as such by the presiding building code. (TRUE) indicates yes, (FALSE) otherwise.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "76f2fc80d20911e1800000215ad4efdf",
+          "Name": "FireExit",
+          "Definition": "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).\nHere whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7e1a0a80d20911e1800000215ad4efdf",
+          "Name": "SprinklerProtection",
+          "Definition": "Indication whether the space is sprinkler protected (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "840feb80d20911e1800000215ad4efdf",
+          "Name": "SprinklerProtectionAutomatic",
+          "Definition": "Indication whether the space has an automatic sprinkler protection (TRUE) or not (FALSE).\nIt should only be given, if the property \"SprinklerProtection\" is set to TRUE.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8bcf9000d20911e1800000215ad4efdf",
+          "Name": "AirPressurization",
+          "Definition": "Indication whether the space is required to have pressurized air (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

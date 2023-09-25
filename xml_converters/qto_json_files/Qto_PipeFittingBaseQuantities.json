@@ -1,0 +1,51 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_PipeFittingBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all types and occurrences of pipe fittings.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPipeFitting"
+    },
+    "ApplicableTypeValue": "IfcPipeFitting",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "Length",
+          "Definition": "Length of the fitting, calculated at midpoint of cross-section and equal to the distance along the flow path from the port inlet to the port outlet. For junction fittings, it indicates the length of the longest flow path.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "GrossCrossSectionArea",
+          "Definition": "Area of the cross section at the inlet, including the pipe fitting itself and the interior flow space.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "NetCrossSectionArea",
+          "Definition": "Area of the cross section at the inlet, including the pipe fitting and excluding the interior flow space.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "OuterSurfaceArea",
+          "Definition": "Total area of the extruded surfaces of the fitting (not taking into account the end cap areas).",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "GrossWeight",
+          "Definition": "Weight of the pipe fitting itself, not including contained fluid.",
+          "QtoType": "Q_WEIGHT"
+        },
+        {
+          "Name": "NetWeight",
+          "Definition": "Weight of the pipe fitting, including contained fluid as designed.",
+          "QtoType": "Q_WEIGHT"
+        }
+      ]
+    }
+  }
+}

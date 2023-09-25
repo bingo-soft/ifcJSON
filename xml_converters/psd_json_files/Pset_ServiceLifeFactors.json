@@ -1,0 +1,107 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "519ab53b9b3848d494c3caf0dac8688e",
+    "templatetype": "PSET_OCCURRENCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ServiceLifeFactors",
+    "Definition": "Captures various factors that impact the expected service life of elements within the system or zone.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSystem"
+    },
+    "ApplicableTypeValue": "IfcSystem",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "d5f5278715be42a0b539cf3f060054e3",
+          "Name": "QualityOfComponents",
+          "Definition": "Adjustment of the service life resulting from the effect of the quality of components used.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8d77f8cb925b4cfdbea48301f42c89a0",
+          "Name": "DesignLevel",
+          "Definition": "Adjustment of the service life resulting from the effect of design level employed.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ac78d9e0d39b43f4af2c7b7596d60667",
+          "Name": "WorkExecutionLevel",
+          "Definition": "Adjustment of the service life resulting from the effect of the quality of work executed.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ab27c286d027498e962abd4fa0cab9a8",
+          "Name": "IndoorEnvironment",
+          "Definition": "Adjustment of the service life resulting from the effect of the indoor environment (where appropriate).",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9988ab22befe45c9ab3c94972c61bd90",
+          "Name": "OutdoorEnvironment",
+          "Definition": "Adjustment of the service life resulting from the effect of the outdoor environment (where appropriate)",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "37ac936a1b0a42bfa3c0f4998cca50e4",
+          "Name": "InUseConditions",
+          "Definition": "Adjustment of the service life resulting from the effect of the conditions in which components are operating.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "97e75274042544a89cb65b8a94766d30",
+          "Name": "MaintenanceLevel",
+          "Definition": "Adjustment of the service life resulting from the effect of the level or degree of maintenance applied to dcomponents.",
+          "PropertyType": {
+            "TypePropertyBoundedValue": {
+              "DataType": {
+                "type": "IfcPositiveRatioMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

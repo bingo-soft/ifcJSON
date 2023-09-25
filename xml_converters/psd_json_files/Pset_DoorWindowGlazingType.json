@@ -1,0 +1,254 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "e69ec280d1dc11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DoorWindowGlazingType",
+    "Definition": "Properties common to the definition of the glazing component of occurrences of IfcDoor and IfcWindow, used for thermal and lighting calculations.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": [
+        "IfcDoor",
+        "IfcWindow"
+      ]
+    },
+    "ApplicableTypeValue": "IfcDoor, IfcWindow",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "0df58f80d1dd11e1800000215ad4efdf",
+          "Name": "GlassLayers",
+          "Definition": "Number of glass layers within the frame. E.g. \"2\" for double glazing.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcCountMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "1a79e800d1dd11e1800000215ad4efdf",
+          "Name": "GlassThickness1",
+          "Definition": "Thickness of the first (inner) glass layer.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2796d700d1dd11e1800000215ad4efdf",
+          "Name": "GlassThickness2",
+          "Definition": "Thickness of the second (intermediate or outer) glass layer.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "32516c00d1dd11e1800000215ad4efdf",
+          "Name": "GlassThickness3",
+          "Definition": "Thickness of the third (outer) glass layer.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3da49780d1dd11e1800000215ad4efdf",
+          "Name": "FillGas",
+          "Definition": "Name of the gas by which the gap between two glass layers is filled. It is given for information purposes only.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "48f7c300d1dd11e1800000215ad4efdf",
+          "Name": "GlassColor",
+          "Definition": "Color (tint) selection for this glazing. It is given for information purposes only.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "51e89480d1dd11e1800000215ad4efdf",
+          "Name": "IsTempered",
+          "Definition": "Indication whether the glass is tempered (TRUE) or not (FALSE) .",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5dd45680d1dd11e1800000215ad4efdf",
+          "Name": "IsLaminated",
+          "Definition": "Indication whether the glass is layered with other materials (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "69278200d1dd11e1800000215ad4efdf",
+          "Name": "IsCoated",
+          "Definition": "Indication whether the glass is coated with a material (TRUE) or not (FALSE).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "72185380d1dd11e1800000215ad4efdf",
+          "Name": "IsWired",
+          "Definition": "Indication whether the glass includes a contained wire mesh to prevent break-in (TRUE) or not (FALSE)",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcBoolean"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7a708e80d1dd11e1800000215ad4efdf",
+          "Name": "VisibleLightReflectance",
+          "Definition": "Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "80666f80d1dd11e1800000215ad4efdf",
+          "Name": "VisibleLightTransmittance",
+          "Definition": "Fraction of the visible light that passes the glazing at normal incidence. It is a value without unit.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "84928d00d1dd11e1800000215ad4efdf",
+          "Name": "SolarAbsorption",
+          "Definition": "(Asol) The ratio of incident solar radiation that is absorbed by a glazing system. It is the sum of the absorption distributed to the exterior (a) and to the interior (qi). Note the following equation Asol + Rsol + Tsol = 1",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "88beaa80d1dd11e1800000215ad4efdf",
+          "Name": "SolarReflectance",
+          "Definition": "(Rsol): The ratio of incident solar radiation that is reflected by a glazing system (also named \u03c1e). Note the following equation Asol + Rsol + Tsol = 1",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "8ceac800d1dd11e1800000215ad4efdf",
+          "Name": "SolarTransmittance",
+          "Definition": "(Tsol): The ratio of incident solar radiation that directly passes through a glazing system (also named \u03c4e). Note the following equation Asol + Rsol + Tsol = 1",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "91af7c00d1dd11e1800000215ad4efdf",
+          "Name": "SolarHeatGainTransmittance",
+          "Definition": "(SHGC): The ratio of incident solar radiation that contributes to the heat gain of the interior, it is the solar radiation that directly passes (Tsol or \u03c4e) plus the part of the absorbed radiation that is distributed to the interior (qi). The SHGC is refered to also as g-value (g = \u03c4e + qi).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "95db9980d1dd11e1800000215ad4efdf",
+          "Name": "ShadingCoefficient",
+          "Definition": "(SC): The measure of the ability of a glazing to transmit solar heat, relative to that ability for 3 mm (1/8-inch) clear, double-strength, single glass. Shading coefficient is being phased out in favor of the solar heat gain coefficient (SHGC), and is approximately equal to the SHGC multiplied by 1.15. The shading coefficient is expressed as a number without units between 0 and 1.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcNormalisedRatioMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9a07b700d1dd11e1800000215ad4efdf",
+          "Name": "ThermalTransmittanceSummer",
+          "Definition": "Thermal transmittance coefficient (U-Value) of a material.\nSummer thermal transmittance coefficient of the glazing only, often referred to as (U-value).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermalTransmittanceMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "9e33d480d1dd11e1800000215ad4efdf",
+          "Name": "ThermalTransmittanceWinter",
+          "Definition": "Thermal transmittance coefficient (U-Value) of a material.\nWinter thermal transmittance coefficient of the glazing only, often referred to as (U-value).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcThermalTransmittanceMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_DuctSegmentBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all types and occurrences of duct segments.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDuctSegment"
+    },
+    "ApplicableTypeValue": "IfcDuctSegment",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "Length",
+          "Definition": "Length of the segment, calculated at midpoint of cross-section, equal to the distance between inlet and outlet ports.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "GrossCrossSectionArea",
+          "Definition": "Area of the cross section, including the duct itself and the interior flow space.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "NetCrossSectionArea",
+          "Definition": "Area of the cross section of the duct, excluding the interior flow space.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "OuterSurfaceArea",
+          "Definition": "Total area of the extruded surfaces of the duct (not taking into account the end cap areas), normally generated as perimeter * length.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "GrossWeight",
+          "Definition": "Weight of the duct segment.",
+          "QtoType": "Q_WEIGHT"
+        }
+      ]
+    }
+  }
+}

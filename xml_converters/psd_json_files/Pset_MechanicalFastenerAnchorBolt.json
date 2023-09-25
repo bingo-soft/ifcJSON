@@ -1,0 +1,71 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "bcef9680d1f011e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_MechanicalFastenerAnchorBolt",
+    "Definition": "Properties common to different types of anchor bolts.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcMechanicalFastener/ANCHORBOLT"
+    },
+    "ApplicableTypeValue": "IfcMechanicalFastener/ANCHORBOLT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "c37e0e00d1f011e1800000215ad4efdf",
+          "Name": "AnchorBoltLength",
+          "Definition": "The length of the anchor bolt.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "ca0c8580d1f011e1800000215ad4efdf",
+          "Name": "AnchorBoltDiameter",
+          "Definition": "The nominal diameter of the anchor bolt bar(s).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d1cc2a00d1f011e1800000215ad4efdf",
+          "Name": "AnchorBoltThreadLength",
+          "Definition": "The length of the threaded part of the anchor bolt.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d8f33800d1f011e1800000215ad4efdf",
+          "Name": "AnchorBoltProtrusionLength",
+          "Definition": "The length of the protruding part of the anchor bolt.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

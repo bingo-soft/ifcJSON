@@ -1,0 +1,95 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "1dbba680d1d211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DiscreteAccessoryColumnShoe",
+    "Definition": "Shape properties common to column shoes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDiscreteAccessory/SHOE"
+    },
+    "ApplicableTypeValue": "IfcDiscreteAccessory/SHOE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2613e180d1d211e1800000215ad4efdf",
+          "Name": "ColumnShoeBasePlateThickness",
+          "Definition": "The thickness of the column shoe base plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "2c09c280d1d211e1800000215ad4efdf",
+          "Name": "ColumnShoeBasePlateWidth",
+          "Definition": "The width of the column shoe base plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "30ce7680d1d211e1800000215ad4efdf",
+          "Name": "ColumnShoeBasePlateDepth",
+          "Definition": "The depth of the column shoe base plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "362bc100d1d211e1800000215ad4efdf",
+          "Name": "ColumnShoeCasingHeight",
+          "Definition": "The height of the column shoe casing.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "3af07500d1d211e1800000215ad4efdf",
+          "Name": "ColumnShoeCasingWidth",
+          "Definition": "The width of the column shoe casing.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "404dbf80d1d211e1800000215ad4efdf",
+          "Name": "ColumnShoeCasingDepth",
+          "Definition": "The depth of the column shoe casing.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

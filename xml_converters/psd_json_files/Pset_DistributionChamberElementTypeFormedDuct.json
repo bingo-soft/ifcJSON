@@ -1,0 +1,83 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "6d4ea200d1d311e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionChamberElementTypeFormedDuct",
+    "Definition": "Space formed in the ground for the passage of pipes, cables, ducts.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionChamberElement/FORMEDDUCT"
+    },
+    "ApplicableTypeValue": "IfcDistributionChamberElement/FORMEDDUCT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "73448300d1d311e1800000215ad4efdf",
+          "Name": "ClearWidth",
+          "Definition": "The width of the formed space in the duct.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "78a1cd80d1d311e1800000215ad4efdf",
+          "Name": "ClearDepth",
+          "Definition": "The depth of the formed space in the duct.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "7e97ae80d1d311e1800000215ad4efdf",
+          "Name": "WallThickness",
+          "Definition": "The thickness of the duct wall construction\nNOTE: It is assumed that chamber walls will be constructed at a single thickness.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "835c6280d1d311e1800000215ad4efdf",
+          "Name": "BaseThickness",
+          "Definition": "The thickness of the duct base construction\nNOTE: It is assumed that duct base will be constructed at a single thickness.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "88b9ad00d1d311e1800000215ad4efdf",
+          "Name": "AccessCoverLoadRating",
+          "Definition": "The load rating of the access cover (which may be a value or an alphanumerically defined class rating).",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcText"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

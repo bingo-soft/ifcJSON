@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "0f8e7a00d21411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ValveTypeAirRelease",
+    "Definition": "Valve used to release air from a pipe or fitting. \nNote that an air release valve is constrained to have a single port pattern",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcValve/AIRRELEASE"
+    },
+    "ApplicableTypeValue": "IfcValve/AIRRELEASE",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "161cf180d21411e1800000215ad4efdf",
+        "Name": "IsAutomatic",
+        "Definition": "Indication of whether the valve is automatically operated (TRUE) or manually operated (FALSE).",
+        "PropertyType": {
+          "TypePropertySingleValue": {
+            "DataType": {
+              "type": "IfcBoolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "30d87180d1e611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FilterTypeWaterFilter",
+    "Definition": "Water filter type attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFilter/WATERFILTER"
+    },
+    "ApplicableTypeValue": "IfcFilter/WATERFILTER",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "35048f00d1e611e1800000215ad4efdf",
+        "Name": "WaterFilterType",
+        "Definition": "Further qualifies the type of water filter.  Filtration removes undissolved matter; Purification removes dissolved matter; Softening replaces dissolved matter.",
+        "PropertyType": {
+          "TypePropertyEnumeratedValue": {
+            "EnumList": {
+              "name": "PEnum_FilterWaterFilterType",
+              "EnumItem": [
+                "FILTRATION_DIATOMACEOUSEARTH",
+                "FILTRATION_SAND",
+                "PURIFICATION_DEIONIZING",
+                "PURIFICATION_REVERSEOSMOSIS",
+                "SOFTENING_ZEOLITE",
+                "OTHER",
+                "NOTKNOWN",
+                "UNSET"
+              ]
+            },
+            "ConstantList": {
+              "ConstantDef": [
+                {
+                  "Name": "FILTRATION_DIATOMACEOUSEARTH",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Filtration Diatomaceous Earth"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "FILTRATION_SAND",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Filtration Sand"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "PURIFICATION_DEIONIZING",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Purification Deionizing"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "PURIFICATION_REVERSEOSMOSIS",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Purification Reverse Osmosis"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "SOFTENING_ZEOLITE",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "Softening Zeolite"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en"
+                    }
+                  }
+                },
+                {
+                  "Name": "OTHER",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(other)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is not listed."
+                    }
+                  }
+                },
+                {
+                  "Name": "NOTKNOWN",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unknown)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value is unknown."
+                    }
+                  }
+                },
+                {
+                  "Name": "UNSET",
+                  "NameAliases": {
+                    "NameAlias": {
+                      "lang": "en",
+                      "#text": "(unset)"
+                    }
+                  },
+                  "DefinitionAliases": {
+                    "DefinitionAlias": {
+                      "lang": "en",
+                      "#text": "Value has not been specified."
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "d382f700d1ca11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CompressorPHistory",
+    "Definition": "Compressor performance history attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCompressor"
+    },
+    "ApplicableTypeValue": "IfcCompressor",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "da116e80d1ca11e1800000215ad4efdf",
+          "Name": "CompressorCapacity",
+          "Definition": "The product of the  ideal capacity and the overall volumetric efficiency of the compressor.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "dd0c5f00d1ca11e1800000215ad4efdf",
+          "Name": "EnergyEfficiencyRatio",
+          "Definition": "Energy efficiency ratio (EER).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "e09fe600d1ca11e1800000215ad4efdf",
+          "Name": "CoefficientOfPerformance",
+          "Definition": "Coefficient of performance (COP).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "e4336d00d1ca11e1800000215ad4efdf",
+          "Name": "VolumetricEfficiency",
+          "Definition": "Ratio of the actual volume of gas entering the compressor to the theoretical displacement of the compressor.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "e72e5d80d1ca11e1800000215ad4efdf",
+          "Name": "CompressionEfficiency",
+          "Definition": "Ratio of the work required for isentropic compression of the gas to the work delivered to the gas within the compression volume (as obtained by measurement).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "ea294e00d1ca11e1800000215ad4efdf",
+          "Name": "MechanicalEfficiency",
+          "Definition": "Ratio of the work (as measured) delivered to the gas to the work input to the compressor shaft.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "ed243e80d1ca11e1800000215ad4efdf",
+          "Name": "IsentropicEfficiency",
+          "Definition": "Ratio of the work required for isentropic compression of the gas to work input to the compressor shaft.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f0b7c580d1ca11e1800000215ad4efdf",
+          "Name": "CompressorTotalEfficiency",
+          "Definition": "Ratio of the thermal cooling capacity to electrical input.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f4e3e300d1ca11e1800000215ad4efdf",
+          "Name": "ShaftPower",
+          "Definition": "The actual shaft power input to the compressor.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f8776a00d1ca11e1800000215ad4efdf",
+          "Name": "InputPower",
+          "Definition": "Input power to the compressor motor.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "fc0af100d1ca11e1800000215ad4efdf",
+          "Name": "LubricantPumpHeatGain",
+          "Definition": "Lubricant pump heat gain.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "ff05e180d1ca11e1800000215ad4efdf",
+          "Name": "FrictionHeatGain",
+          "Definition": "Friction heat gain.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "0200d200d1cb11e1800000215ad4efdf",
+          "Name": "CompressorTotalHeatGain",
+          "Definition": "Compressor total heat gain.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "05945900d1cb11e1800000215ad4efdf",
+          "Name": "FullLoadRatio",
+          "Definition": "Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio).",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

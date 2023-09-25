@@ -1,0 +1,41 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_DoorBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of doors.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDoor"
+    },
+    "ApplicableTypeValue": "IfcDoor",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "Width",
+          "Definition": "Total outer width of the door lining. It should only be provided, if it is a rectangular door.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "Height",
+          "Definition": "Total outer heigth of the door lining. It should only be provided, if it is a rectangular door.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "Perimeter",
+          "Definition": "Total perimeter of the outer lining of the door.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "Area",
+          "Definition": "Total area of the outer lining of the door.",
+          "QtoType": "Q_AREA"
+        }
+      ]
+    }
+  }
+}

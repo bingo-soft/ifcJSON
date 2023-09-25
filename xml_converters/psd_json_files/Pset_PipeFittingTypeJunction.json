@@ -1,0 +1,167 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "34bec080d1f311e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_PipeFittingTypeJunction",
+    "Definition": "Pipe fitting type attributes for junction shapes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcPipeFitting/JUNCTION"
+    },
+    "ApplicableTypeValue": "IfcPipeFitting/JUNCTION",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "39837480d1f311e1800000215ad4efdf",
+          "Name": "JunctionType",
+          "Definition": "The type of junction. TEE=3 ports, CROSS = 4 ports.",
+          "PropertyType": {
+            "TypePropertyEnumeratedValue": {
+              "EnumList": {
+                "name": "PEnum_PipeFittingJunctionType",
+                "EnumItem": [
+                  "TEE",
+                  "CROSS",
+                  "OTHER",
+                  "NOTKNOWN",
+                  "UNSET"
+                ]
+              },
+              "ConstantList": {
+                "ConstantDef": [
+                  {
+                    "Name": "TEE",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Tee"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CROSS",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "Cross"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en"
+                      }
+                    }
+                  },
+                  {
+                    "Name": "OTHER",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(other)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is not listed."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "NOTKNOWN",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unknown)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value is unknown."
+                      }
+                    }
+                  },
+                  {
+                    "Name": "UNSET",
+                    "NameAliases": {
+                      "NameAlias": {
+                        "lang": "en",
+                        "#text": "(unset)"
+                      }
+                    },
+                    "DefinitionAliases": {
+                      "DefinitionAlias": {
+                        "lang": "en",
+                        "#text": "Value has not been specified."
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4607cd00d1f311e1800000215ad4efdf",
+          "Name": "JunctionLeftAngle",
+          "Definition": "The change of direction of flow for the left junction.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositivePlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4acc8100d1f311e1800000215ad4efdf",
+          "Name": "JunctionLeftRadius",
+          "Definition": "The radius of bending for the left junction.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5324bc00d1f311e1800000215ad4efdf",
+          "Name": "JunctionRightAngle",
+          "Definition": "The change of direction of flow for the right junction where 0 indicates straight segment.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositivePlaneAngleMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "57e97000d1f311e1800000215ad4efdf",
+          "Name": "JunctionRightRadius",
+          "Definition": "The radius of bending for the right junction where 0 indicates sharp bend.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

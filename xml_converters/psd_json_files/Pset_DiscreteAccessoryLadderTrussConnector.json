@@ -1,0 +1,95 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "bce09e00d1d211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DiscreteAccessoryLadderTrussConnector",
+    "Definition": "Shape properties specific to connecting accessories in truss form with straight cross-bars in ladder shape.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDiscreteAccessory/Ladder truss connector"
+    },
+    "ApplicableTypeValue": "IfcDiscreteAccessory/Ladder truss connector",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "c23de880d1d211e1800000215ad4efdf",
+          "Name": "LadderTrussHeight",
+          "Definition": "The overall height of the truss connector.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c7029c80d1d211e1800000215ad4efdf",
+          "Name": "LadderTrussLength",
+          "Definition": "The overall length of the truss connector.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "cd911400d1d211e1800000215ad4efdf",
+          "Name": "LadderTrussCrossBarSpacing",
+          "Definition": "The spacing between the straight cross-bars.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d255c800d1d211e1800000215ad4efdf",
+          "Name": "LadderTrussBaseBarDiameter",
+          "Definition": "The nominal diameter of the base bar.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "d84ba900d1d211e1800000215ad4efdf",
+          "Name": "LadderTrussSecondaryBarDiameter",
+          "Definition": "The nominal diameter of the secondary bar.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "dda8f380d1d211e1800000215ad4efdf",
+          "Name": "LadderTrussCrossBarDiameter",
+          "Definition": "The nominal diameter of the straight cross-bars.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

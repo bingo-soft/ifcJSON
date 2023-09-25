@@ -1,0 +1,86 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_SpaceBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of spaces.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSpace"
+    },
+    "ApplicableTypeValue": "IfcSpace",
+    "QtoDefs": {
+      "QtoDef": [
+        {
+          "Name": "Height",
+          "Definition": "Total height (from base slab without flooring to ceiling without suspended ceiling) for this space (measured from top of slab below to bottom of slab above). To be provided only if the space has a constant height.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "FinishCeilingHeight",
+          "Definition": "Height of the suspended ceiling (from top of flooring to the bottom of the suspended ceiling). To be provided only if the space has a suspended ceiling with constant height.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "FinishFloorHeight",
+          "Definition": "Height of the flooring (from base slab without flooring to the flooring height). To be provided only if the space has a constant flooring height.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "GrossPerimeter",
+          "Definition": "Gross perimeter at the floor level of this space. It all sides of the space, including those parts of the perimeter that are created by virtual boundaries and openings (like doors).",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "NetPerimeter",
+          "Definition": "Net perimeter at the floor level of this space. It excludes those parts of the perimeter that are created by by virtual boundaries and openings (like doors). It is the measurement used for skirting boards and may includes the perimeter of internal fixed objects like columns.",
+          "QtoType": "Q_LENGTH"
+        },
+        {
+          "Name": "GrossFloorArea",
+          "Definition": "Sum of all floor areas covered by the space. It includes the area covered by elementsinside the space (columns, inner walls, etc.) and excludes the area covered by wall claddings.",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "NetFloorArea",
+          "Definition": "Sum of all usable floor areas covered by the space. It excludes the area covered  by elements inside the space (columns, inner walls, built-in's etc.), slab openings, or other protruding elements. Varying heights are not taking into account (i.e. no reduction for areas under a minimum headroom).",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "GrossWallArea",
+          "Definition": "Sum of all wall (and other vertically bounding elements, like columns) areas bounded by the space. It includes the area covered by elements inside the wall area (doors, windows, other openings, etc.).",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "NetWallArea",
+          "Definition": "Sum of all wall (and other vertically bounding elements, like columns) areas bounded by the space. It excludes the area covered by elements inside the wall area (doors, windows, other openings, etc.).",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "GrossCeilingArea",
+          "Definition": "Sum of all ceiling areas of the space. It includes the area covered by elementsinside the space (columns, inner walls, etc.). The ceiling area is the real (and not the projected) area (e.g. in case of sloped ceilings).",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "NetCeilingArea",
+          "Definition": "Sum of all ceiling areas of the space. It excludes the area covered by elementsinside the space (columns, inner walls, etc.). The ceiling area is the real (and not the projected) area (e.g. in case of sloped ceilings).",
+          "QtoType": "Q_AREA"
+        },
+        {
+          "Name": "GrossVolume",
+          "Definition": "Gross volume enclosed by the space, including the volume of construction elements inside the space.",
+          "QtoType": "Q_VOLUME"
+        },
+        {
+          "Name": "NetVolume",
+          "Definition": "Net volume enclosed by the space, excluding the volume of construction elements inside the space.",
+          "QtoType": "Q_VOLUME"
+        }
+      ]
+    }
+  }
+}

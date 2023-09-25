@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "40a58500d1e911e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FurnitureTypeTable",
+    "Definition": "HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Table",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFurniture/TABLE"
+    },
+    "ApplicableTypeValue": "IfcFurniture/TABLE",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "469b6600d1e911e1800000215ad4efdf",
+          "Name": "WorksurfaceArea",
+          "Definition": "The value of the work surface area of the desk..",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcAreaMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "4bf8b080d1e911e1800000215ad4efdf",
+          "Name": "NumberOfChairs",
+          "Definition": "Maximum number of chairs that can fit with the table for normal use.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

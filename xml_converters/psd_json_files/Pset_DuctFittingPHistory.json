@@ -1,0 +1,53 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "f1a62280d1dd11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DuctFittingPHistory",
+    "Definition": "Duct fitting performance history common attributes.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDuctFitting"
+    },
+    "ApplicableTypeValue": "IfcDuctFitting",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "f66ad680d1dd11e1800000215ad4efdf",
+          "Name": "LossCoefficient",
+          "Definition": "Dimensionless loss coefficient used for calculating fluid resistance representing the ratio of total pressure loss to velocity pressure at a referenced cross-section.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "f8cd3080d1dd11e1800000215ad4efdf",
+          "Name": "AtmosphericPressure",
+          "Definition": "Ambient atmospheric pressure.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "fb2f8a80d1dd11e1800000215ad4efdf",
+          "Name": "AirFlowLeakage",
+          "Definition": "Volumetric leakage flow rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

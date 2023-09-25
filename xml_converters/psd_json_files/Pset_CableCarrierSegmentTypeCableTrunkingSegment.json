@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "a0d6ff80d1c611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_CableCarrierSegmentTypeCableTrunkingSegment",
+    "Definition": "An enclosed carrier segment with one or more compartments into which cables are placed.\nHISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcCableCarrierSegment/CABLETRUNKINGSEGMENT"
+    },
+    "ApplicableTypeValue": "IfcCableCarrierSegment/CABLETRUNKINGSEGMENT",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "a59bb380d1c611e1800000215ad4efdf",
+          "Name": "NominalWidth",
+          "Definition": "The nominal width of the segment.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "aaf8fe00d1c611e1800000215ad4efdf",
+          "Name": "NominalHeight",
+          "Definition": "The nominal height of the segment.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b0eedf00d1c611e1800000215ad4efdf",
+          "Name": "NumberOfCompartments",
+          "Definition": "The number of separate internal compartments within the trunking.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

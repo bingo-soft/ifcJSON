@@ -1,0 +1,71 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "46dc3700d1d211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DiscreteAccessoryCornerFixingPlate",
+    "Definition": "Properties specific to corner fixing plates.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDiscreteAccessory/Corner fixing plate"
+    },
+    "ApplicableTypeValue": "IfcDiscreteAccessory/Corner fixing plate",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "4ba0eb00d1d211e1800000215ad4efdf",
+          "Name": "CornerFixingPlateLength",
+          "Definition": "The length of the L-shaped corner plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "50fe3580d1d211e1800000215ad4efdf",
+          "Name": "CornerFixingPlateThickness",
+          "Definition": "The thickness of the L-shaped corner plate.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "565b8000d1d211e1800000215ad4efdf",
+          "Name": "CornerFixingPlateFlangeWidthInPlaneZ",
+          "Definition": "The flange width of the L-shaped corner plate in plane Z.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "5bb8ca80d1d211e1800000215ad4efdf",
+          "Name": "CornerFixingPlateFlangeWidthInPlaneX",
+          "Definition": "The flange width of the L-shaped corner plate in plane X.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

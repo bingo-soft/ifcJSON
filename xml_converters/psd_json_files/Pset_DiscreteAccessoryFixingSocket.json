@@ -1,0 +1,69 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "a3d7ed00d1d211e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DiscreteAccessoryFixingSocket",
+    "Definition": "Properties common to fixing sockets.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDiscreteAccessory/Fixing socket"
+    },
+    "ApplicableTypeValue": "IfcDiscreteAccessory/Fixing socket",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "a9353780d1d211e1800000215ad4efdf",
+          "Name": "FixingSocketTypeReference",
+          "Definition": "Type reference for the fixing socket according to local standards.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcExternalReference"
+            }
+          }
+        },
+        {
+          "ifdguid": "ab979180d1d211e1800000215ad4efdf",
+          "Name": "FixingSocketHeight",
+          "Definition": "The overall height of the fixing socket.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b0f4dc00d1d211e1800000215ad4efdf",
+          "Name": "FixingSocketThreadDiameter",
+          "Definition": "The nominal diameter of the thread.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "b6522680d1d211e1800000215ad4efdf",
+          "Name": "FixingSocketThreadLength",
+          "Definition": "The length of the threaded part of the fixing socket.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcPositiveLengthMeasure"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

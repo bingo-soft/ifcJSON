@@ -1,0 +1,47 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "bb17da00d1d411e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_DistributionPortCommon",
+    "Definition": "Common attributes attached to an instance of IfcDistributionPort.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcDistributionPort"
+    },
+    "ApplicableTypeValue": "IfcDistributionPort",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "c0752480d1d411e1800000215ad4efdf",
+          "Name": "PortNumber",
+          "Definition": "The port index for logically ordering the port within the containing element or element type.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcInteger"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "c79c3280d1d411e1800000215ad4efdf",
+          "Name": "ColorCode",
+          "Definition": "Name of a color for identifying the connector, if applicable.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

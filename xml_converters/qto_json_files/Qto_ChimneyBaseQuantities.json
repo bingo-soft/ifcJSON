@@ -1,0 +1,24 @@
+{
+  "QtoSetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Qto_ChimneyBaseQuantities",
+    "Definition": "Base quantities that are common to the definition of all occurrences of chimneys.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcChimney"
+    },
+    "ApplicableTypeValue": "IfcChimney",
+    "QtoDefs": {
+      "QtoDef": {
+        "Name": "Length",
+        "Definition": "Total length of the chimney from the foundation (or beginning) to the top not taking into account any cut-out's or other processing features.",
+        "QtoType": "Q_LENGTH"
+      }
+    }
+  }
+}

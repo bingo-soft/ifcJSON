@@ -1,0 +1,163 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "f1bd1700d20b11e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SpaceThermalLoadPHistory",
+    "Definition": "The space thermal load IfcSpaceThermalLoadProperties defines actual measured thermal losses and gains occurring within a space or zone. The thermal load source attribute defines an enumeration of possible sources of the thermal load.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSpace"
+    },
+    "ApplicableTypeValue": "IfcSpace",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "f7b2f800d20b11e1800000215ad4efdf",
+          "Name": "People",
+          "Definition": "Heat gains and losses from people.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "faade880d20b11e1800000215ad4efdf",
+          "Name": "Lighting",
+          "Definition": "Lighting loads.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "fda8d900d20b11e1800000215ad4efdf",
+          "Name": "EquipmentSensible",
+          "Definition": "Heat gains and losses from equipment.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "000b3300d20c11e1800000215ad4efdf",
+          "Name": "VentilationIndoorAir",
+          "Definition": "Ventilation loads from indoor air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "03062380d20c11e1800000215ad4efdf",
+          "Name": "VentilationOutdoorAir",
+          "Definition": "Ventilation loads from outdoor air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "06011400d20c11e1800000215ad4efdf",
+          "Name": "RecirculatedAir",
+          "Definition": "Loads from recirculated air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "08fc0480d20c11e1800000215ad4efdf",
+          "Name": "ExhaustAir",
+          "Definition": "Loads from exhaust air.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "0bf6f500d20c11e1800000215ad4efdf",
+          "Name": "AirExchangeRate",
+          "Definition": "Loads from the air exchange rate.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "0f8a7c00d20c11e1800000215ad4efdf",
+          "Name": "DryBulbTemperature",
+          "Definition": "Loads from the dry bulb temperature.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "12856c80d20c11e1800000215ad4efdf",
+          "Name": "RelativeHumidity",
+          "Definition": "Loads from the relative humidity.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "15805d00d20c11e1800000215ad4efdf",
+          "Name": "InfiltrationSensible",
+          "Definition": "Heat gains and losses from infiltration.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "187b4d80d20c11e1800000215ad4efdf",
+          "Name": "TotalSensibleLoad",
+          "Definition": "Total energy added or removed from air that affects its temperature.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "1b763e00d20c11e1800000215ad4efdf",
+          "Name": "TotalLatentLoad",
+          "Definition": "Total energy added or removed from air that affects its humidity or concentration of water vapor.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "1e712e80d20c11e1800000215ad4efdf",
+          "Name": "TotalRadiantLoad",
+          "Definition": "Total electromagnetic energy added or removed by emission or absorption.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

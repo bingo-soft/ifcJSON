@@ -1,0 +1,59 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "f7d7d700d1bc11e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_ActorCommon",
+    "Definition": "A property set that enables further classification of actors, including the ability to give a number of actors to be designated as a population, the number being specified as a property to be dealt with as a single value rather than having to aggregate a number of instances of IfcActor.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcActor"
+    },
+    "ApplicableTypeValue": "IfcActor",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "00c8a880d1bd11e1800000215ad4efdf",
+          "Name": "NumberOfActors",
+          "Definition": "The number of actors that are to be dealt with together in the population.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcCountMeasure"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "06be8980d1bd11e1800000215ad4efdf",
+          "Name": "Category",
+          "Definition": "Designation of the category into which the actors in the population belong.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        },
+        {
+          "ifdguid": "0c1bd400d1bd11e1800000215ad4efdf",
+          "Name": "SkillLevel",
+          "Definition": "Skill level exhibited by the actor and which indicates an extent of their capability to perform actions on the artefacts upon which they can act.",
+          "PropertyType": {
+            "TypePropertySingleValue": {
+              "DataType": {
+                "type": "IfcLabel"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

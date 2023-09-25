@@ -1,0 +1,33 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "3776e100d20611e1800000215ad4efdf",
+    "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_SensorTypeRadiationSensor",
+    "Definition": "A device that senses or detects radiation. HISTORY: Added in IFC4.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcSensor/RADIATIONSENSOR"
+    },
+    "ApplicableTypeValue": "IfcSensor/RADIATIONSENSOR",
+    "PropertyDefs": {
+      "PropertyDef": {
+        "ifdguid": "3cd42b80d20611e1800000215ad4efdf",
+        "Name": "SetPointRadiation",
+        "Definition": "The radiation power value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+        "PropertyType": {
+          "TypePropertyBoundedValue": {
+            "DataType": {
+              "type": "IfcPowerMeasure"
+            }
+          }
+        }
+      }
+    }
+  }
+}

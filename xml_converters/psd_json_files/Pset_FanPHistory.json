@@ -1,0 +1,113 @@
+{
+  "PropertySetDef": {
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "ifdguid": "1ac9b180d1e411e1800000215ad4efdf",
+    "templatetype": "PSET_PERFORMANCEDRIVEN",
+    "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd",
+    "IfcVersion": {
+      "version": "IFC4"
+    },
+    "Name": "Pset_FanPHistory",
+    "Definition": "Fan performance history attributes.\nSound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.",
+    "Applicability": null,
+    "ApplicableClasses": {
+      "ClassName": "IfcFan"
+    },
+    "ApplicableTypeValue": "IfcFan",
+    "PropertyDefs": {
+      "PropertyDef": [
+        {
+          "ifdguid": "2026fc00d1e411e1800000215ad4efdf",
+          "Name": "FanRotationSpeed",
+          "Definition": "Fan rotation speed.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "23ba8300d1e411e1800000215ad4efdf",
+          "Name": "WheelTipSpeed",
+          "Definition": "Fan blade tip speed, typically defined as the linear speed of the tip of the fan blade furthest from the shaft.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "26b57380d1e411e1800000215ad4efdf",
+          "Name": "FanEfficiency",
+          "Definition": "Fan mechanical efficiency.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "29b06400d1e411e1800000215ad4efdf",
+          "Name": "OverallEfficiency",
+          "Definition": "Total efficiency of motor and fan.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "2cab5480d1e411e1800000215ad4efdf",
+          "Name": "FanPowerRate",
+          "Definition": "Fan power consumption.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "303edb80d1e411e1800000215ad4efdf",
+          "Name": "ShaftPowerRate",
+          "Definition": "Fan shaft power.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "33d26280d1e411e1800000215ad4efdf",
+          "Name": "DischargeVelocity",
+          "Definition": "The speed at which air discharges from the fan through the fan housing discharge opening.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "36cd5300d1e411e1800000215ad4efdf",
+          "Name": "DischargePressureLoss",
+          "Definition": "Fan discharge pressure loss associated with the discharge arrangement.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        },
+        {
+          "ifdguid": "3a60da00d1e411e1800000215ad4efdf",
+          "Name": "DrivePowerLoss",
+          "Definition": "Fan drive power losses associated with the type of connection between the motor and the fan wheel.",
+          "PropertyType": {
+            "TypePropertyReferenceValue": {
+              "reftype": "IfcTimeSeries"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
