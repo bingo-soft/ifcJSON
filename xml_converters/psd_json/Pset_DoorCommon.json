@@ -1,0 +1,1778 @@
+{
+    "PropertySetDef": {
+        "$": {
+            "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+            "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "ifdguid": "0e8d2680d1db11e1800000215ad4efdf",
+            "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+            "xsi:noNamespaceSchemaLocation": "http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd"
+        },
+        "IfcVersion": [
+            {
+                "$": {
+                "version": "IFC4"
+                }   
+            }
+        ],
+        "Name": [
+            "Pset_DoorCommon"
+        ],
+        "Definition": [
+            "Properties common to the definition of all occurrences of IfcDoor."
+        ],
+        "Applicability": [
+            ""
+        ],
+        "ApplicableClasses": [
+            {
+                "ClassName": [
+                "IfcDoor"
+                ]
+            }
+        ],
+        "ApplicableTypeValue": [
+        "IfcDoor"
+        ],
+        "PropertyDefs": [
+            {
+                    "PropertyDef": [
+                        {
+                            "$": {
+                            "ifdguid": "2795d780d1db11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "Reference"
+                            ],
+                            "Definition": [
+                            "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcIdentifier"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Bauteiltyp",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Reference",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Reference",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "参照記号",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "参考号",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des \"Typobjekts\", insbesondere wenn die Software keine Typen unterstützt.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Référence à l'identifiant d'un type spécifié dans le contexte du projet (exemple : \"type A1\") pour désigner un \"type de construction\". Une alternative au nom d'un objet type lorsque les objets types ne sont pas gérés par le logiciel.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "若未采用已知的分类系统，则该属性为该项目中该类型构件的参考编号（例如，类型A-1）。",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "32e90300d1db11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "Status"
+                            ],
+                            "Definition": [
+                            "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure)."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertyEnumeratedValue": [
+                                {
+                                    "EnumList": [
+                                    {
+                                        "$": {
+                                        "name": "PEnum_ElementStatus"
+                                        },
+                                        "EnumItem": [
+                                        "NEW",
+                                        "EXISTING",
+                                        "DEMOLISH",
+                                        "TEMPORARY",
+                                        "OTHER",
+                                        "NOTKNOWN",
+                                        "UNSET"
+                                        ]
+                                    }
+                                    ],
+                                    "ConstantList": [
+                                    {
+                                        "ConstantDef": [
+                                        {
+                                            "Name": [
+                                            "NEW"
+                                            ],
+                                            "Definition": [
+                                            "element designed as new addition"
+                                            ],
+                                            "NameAliases": [
+                                            {
+                                                "NameAlias": [
+                                                {
+                                                    "_": "New",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ],
+                                            "DefinitionAliases": [
+                                            {
+                                                "DefinitionAlias": [
+                                                {
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ]
+                                        },
+                                        {
+                                            "Name": [
+                                            "EXISTING"
+                                            ],
+                                            "Definition": [
+                                            "element exists and is to remain"
+                                            ],
+                                            "NameAliases": [
+                                            {
+                                                "NameAlias": [
+                                                {
+                                                    "_": "Existing",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ],
+                                            "DefinitionAliases": [
+                                            {
+                                                "DefinitionAlias": [
+                                                {
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ]
+                                        },
+                                        {
+                                            "Name": [
+                                            "DEMOLISH"
+                                            ],
+                                            "Definition": [
+                                            "element exists but is to be demolished"
+                                            ],
+                                            "NameAliases": [
+                                            {
+                                                "NameAlias": [
+                                                {
+                                                    "_": "Demolish",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ],
+                                            "DefinitionAliases": [
+                                            {
+                                                "DefinitionAlias": [
+                                                {
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ]
+                                        },
+                                        {
+                                            "Name": [
+                                            "TEMPORARY"
+                                            ],
+                                            "Definition": [
+                                            "element will exist only temporarily (such as a temporary support structure)"
+                                            ],
+                                            "NameAliases": [
+                                            {
+                                                "NameAlias": [
+                                                {
+                                                    "_": "Temporary",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ],
+                                            "DefinitionAliases": [
+                                            {
+                                                "DefinitionAlias": [
+                                                {
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ]
+                                        },
+                                        {
+                                            "Name": [
+                                            "OTHER"
+                                            ],
+                                            "NameAliases": [
+                                            {
+                                                "NameAlias": [
+                                                {
+                                                    "_": "(other)",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ],
+                                            "DefinitionAliases": [
+                                            {
+                                                "DefinitionAlias": [
+                                                {
+                                                    "_": "Value is not listed.",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ]
+                                        },
+                                        {
+                                            "Name": [
+                                            "NOTKNOWN"
+                                            ],
+                                            "NameAliases": [
+                                            {
+                                                "NameAlias": [
+                                                {
+                                                    "_": "(unknown)",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ],
+                                            "DefinitionAliases": [
+                                            {
+                                                "DefinitionAlias": [
+                                                {
+                                                    "_": "Value is unknown.",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ]
+                                        },
+                                        {
+                                            "Name": [
+                                            "UNSET"
+                                            ],
+                                            "NameAliases": [
+                                            {
+                                                "NameAlias": [
+                                                {
+                                                    "_": "(unset)",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ],
+                                            "DefinitionAliases": [
+                                            {
+                                                "DefinitionAlias": [
+                                                {
+                                                    "_": "Value has not been specified.",
+                                                    "$": {
+                                                    "lang": "en"
+                                                    }
+                                                }
+                                                ]
+                                            }
+                                            ]
+                                        }
+                                        ]
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Status",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Status",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Statut",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "状態",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. \"Neu\" (new) neues Bauteil als Ergänzung, \"Bestand\" (existing) bestehendes Bauteil, dass erhalten bleibt, \"Abbruch\" (demolish) Bauteil, das abgebrochen wird, \"Temporär\" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Statut de l'élément, principalement utilisé dans les projets de rénovation et de réhabilitation. Le statut a pour valeur NOUVEAU pour un nouvel élément, EXISTANT pour un élément existant qui est conservé, DEMOLI pour un élément existant à démolir et TEMPORAIRE pour un élément temporaire (comme une structure support provisoire).",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                        "$": {
+                        "ifdguid": "7ba0bc00d1db11e1800000215ad4efdf"
+                        },
+                        "Name": [
+                        "FireRating"
+                        ],
+                        "Definition": [
+                        "Fire rating for this object. It is given according to the national fire safety code or regulation."
+                        ],
+                        "PropertyType": [
+                        {
+                            "TypePropertySingleValue": [
+                            {
+                                "DataType": [
+                                {
+                                    "$": {
+                                    "type": "IfcLabel"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        }
+                        ],
+                        "NameAliases": [
+                        {
+                            "NameAlias": [
+                            {
+                                "_": "Feuerwiderstandsklasse",
+                                "$": {
+                                "lang": "de-DE"
+                                }
+                            },
+                            {
+                                "_": "Fire Rating",
+                                "$": {
+                                "lang": "en"
+                                }
+                            },
+                            {
+                                "_": "ResistanceAuFeu",
+                                "$": {
+                                "lang": "fr-FR"
+                                }
+                            },
+                            {
+                                "_": "耐火等級",
+                                "$": {
+                                "lang": "ja-JP"
+                                }
+                            },
+                            {
+                                "_": "防火等级",
+                                "$": {
+                                "lang": "zh-CN"
+                                }
+                            }
+                            ]
+                        }
+                        ],
+                        "DefinitionAliases": [
+                        {
+                            "DefinitionAlias": [
+                            {
+                                "_": "Feuerwiderstandsklasse für den Brandschutz gemäß der nationalen oder regionalen Richtlinie die für den Brandschutz der Brandschutztür gewährleistet werden muss.",
+                                "$": {
+                                "lang": "de-DE"
+                                }
+                            },
+                            {
+                                "$": {
+                                "lang": "en"
+                                }
+                            },
+                            {
+                                "_": "Classement au feu de l'élément donné selon la classification nationale de sécurité incendie.",
+                                "$": {
+                                "lang": "fr-FR"
+                                }
+                            },
+                            {
+                                "_": "主要な耐火等級。関連する建築基準法、消防法などの国家基準を参照。",
+                                "$": {
+                                "lang": "ja-JP"
+                                }
+                            },
+                            {
+                                "_": "该构件的防火等级。\n该属性的依据为国家防火安全分级。",
+                                "$": {
+                                "lang": "zh-CN"
+                                }
+                            }
+                            ]
+                        }
+                        ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "95420380d1db11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "AcousticRating"
+                            ],
+                            "Definition": [
+                            "Acoustic rating for this object.\nIt is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values)."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcLabel"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Schallschutzklasse",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Acoustic Rating",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "IsolationAcoustique",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "遮音等級",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "隔音等级",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Schallschutzklasse gemäß der nationalen oder regionalen Richtlinie die als Mindestanforderung für die Schalldämmung der Tür gewährleistet sein muss.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Classement acoustique de cet objet. Donné selon le Code National du Bâtiment. Il indique la résistance à la transmission du son de cet objet par une valeur de référence (au lieu de fournir les valeurs totales d'absorption du son).",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "遮音等級情報。関連する建築基準法を参照。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "该构件的隔音等级。\n该属性的依据为国家建筑规范。为表示该构件隔音效果的比率（而不是完全吸收声音的值）。",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "b4409580d1db11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "SecurityRating"
+                            ],
+                            "Definition": [
+                            "Index based rating system indicating security level.\nIt is giving according to the national building code."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcLabel"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Widerstandsklasse",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Security Rating",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "NiveauSecurite",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "防犯等級",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "安全等级",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Widerstandsklasse für den Einbruchschutz gemäß der nationalen oder regionalen Richtlinie die als Mindestanforderung für die Einbruchhemmung der Tür gewährleistet sein muss.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Système de classification par indices, indiquant le niveau de sécurité.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "防犯等級情報。関連する基準を参照。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "表示安全程度的参考性等级。\n该属性的依据为国家建筑规范。",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "cde1dd00d1db11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "DurabilityRating"
+                            ],
+                            "Definition": [
+                            "Durability against mechanical stress. It is given according to the national code or regulation."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcLabel"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Beanspruchungsklasse",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Durability Rating",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Durabilité",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Mechanische Widerstandsfähigkeit gegen immer wiederkehrende Bewegungen und Einflüsse gemäß der nationalen oder regionalen Richtlinie.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Durabilité au stress mécanique, selon une classification ou règlementation nationale.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "ec47d880d1db11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "HygrothermalRating"
+                            ],
+                            "Definition": [
+                            "Resistence against hygrothermal impact from different temperatures and humidities inside and outside. It is given according to the national code or regulation."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcLabel"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Klimaklasse",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Hygrothermal Rating",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Résistance hygrothermique",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Hygrothermische Widerstandsfähigkeit gegen Temperatur- und Feuchteunterschiede gemäß der nationalen oder regionalen Richtlinie als Mindestanforderung gegen die Verformung der Tür.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Résistance à l'impact hygrothermique des différences de température et d'humidité entre l'intérieur et l'extérieur, selon une classification ou règlementation nationale.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "5030f04224d94c74aba753294170b227"
+                            },
+                            "Name": [
+                            "WaterTightnessRating"
+                            ],
+                            "Definition": [
+                            "Water tightness rating for this object.\nIt is provided according to the national building code."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcLabel"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            ""
+                            ],
+                            "DefinitionAliases": [
+                            ""
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "da9b78dfa88b4538887d4c597a1059dd"
+                            },
+                            "Name": [
+                            "MechanicalLoadRating"
+                            ],
+                            "Definition": [
+                            "Mechanical load rating for this object.\nIt is provided according to the national building code."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcLabel"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            ""
+                            ],
+                            "DefinitionAliases": [
+                            ""
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "9be0892ff9324135bdafcd98782a64ff"
+                            },
+                            "Name": [
+                            "WindLoadRating"
+                            ],
+                            "Definition": [
+                            "Wind load resistance rating for this object.\nIt is provided according to the national building code."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcLabel"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            ""
+                            ],
+                            "DefinitionAliases": [
+                            ""
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "23b68500d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "Infiltration"
+                            ],
+                            "Definition": [
+                            "Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcVolumetricFlowRateMeasure"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Luftdurchlässigkeit",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Infiltration",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "TauxInfiltration",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Luftaustausch über die Fugen der geschlossenen Tür  (Q-Wert). Gibt die Luftdurchlässigkeit der gesamten Tür bei einem Luftdruckniveau von 50 Pascal an.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Taux d'infiltration de l'air extérieur lorsqu'on soumet la porte à une pression de 50 pascals. Cette valeur sera utilisée si la longueur des joints n'est pas connue.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "0aadd400d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "IsExternal"
+                            ],
+                            "Definition": [
+                            "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcBoolean"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Außenbauteil",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Is External",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "EstExterieur",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "外部区分",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "是否外部构件",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser).",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Indique si l'élément est conçu pour être utilisé à l'extérieur (VRAI) ou non (FAUX). Si VRAI, c'est un élément extérieur qui donne sur l'extérieur du bâtiment.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "表示该图元是否设计为外部构件。若是，则该图元为外部图元，朝向建筑物的外部。",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "42b51700d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "ThermalTransmittance"
+                            ],
+                            "Definition": [
+                            "Thermal transmittance coefficient (U-Value) of a material.\nIt applies to the total door construction."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcThermalTransmittanceMeasure"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "U-Wert",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Thermal Transmittance",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "TransmissionThermique",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "熱貫流率",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "导热系数",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Wärmedurchgangskoeffizient (U-Wert) der Materialschichten.\nHier der Gesamtwärmedurchgangskoeffizient der Tür.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Coefficient de transmission thermique (U) d'un matériau. Il s'applique à l'ensemble de la porte.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "熱貫流率U値。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "材料的导热系数（U值）。\n适用于门的整体结构。",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "5d878b80d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "GlazingAreaFraction"
+                            ],
+                            "Definition": [
+                            "Fraction of the glazing area relative to the total area of the filling element. \nIt shall be used, if the glazing area is not given separately for all panels within the filling element."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcPositiveRatioMeasure"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Glasflächenanteil",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Glazing Area Fraction",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "FractionSurfaceVitree",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Anteil der verglasten Fläche an der Gesamtfläche der Tür.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Part de surface de vitrage par rapport à la surface totale de l'élément de remplissage. Doit être utilisée si la surface de vitrage n'est pas donnée séparément pour tous les panneaux occupant l'ouverture.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "76903c80d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "HandicapAccessible"
+                            ],
+                            "Definition": [
+                            "Indication that this object is designed to be accessible by the handicapped. \nIt is giving according to the requirements of the national building code."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcBoolean"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Behindertengerecht",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Handicap Accessible",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "AccessibleHandicapes",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Angabe, ob die Tür behindertengerecht gemäß der nationalen oder regionalen Verordnung ist (JA), oder nicht (NEIN).",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Indique que cet objet est conçu pour être accessible aux handicapés. Indication donnée selon le Code National.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "8f98ed80d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "FireExit"
+                            ],
+                            "Definition": [
+                            "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).\nHere it defines an exit door in accordance to the national building code."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcBoolean"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Notausgang",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Fire Exit",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Sortie Secours",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "非常口区分",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "是否为紧急出口",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Angabe, ob die Tür ein Notausgang gemäß der nationalen oder regionalen Brandschutzverordnung ist (JA), oder nicht (NEIN)..",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Indique si cet objet est conçu pour servir de sortie en cas d'incendie (VRAI) ou non (FAUX). Définition de la sortie de secours selon le Code National.",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "このオブジェクトが火災時の非常口として設計されているかどうかを示すブーリアン値。ここでは関連する建築基準法における出口ドアとして定義している。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "表示该构件是否设计为火灾时的紧急出口。\n该属性的依据为国家建筑规范。",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "aa6b6200d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "HasDrive"
+                            ],
+                            "Definition": [
+                            "Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)"
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcBoolean"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Antrieb",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Has Drive",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Angabe, ob dieses Bauteil einen automatischen Antrieb zum Öffnen und Schließen besitzt (JA) oder nicht (NEIN).",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "beaf5f00d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "SelfClosing"
+                            ],
+                            "Definition": [
+                            "Indication whether this object is designed to close automatically after use (TRUE) or not (FALSE)."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcBoolean"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Selbstschliessend",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Self Closing",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "FermetureAutomatique",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "自動ドア閉機能区分",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "是否自动关闭",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Angabe, ob die Tür sicher und selbständig nach der Benutzung durch einen Türschließer schließt (Ja) oder nicht (NEIN).",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Indique si cet objet est conçu pour une fermeture automatique après usage (VRAI) ou non (FAUX)",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "このドアが自動的に閉まる機能を有するかどうかのブーリアン値。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "表示该构件是否设计为自动关闭。",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "$": {
+                            "ifdguid": "cec73e80d1dc11e1800000215ad4efdf"
+                            },
+                            "Name": [
+                            "SmokeStop"
+                            ],
+                            "Definition": [
+                            "Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE)."
+                            ],
+                            "PropertyType": [
+                            {
+                                "TypePropertySingleValue": [
+                                {
+                                    "DataType": [
+                                    {
+                                        "$": {
+                                        "type": "IfcBoolean"
+                                        }
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ],
+                            "NameAliases": [
+                            {
+                                "NameAlias": [
+                                {
+                                    "_": "Rauchschutz",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "_": "Smoke Stop",
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "CoupeFumee",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "煙止め機能区分",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "是否防烟",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ],
+                            "DefinitionAliases": [
+                            {
+                                "DefinitionAlias": [
+                                {
+                                    "_": "Angabe, ob die Tür einen Rauchschutz gemäß der nationalen oder regionalen Brandschutzverordnung gewährleistet (JA) oder nicht (NEIN). Rauchschutztüren müssen selbstschließend sein.",
+                                    "$": {
+                                    "lang": "de-DE"
+                                    }
+                                },
+                                {
+                                    "$": {
+                                    "lang": "en"
+                                    }
+                                },
+                                {
+                                    "_": "Indique si la porte est conçue pour une fonction coupe-fumée (VRAI) ou non (FAUX)",
+                                    "$": {
+                                    "lang": "fr-FR"
+                                    }
+                                },
+                                {
+                                    "_": "このドアが煙を止める機能を有するかどうかのブーリアン値。",
+                                    "$": {
+                                    "lang": "ja-JP"
+                                    }
+                                },
+                                {
+                                    "_": "表示该构件是否设计为防烟。",
+                                    "$": {
+                                    "lang": "zh-CN"
+                                    }
+                                }
+                                ]
+                            }
+                            ]
+                        }
+                    ]
+            }
+        ],
+        "PsetDefinitionAliases": [
+            {
+                "PsetDefinitionAlias": [
+                {
+                    "$": {
+                    "lang": "en"
+                    }
+                },
+                {
+                    "_": "Définition de l'IAI : propriétés communes à la définition de toutes les instances de la classe IfcDoor",
+                    "$": {
+                    "lang": "fr-FR"
+                    }
+                },
+                {
+                    "_": "IfcDoor(ドア)オブジェクトに関する共通プロパティセット定義。",
+                    "$": {
+                    "lang": "ja-JP"
+                    }
+                },
+                {
+                    "_": "所有IfcDoor实例的定义中通用的属性。",
+                    "$": {
+                    "lang": "zh-CN"
+                    }
+                }
+                ]
+            }
+        ]
+    }
+}
